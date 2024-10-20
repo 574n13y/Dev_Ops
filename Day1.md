@@ -1,3 +1,5 @@
+# Day 1
+
 🔸 AWS Interview Question:
 What is the difference between EC2 On-Demand and EC2 Spot Instances?
 - **EC2 On-Demand Instances** are virtual servers you can launch without long-term commitments, paying only for the compute capacity you use by the hour or second. They offer flexibility and are ideal for unpredictable workloads.

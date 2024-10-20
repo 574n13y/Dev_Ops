@@ -1,3 +1,5 @@
+# Day 2
+
 🔸 AWS Question:
 What is an Availability Zone in AWS, and how does it differ from a Region?
 - An Availability Zone (AZ) in AWS is an isolated data center within a Region. Each Region consists of multiple AZs, providing redundancy and fault tolerance. A Region is a geographical area (e.g., US East, EU Central) containing multiple AZs, allowing for distributed
