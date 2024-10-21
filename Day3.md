@@ -20,4 +20,4 @@ What is the difference between a Layer 2 switch and a Layer 3 switch? Can a Laye
 In a Git workflow, what is the difference between git merge and git rebase, and how can using one over the other affect the commit history?
 1. git merge: Combines branches by creating a new commit, preserving the full branch history.
 2. git rebase: Moves or reapplies commits from one branch to another, creating a linear history by rewriting commit sequences.
-Effect on History: Merging keeps all commits visible, while rebasing creates a cleaner, linear commit history, which can make it easier to read but may lead to conflicts if done improperly on shared branches.
+3. Effect on History: Merging keeps all commits visible, while rebasing creates a cleaner, linear commit history, which can make it easier to read but may lead to conflicts if done improperly on shared branches.
