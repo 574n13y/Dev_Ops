@@ -16,9 +16,9 @@ df -h
 
 🔸 Networking Question:
 What is a default gateway, and why is it important in a network?
-A **default gateway** is a device (usually a router) that routes traffic from a local network to other networks (e.g., the internet). It is crucial because it allows devices on a local network to communicate with devices outside their network. Without a default gateway, devices would not know where to send data destined for external addresses.
+- A **default gateway** is a device (usually a router) that routes traffic from a local network to other networks (e.g., the internet). It is crucial because it allows devices on a local network to communicate with devices outside their network. Without a default gateway, devices would not know where to send data destined for external addresses.
 
 🔸 DevOps Question:
 What is the purpose of a Dockerfile, and how does it help in containerization?
-A **Dockerfile** is a script containing instructions to build a Docker image. It defines the environment, dependencies, application code, and commands to run inside a container. By using a Dockerfile, you can create consistent and reproducible container images that can be deployed across different environments, helping streamline the containerization process.(concept of key and value)
+- A **Dockerfile** is a script containing instructions to build a Docker image. It defines the environment, dependencies, application code, and commands to run inside a container. By using a Dockerfile, you can create consistent and reproducible container images that can be deployed across different environments, helping streamline the containerization process.(concept of key and value)
 
