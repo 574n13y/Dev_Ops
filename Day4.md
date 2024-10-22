@@ -16,6 +16,7 @@ df -h
 
 🔸 Networking Question:
 What is a default gateway, and why is it important in a network?
+A **default gateway** is a device (usually a router) that routes traffic from a local network to other networks (e.g., the internet). It is crucial because it allows devices on a local network to communicate with devices outside their network. Without a default gateway, devices would not know where to send data destined for external addresses.
 
 🔸 DevOps Question:
 What is the purpose of a Dockerfile, and how does it help in containerization?
