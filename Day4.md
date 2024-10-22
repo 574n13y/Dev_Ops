@@ -6,6 +6,13 @@ What is an Elastic IP in AWS, and how does it differ from a public IP?
 
 🔸 Linux Question:
 What command would you use to check the disk space usage on a Linux system? Can you explain how to interpret the output?
+- To check disk space usage, use the command:
+```bash
+df -h
+```
+- **`df`:** Displays disk space usage.
+- **`-h`:** Shows output in a human-readable format (e.g., MB, GB).
+- **Output Interpretation:** The output shows each filesystem, total size, used space, available space, and usage percentage. The `Mounted on` column indicates the directory where the filesystem is mounted.
 
 🔸 Networking Question:
 What is a default gateway, and why is it important in a network?
