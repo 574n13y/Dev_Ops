@@ -9,6 +9,9 @@ What are AWS Security Groups, and how do they differ from Network ACLs (NACLs)?
 
 🔸 Linux Question:
 What is the purpose of the sudo command in Linux? How does it differ from logging in directly as the root user?
+- **`sudo`:** Allows a permitted user to run commands as the superuser (root) or another user, based on configuration.
+- **Difference from Root Login:** Using `sudo` provides temporary elevated permissions, enabling users to perform admin tasks without needing to log in as root. It improves security by limiting root access and logging command usage.
+
 
 🔸 Networking Question:
 What is a traceroute, and how does it help diagnose network issues? What’s the difference between ping and traceroute?
