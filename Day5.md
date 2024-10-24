@@ -20,4 +20,9 @@ What is a traceroute, and how does it help diagnose network issues? What’s the
 
 🔸 DevOps Question:
 How do you handle secrets and sensitive data in a CI/CD pipeline to ensure security during deployment?
+To handle **secrets and sensitive data** securely in a CI/CD pipeline:
+- **Use Secret Management Tools:** Store secrets in tools like AWS Secrets Manager, HashiCorp Vault, or Azure Key Vault.
+- **Environment Variables & Encrypted Files:** Access secrets via environment variables or encrypted files, ensuring they are not hardcoded in the codebase.
+- **Access Control:** Limit access to secrets and ensure only authorized services or users can retrieve them.
+- **Auditing & Logging:** Monitor access to secrets to detect any unauthorized attempts, ensuring better security practices during deployment.
 
