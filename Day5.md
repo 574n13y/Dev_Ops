@@ -15,6 +15,8 @@ What is the purpose of the sudo command in Linux? How does it differ from loggin
 
 🔸 Networking Question:
 What is a traceroute, and how does it help diagnose network issues? What’s the difference between ping and traceroute?
+- **Traceroute:** A network diagnostic tool that shows the path packets take from the source to the destination, listing each hop (router) along the way. It helps identify where delays or issues occur in the network.
+- **Ping vs. Traceroute:** `Ping` checks connectivity by sending packets to a target and measuring the round-trip time. `Traceroute` goes further by showing the path and each hop, helping pinpoint where network issues might be occurring.
 
 🔸 DevOps Question:
 How do you handle secrets and sensitive data in a CI/CD pipeline to ensure security during deployment?
