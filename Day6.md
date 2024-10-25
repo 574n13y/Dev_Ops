@@ -23,6 +23,8 @@ How do you find and kill a running process in Linux using the terminal? What com
 
 🔸 Networking Question:
 What is the difference between TCP and UDP? Can you provide scenarios where each is preferred?
+- **TCP (Transmission Control Protocol):** Connection-oriented, reliable, and ensures data is received in order. Preferred for scenarios where accuracy and data integrity are critical (e.g., web browsing, file transfers, emails).
+- **UDP (User Datagram Protocol):** Connectionless, faster, and does not guarantee delivery. Suitable for scenarios where speed is more critical than reliability (e.g., online gaming, video streaming, VoIP).
 
 🔸 DevOps Question:
 How do you ensure that your infrastructure is provisioned consistently across multiple environments (e.g., dev, staging, prod) using Infrastructure as Code (IaC)?
