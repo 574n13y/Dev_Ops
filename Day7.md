@@ -1,3 +1,5 @@
+# Day 7
+
 🔸 AWS Question:
 How do you automate the creation and testing of AMI backups in AWS? What services would you use to ensure automated and reliable backup processes?
 
