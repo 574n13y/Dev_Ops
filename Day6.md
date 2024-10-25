@@ -28,5 +28,10 @@ What is the difference between TCP and UDP? Can you provide scenarios where each
 
 🔸 DevOps Question:
 How do you ensure that your infrastructure is provisioned consistently across multiple environments (e.g., dev, staging, prod) using Infrastructure as Code (IaC)?
+- To ensure consistent infrastructure provisioning across multiple environments using **Infrastructure as Code (IaC)**:
+1. **Use IaC Tools:** Utilize tools like Terraform, AWS CloudFormation, or Ansible to define infrastructure as code. This ensures that the same configuration is used across all environments.
+2. **Version Control:** Store IaC templates in a version-controlled repository (like Git) to track changes and maintain consistency.
+3. **Environment-Specific Variables:** Define environment-specific variables (e.g., dev, staging, prod) to customize configurations without altering the core infrastructure code.
+4. **Automated Pipelines:** Integrate IaC scripts into CI/CD pipelines to automatically provision infrastructure in a repeatable and consistent manner.
 
 
