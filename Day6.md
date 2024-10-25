@@ -1,3 +1,5 @@
+# Day 6
+
 🔸 AWS Question:
 How can you test your backups in AWS to ensure they are reliable and usable in case of failure?
 - To test your **backups in AWS**, you can:
