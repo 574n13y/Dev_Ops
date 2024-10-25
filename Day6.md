@@ -1,5 +1,10 @@
 🔸 AWS Question:
 How can you test your backups in AWS to ensure they are reliable and usable in case of failure?
+- To test your **backups in AWS**, you can:
+1. **Perform Restore Tests:** Periodically restore backups to a new instance (EC2, RDS, etc.) and verify the data integrity and application functionality.
+2. **Automate Backup Testing:** Use scripts or AWS services (like AWS Backup or Lambda) to regularly perform automated restores and checks.
+3. **Disaster Recovery Drills:** Conduct full-scale tests that simulate a failure scenario, ensuring that the backup can be restored within the required recovery time.
+
 
 🔸 Linux Question:
 How do you find and kill a running process in Linux using the terminal? What command would you use to identify a process and terminate it?
