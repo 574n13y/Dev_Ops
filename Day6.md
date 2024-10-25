@@ -8,6 +8,18 @@ How can you test your backups in AWS to ensure they are reliable and usable in c
 
 🔸 Linux Question:
 How do you find and kill a running process in Linux using the terminal? What command would you use to identify a process and terminate it?
+- To find and kill a running process:
+1. **Identify the Process:**
+   ```bash
+   ps aux | grep <process_name>
+   ```
+   or use `pgrep <process_name>` to get the process ID (PID).
+2. **Kill the Process:**
+   ```bash
+   kill <PID>
+   ```
+   or use `kill -9 <PID>` to forcefully terminate it.
+
 
 🔸 Networking Question:
 What is the difference between TCP and UDP? Can you provide scenarios where each is preferred?
