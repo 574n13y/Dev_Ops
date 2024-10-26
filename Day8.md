@@ -31,5 +31,11 @@ What is the difference between NAT (Network Address Translation) and PAT (Port A
 
 🔸 DevOps Question:
 What is the purpose of using Helm in Kubernetes, and how does it simplify the management of Kubernetes applications?
+ **Helm** example:
+- To deploy a complex application (e.g., a web app with frontend, backend, and database) in Kubernetes, you can package all components in a **Helm chart**. Instead of manually creating multiple YAML files, use Helm to deploy the entire app with a single command:
+  ```
+  helm install myapp ./myapp-chart
+  ```
+Helm manages configurations, versions, and rollbacks, simplifying application lifecycle management in Kubernetes.
 
 
