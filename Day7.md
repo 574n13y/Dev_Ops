@@ -18,6 +18,10 @@ What is the difference between grep and awk? When would you use one over the oth
 
 🔸 Networking Question:
 What is ARP (Address Resolution Protocol), and how does it work in a network to resolve IP addresses to MAC addresses?
+- **ARP (Address Resolution Protocol):** A protocol used to map an IP address to a MAC (hardware) address on a local network.
+- **How It Works:** When a device wants to communicate with another on the same network, it sends out an ARP request asking "Who has this IP?" The device with the matching IP responds with its MAC address. The requesting device then uses this MAC address to send data directly.
+- **Purpose:** It allows communication within a local network by resolving IP addresses to physical (MAC) addresses, ensuring proper data packet delivery.
+
 
 🔸 DevOps Question:
 What is a Canary Deployment, and how does it minimize the risk of rolling out new features or updates in production?
