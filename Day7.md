@@ -25,4 +25,7 @@ What is ARP (Address Resolution Protocol), and how does it work in a network to 
 
 🔸 DevOps Question:
 What is a Canary Deployment, and how does it minimize the risk of rolling out new features or updates in production?
+- A **Canary Deployment** is a strategy that involves rolling out new features or updates to a small subset of users (the "canary") before deploying it to the entire user base.
+- **How It Minimizes Risk:** By gradually exposing the new version, you can monitor for issues, performance drops, or unexpected behavior. If the deployment is successful, it can be rolled out to more users. If not, it’s easier to roll back the change, minimizing the impact on production.
+
 
