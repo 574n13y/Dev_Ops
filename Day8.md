@@ -6,6 +6,19 @@ How do you ensure high availability of your application running in AWS across mu
 
 🔸 Linux Question:
 What is the difference between cron and at in Linux? When would you use each for task scheduling?
+- **`cron`** example:
+- Schedule a backup script to run every day at 2 AM:
+  ```
+  0 2 * * * /path/to/backup.sh
+  ```
+
+**`at`** example:
+- Schedule a one-time task to run a script at 6 PM:
+  ```
+  echo "/path/to/script.sh" | at 18:00
+  ```
+Use **`cron`** for regular, repeating tasks and **`at`** for one-time scheduled tasks.
+
 
 🔸 Networking Question:
 What is the difference between NAT (Network Address Translation) and PAT (Port Address Translation)? When would you use PAT over NAT?
