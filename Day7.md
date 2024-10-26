@@ -11,6 +11,10 @@ How do you automate the creation and testing of AMI backups in AWS? What service
 
 🔸 Linux Question:
 What is the difference between grep and awk? When would you use one over the other for text processing?
+- **`grep`:** Primarily used for searching and filtering text. It matches patterns in a file or output and displays matching lines. Best for quick searches.
+- **`awk`:** More powerful for text processing. It can search, extract, and manipulate data from text files, perform calculations, and format output. Ideal for more complex data transformations.
+- **When to Use:** Use `grep` for simple text searches and `awk` when you need to process and manipulate text data (e.g., extracting specific columns).
+
 
 🔸 Networking Question:
 What is ARP (Address Resolution Protocol), and how does it work in a network to resolve IP addresses to MAC addresses?
