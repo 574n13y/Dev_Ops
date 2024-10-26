@@ -22,6 +22,12 @@ Use **`cron`** for regular, repeating tasks and **`at`** for one-time scheduled 
 
 🔸 Networking Question:
 What is the difference between NAT (Network Address Translation) and PAT (Port Address Translation)? When would you use PAT over NAT?
+ **NAT** example:
+- When a server on a private network (e.g., 192.168.1.5) accesses the internet, NAT translates its private IP to a public IP (e.g., 203.0.113.1).
+
+ **PAT** example:
+- If multiple devices (192.168.1.5, 192.168.1.6) need to access the internet, PAT maps them to a single public IP (203.0.113.1) but assigns different ports for each device. Use **PAT** to conserve public IPs while allowing multiple devices to share one.
+
 
 🔸 DevOps Question:
 What is the purpose of using Helm in Kubernetes, and how does it simplify the management of Kubernetes applications?
