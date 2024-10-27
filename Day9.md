@@ -2,6 +2,7 @@
 
 🔸 AWS Question:
 What is AWS Config, and how can it be used to monitor compliance and track configuration changes across your AWS resources?
+- AWS Config: AWS Config is a service that tracks and records configuration changes to your AWS resources, enabling you to assess compliance with internal policies. It continuously monitors and evaluates resource configurations, providing a history of changes and generating alerts if configurations drift from the desired state.
 
 🔸 Linux Question:
 Explain the difference between ps and top commands in Linux. When would you prefer using one over the other?
