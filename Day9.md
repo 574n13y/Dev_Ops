@@ -9,14 +9,18 @@ What is AWS Config, and how can it be used to monitor compliance and track confi
 Explain the difference between ps and top commands in Linux. When would you prefer using one over the other?
 - ps vs. top:
 
-ps shows a snapshot of currently running processes at a specific moment, useful for seeing detailed information about specific processes.
-top is a real-time, dynamic view of system processes, continuously updating the list. It’s helpful for monitoring system performance and resource usage over time.
+1. ps shows a snapshot of currently running processes at a specific moment, useful for seeing detailed information about specific processes.
+2. top is a real-time, dynamic view of system processes, continuously updating the list. It’s helpful for monitoring system performance and resource usage over time.
 Use ps for a one-time check and top for continuous monitoring.
 
 
 
 🔸 Networking Question:
 What is the difference between a VLAN (Virtual Local Area Network) and a Subnet, and how do they help in network segmentation?
+- VLAN: Divides a physical network into multiple logical networks, isolating traffic at the data link layer (Layer 2).
+- Subnet: Partitions an IP network into smaller segments, controlling traffic at the network layer (Layer 3).
+Both help in segmenting networks but at different layers, improving security and traffic management.
+
 
 🔸 DevOps Question:
 What are the main differences between Blue-Green Deployment and Feature Toggles?
