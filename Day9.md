@@ -24,4 +24,5 @@ Both help in segmenting networks but at different layers, improving security and
 
 🔸 DevOps Question:
 What are the main differences between Blue-Green Deployment and Feature Toggles?
-
+1. **Blue-Green Deployment:** Maintains two environments (blue and green) where one is live, and the other is a staging environment. You switch traffic to the new version once it's tested and ready.
+2. **Feature Toggles:** Allows deploying code with features hidden or disabled, which can be turned on or off without redeploying the application, enabling continuous delivery and feature experimentation.
