@@ -7,6 +7,8 @@ AWS CloudTrail records and logs API calls made in your AWS account, providing vi
 
 🔸 Linux Question:
 What is the umask command in Linux, and how does it affect file and directory permissions? How can you modify the default umask value for a user?
+- `umask`**:
+The `umask` command sets default permissions for newly created files and directories by specifying which permission bits to mask out. It subtracts permissions from the system default (666 for files, 777 for directories). You can modify the default `umask` value by adding a `umask` command in the user’s shell configuration file (e.g., `.bashrc` or `.profile`).
 
 🔸 Networking Question:
 What is the difference between a stateful firewall and a stateless firewall? In what scenarios would you use one over the other?
