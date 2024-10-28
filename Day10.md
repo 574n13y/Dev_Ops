@@ -18,5 +18,8 @@ What is the difference between a stateful firewall and a stateless firewall? In 
 
 🔸 DevOps Question:
 What is the purpose of using a reverse proxy in a microservices architecture, and how does it improve performance and security?
+- **Reverse Proxy in Microservices**:
+A reverse proxy in microservices handles client requests and forwards them to the appropriate backend service. It improves performance by enabling load balancing, caching, and compression. It enhances security by hiding backend services, terminating SSL, and controlling traffic flow, preventing direct exposure of services to the internet.
+
 
 
