@@ -18,5 +18,5 @@ What is MTU (Maximum Transmission Unit), and how does it affect network performa
 
 🔸 DevOps Question:
 What is the concept of "Shift Left" in DevOps, and how does it help improve the quality and security of software?
-
+- "Shift Left" in DevOps emphasizes integrating testing, quality, and security earlier in the development process. This helps identify and resolve issues sooner, reducing bugs and security risks, ultimately speeding up delivery and improving software quality.
 
