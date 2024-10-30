@@ -17,5 +17,5 @@ What is a load balancer, and how does it improve network performance? Can you ex
 
 🔸 DevOps Question:
 What is the difference between observability and monitoring in DevOps? Why is observability important for modern applications?
-
+- Monitoring tracks specific metrics (e.g., CPU, memory), while observability focuses on understanding system behavior through logs, metrics, and traces. Observability is essential for diagnosing complex issues in modern distributed systems, giving deeper insights into the "why" behind issues.
 
