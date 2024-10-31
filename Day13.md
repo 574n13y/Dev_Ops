@@ -6,6 +6,7 @@ What is AWS PrivateLink, and how does it help securely connect your VPC to AWS s
 
 🔸 Linux Question:
 Explain the purpose of the /etc/fstab file in Linux. 
+- The `/etc/fstab` file in Linux defines how and where disk partitions, storage devices, and remote filesystems are automatically mounted at boot. It simplifies managing persistent mounts.
 
 🔸 Networking Question:
 What is Network Address Translation (NAT), and how does it help conserve IP addresses?
