@@ -10,6 +10,7 @@ Explain the purpose of the /etc/fstab file in Linux.
 
 🔸 Networking Question:
 What is Network Address Translation (NAT), and how does it help conserve IP addresses?
+- Network Address Translation (NAT) translates private IP addresses to a public IP for internet access, helping conserve IPs by allowing multiple devices to share a single public IP.
 
 🔸 DevOps Question:
 What is the purpose of CI/CD pipelines in DevOps?
