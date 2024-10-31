@@ -14,6 +14,6 @@ What is Network Address Translation (NAT), and how does it help conserve IP addr
 
 🔸 DevOps Question:
 What is the purpose of CI/CD pipelines in DevOps?
-
+- CI/CD pipelines automate building, testing, and deploying code changes, speeding up delivery and improving code quality by enabling frequent, reliable updates.
 
 
