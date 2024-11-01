@@ -14,7 +14,7 @@ What is the role of DNS (Domain Name System) in networking, and why is it essent
 
 🔸 DevOps Question:
 What is artifact management in DevOps, and why is it important? Can you name some popular tools for managing artifacts?
-
+- Artifact management in DevOps involves storing, organizing, and managing binary files created during development, like `.jar` or `.zip` files. It ensures consistency across deployments. Tools like *Artifactory*, *Nexus*, and *Azure Artifacts* are popular for managing artifacts, ensuring they’re available for testing and production environments.
 
 
 
