@@ -10,6 +10,7 @@ What is the purpose of the ping command in Linux, and how can it help diagnose n
 
 🔸 Networking Question:
 What is the role of DNS (Domain Name System) in networking, and why is it essential?
+- DNS (Domain Name System) translates human-readable domain names (like `example.com`) into IP addresses, allowing browsers to load internet resources. It’s essential for seamless internet navigation; without DNS, users would need to remember IP addresses instead of domain names.
 
 🔸 DevOps Question:
 What is artifact management in DevOps, and why is it important? Can you name some popular tools for managing artifacts?
