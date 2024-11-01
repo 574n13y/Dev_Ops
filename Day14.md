@@ -2,10 +2,11 @@
 
 🔸 AWS Question:
 What is an IAM policy in AWS, and how does it control access to resources? How do policies differ from roles?
--An IAM policy in AWS is a JSON document that defines permissions to access AWS resources. It specifies *who* can do *what* on *which resources*. Policies can be attached to users, groups, or roles. For example, a policy might allow an EC2 instance to access S3 buckets. *Roles* differ in that they’re assumed temporarily by entities like users or services for cross-account or service-based access, whereas policies define access permissions.
+- An IAM policy in AWS is a JSON document that defines permissions to access AWS resources. It specifies *who* can do *what* on *which resources*. Policies can be attached to users, groups, or roles. For example, a policy might allow an EC2 instance to access S3 buckets. *Roles* differ in that they’re assumed temporarily by entities like users or services for cross-account or service-based access, whereas policies define access permissions.
 
 🔸 Linux Question:
 What is the purpose of the ping command in Linux, and how can it help diagnose network connectivity issues?
+- The `ping` command tests network connectivity between the host and a target (like an IP or domain) by sending ICMP echo requests. It helps diagnose issues like packet loss or latency by measuring the response time. For example, `ping google.com` checks if your device can reach Google’s servers.
 
 🔸 Networking Question:
 What is the role of DNS (Domain Name System) in networking, and why is it essential?
