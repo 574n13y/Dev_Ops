@@ -28,6 +28,9 @@ Explanation:
 
 🔸 Networking Question:
 What is ARP (Address Resolution Protocol), and how does it help devices on a local network communicate with each other?
+- ARP, or Address Resolution Protocol, is used to map a device’s IP address to its MAC (Media Access Control) address on a local network. When a device needs to communicate with another on the same subnet, it sends an ARP request, essentially asking, "Who has this IP address?" The device with that IP responds with its MAC address, enabling direct communication over the Ethernet network.
+
+- This mapping is crucial for local communication because while IP addresses facilitate identification within a network layer, MAC addresses are essential for data-link layer interactions on a physical network. Devices maintain an ARP cache, so they don’t have to repeatedly send requests for known addresses.
 
 🔸 DevOps Question:
 How do configuration management tools like Ansible or Chef work in a DevOps environment, and how do they help ensure consistency across servers?
