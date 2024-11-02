@@ -8,6 +8,23 @@ How does Amazon RDS handle automated backups, and how can you restore a database
 
 🔸 Linux Question:
 How would you create a cron job to run a script every Monday at 3:00 AM.
+- To schedule a cron job for every Monday at 3:00 AM, open the crontab file by running:
+```bash
+crontab -e
+```
+Add this line to the file:
+```bash
+0 3 * * 1 /path/to/your/script.sh
+```
+
+Explanation:
+  - `0 3 * * 1` specifies the timing:
+  - `0` - Minute (0th minute of the hour)
+  - `3` - Hour (3 AM)
+  - `* *` - Every day and every month
+  - `1` - Monday
+  - `/path/to/your/script.sh` is the path to the script you want to run.
+
 
 🔸 Networking Question:
 What is ARP (Address Resolution Protocol), and how does it help devices on a local network communicate with each other?
