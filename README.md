@@ -1,8 +1,17 @@
 # Dev_Ops
-Daily DevOps Challenge 🎉 by  T.K.V.S Sree HarshaT.K.V.S Sree Harsha  
- I’m launching a Daily DevOps Challenge to give back to our amazing DevOps community! 🎉
-- 🔹 1 AWS Question
-- 🔹 1 Linux Question
-- 🔹 1 Networking Question
 
-Whether you're sharpening your skills for certifications, preparing for interviews, or just looking to deepen your DevOps expertise, this daily routine will help you stay ahead and keep learning consistently! 💡
+I'm excited to announce a revamped Daily DevOps Challenge, designed to give back to our awesome DevOps community! 🎉 
+
+Here's what you can look forward to:
+- 🔹 Daily Questions on AWS
+- 🔹 Daily Linux Questions
+- 🔹 Daily Networking Questions
+
+From Day 1 to Day 15, we focused on foundational tasks. Now, we're leveling up! This challenge has been extended to 150 days, where each day you'll tackle questions across a range of topics:
+- 🔸 Linux
+- 🔸 Networking
+- 🔸 Cloud Computing
+- 🔸 DevOps Tools & Technologies
+- 🔸 Scenario-Based Questions 
+
+These challenges, from beginner to advanced, are perfect for anyone looking to sharpen their skills for certifications, interviews, or simply to deepen their DevOps expertise. This daily routine will keep you on track, learning consistently, and staying ahead! 💡
