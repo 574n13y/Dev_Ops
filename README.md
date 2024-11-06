@@ -8,23 +8,21 @@ Here's what you can look forward to:
 - 🔹 Daily Networking Questions
 
 - Foundational Tasks
- 1.  [Day1](https://github.com/574n13y/Dev_Ops/tree/main/Day1)
- 2.  [Day2](https://github.com/574n13y/Dev_Ops/tree/main/Day2)
- 3.  [Day3](https://github.com/574n13y/Dev_Ops/tree/main/Day3)
- 4.  [Day4](https://github.com/574n13y/Dev_Ops/tree/main/Day4)
- 5.  [Day5](https://github.com/574n13y/Dev_Ops/tree/main/Day5)
- 6.  [Day6](https://github.com/574n13y/Dev_Ops/tree/main/Day6)
- 7.  [Day7](https://github.com/574n13y/Dev_Ops/tree/main/Day7)
- 8.  [Day8](https://github.com/574n13y/Dev_Ops/tree/main/Day8)
- 9.  [Day9](https://github.com/574n13y/Dev_Ops/tree/main/Day9)
- 10. [Day10](https://github.com/574n13y/Dev_Ops/tree/main/Day10)
- 11. [Day11](https://github.com/574n13y/Dev_Ops/tree/main/Day11)
- 12. [Day12](https://github.com/574n13y/Dev_Ops/tree/main/Day12)
- 13. [Day13](https://github.com/574n13y/Dev_Ops/tree/main/Day13)
- 14. [Day14](https://github.com/574n13y/Dev_Ops/tree/main/Day14)
- 15. [Day15](https://github.com/574n13y/Dev_Ops/tree/main/Day15)
- 
-
+ 1.  <a href="https://github.com/574n13y/Dev_Ops/tree/main/Day1" target="_blank">Day1</a>
+ 2.  <a href="https://github.com/574n13y/Dev_Ops/tree/main/Day2" target="_blank">Day2</a>
+ 3.  <a href="https://github.com/574n13y/Dev_Ops/tree/main/Day3" target="_blank">Day3</a>
+ 4.  <a href="https://github.com/574n13y/Dev_Ops/tree/main/Day4" target="_blank">Day4</a>
+ 5.  <a href="https://github.com/574n13y/Dev_Ops/tree/main/Day5" target="_blank">Day5</a>
+ 6.  <a href="https://github.com/574n13y/Dev_Ops/tree/main/Day6" target="_blank">Day6</a>
+ 7.  <a href="https://github.com/574n13y/Dev_Ops/tree/main/Day7" target="_blank">Day7</a>
+ 8.  <a href="https://github.com/574n13y/Dev_Ops/tree/main/Day8" target="_blank">Day8</a>
+ 9.  <a href="https://github.com/574n13y/Dev_Ops/tree/main/Day9" target="_blank">Day9</a>
+ 10. <a href="https://github.com/574n13y/Dev_Ops/tree/main/Day10" target="_blank">Day10</a>
+ 11. <a href="https://github.com/574n13y/Dev_Ops/tree/main/Day11" target="_blank">Day11</a>
+ 12. <a href="https://github.com/574n13y/Dev_Ops/tree/main/Day12" target="_blank">Day12</a>
+ 13. <a href="https://github.com/574n13y/Dev_Ops/tree/main/Day13" target="_blank">Day13</a>
+ 14. <a href="https://github.com/574n13y/Dev_Ops/tree/main/Day14" target="_blank">Day14</a>
+ 15. <a href="https://github.com/574n13y/Dev_Ops/tree/main/Day15" target="_blank">Day15</a>
 
 
 From Day 1 to Day 15, we focused on foundational tasks. Now, we're leveling up! This challenge has been extended to 150 days, where each day you'll tackle questions across a range of topics:
