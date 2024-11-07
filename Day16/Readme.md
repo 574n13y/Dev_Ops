@@ -26,6 +26,15 @@
 
 
 4. **DevOps**: Define DevOps in your own words. What are its core principles?
+- **Definition of DevOps:**
+    - DevOps is a collaborative approach that integrates development and operations teams to streamline software delivery. Its focus is on automating processes, improving collaboration, and enhancing software quality through continuous integration, continuous delivery (CI/CD), and monitoring.
+
+- **Core Principles of DevOps:**
+    - **Collaboration**: Developers and operations teams work closely to create shared goals and processes.
+    - **Automation**: Automate repetitive tasks like code integration, testing, deployment, and infrastructure management to reduce manual errors.
+    - **Continuous Integration/Continuous Delivery (CI/CD)**: Build, test, and deploy code frequently and reliably.
+    - **Monitoring & Feedback**: Actively monitor applications and use feedback loops to enhance performance, identify issues, and respond quickly.
+
 5. **Tools & Technology**: What is Git? Initialize a Git repository and create your first commit with a README file.
 6. **Scenario**: You are asked to deploy an application in a secure, high-availability setup on a cloud platform. What key steps would you consider?
 
