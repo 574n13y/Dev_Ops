@@ -36,6 +36,25 @@
     - **Monitoring & Feedback**: Actively monitor applications and use feedback loops to enhance performance, identify issues, and respond quickly.
 
 5. **Tools & Technology**: What is Git? Initialize a Git repository and create your first commit with a README file.
+- **Git:**
+    - Git is a version control system that tracks code changes, allowing multiple developers to collaborate on a project while keeping a history of changes.
+
+- **Initialize a Git Repository and Create First Commit:**
+    - Start by navigating to your project directory. Then, initialize a new Git repository:
+      ```bash
+      git init
+      ```
+    - Next, create a `README.md` file (a simple text file for project info), and add initial content to it:
+      ```bash
+      echo "# Project Title" > README.md
+      ```
+    - Add the file to the Git staging area and commit it:
+      ```bash
+      git add README.md
+      git commit -m "Initial commit with README file"
+      ```
+
+
 6. **Scenario**: You are asked to deploy an application in a secure, high-availability setup on a cloud platform. What key steps would you consider?
 
 
