@@ -19,6 +19,11 @@
       This sends ICMP (Internet Control Message Protocol) echo requests to Google and shows the latency or any potential packet loss
 
 3. **Cloud Computing**: Explain the difference between public, private, and hybrid clouds.
+- **Public, Private, and Hybrid Clouds:**
+    - **Public Cloud:** Resources (like storage and servers) are owned and managed by a third-party cloud provider and made available to the general public over the internet. Examples include AWS, Google Cloud, and Azure. It’s generally cost-effective and highly scalable.
+    - **Private Cloud:** This is a cloud infrastructure that an individual or organization solely owns and uses. It provides greater control over data and security but is generally more expensive and requires in-house management.
+    - **Hybrid Cloud:** Combines both public and private clouds, allowing data and applications to be shared between them. It provides flexibility by moving workloads between environments, balancing security, scalability, and cost.
+
 
 4. **DevOps**: Define DevOps in your own words. What are its core principles?
 5. **Tools & Technology**: What is Git? Initialize a Git repository and create your first commit with a README file.
