@@ -14,8 +14,13 @@ The OSI (Open Systems Interconnection) model is a conceptual framework used to u
    - Layer 7: **Application** – Provides application-level services and network access for end-users.
    
    HTTP operates on the **Application layer** (Layer 7).
-wq
+
 3. **Cloud Computing**: What is IaaS? Name three popular IaaS providers and their core services.
+ IaaS (Infrastructure as a Service) is a cloud computing model where a provider hosts virtualized resources (servers, storage, networking) on behalf of customers, enabling them to build and manage applications without owning hardware. Three popular IaaS providers are:
+   - **Amazon Web Services (AWS)**: Core services include EC2 (compute), S3 (storage), and VPC (networking).
+   - **Microsoft Azure**: Core services include Virtual Machines, Blob Storage, and Virtual Network.
+   - **Google Cloud Platform (GCP)**: Core services include Compute Engine, Cloud Storage, and Virtual Private Cloud.
+
 4. **DevOps**: Explain the concept of Continuous Integration. Why is it important?
 5. **Tools & Technology**: What is Docker? Install Docker on your system and run a simple `hello-world` container.
 6. **Scenario**: You need to troubleshoot an application that’s not accessible from outside the network. What steps would you take to diagnose the issue?
