@@ -30,3 +30,10 @@
    - **Run a container**: Use the command `docker run hello-world` to download and start the `hello-world` container, which confirms Docker is installed and running correctly.
 
 6. **Scenario**: You need to troubleshoot an application that’s not accessible from outside the network. What steps would you take to diagnose the issue?
+   To troubleshoot an application that isn’t accessible externally, you could:
+   - **Verify the network connectivity** by checking if you can reach the server with `ping` or `traceroute`.
+   - **Check firewall rules** to ensure external requests are allowed on the relevant port.
+   - **Verify application status** to ensure it’s running by using commands like `ps`, `systemctl status`, or `docker ps` if in a container.
+   - **Inspect logs** for errors in the application or network logs.
+   - **Test the port** directly with tools like `telnet` or `netcat` to confirm if it’s listening.
+   - **Check DNS settings** to make sure the domain resolves correctly if using a domain name.
