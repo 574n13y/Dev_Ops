@@ -22,5 +22,9 @@ The OSI (Open Systems Interconnection) model is a conceptual framework used to u
    - **Google Cloud Platform (GCP)**: Core services include Compute Engine, Cloud Storage, and Virtual Private Cloud.
 
 4. **DevOps**: Explain the concept of Continuous Integration. Why is it important?
+   Continuous Integration (CI) is a practice where developers frequently merge their code changes into a central repository. Each change is automatically tested, ensuring integration issues are detected early. CI is important as it promotes quick detection of defects, reduces integration problems, and accelerates the release process.
+
+
 5. **Tools & Technology**: What is Docker? Install Docker on your system and run a simple `hello-world` container.
+  
 6. **Scenario**: You need to troubleshoot an application that’s not accessible from outside the network. What steps would you take to diagnose the issue?
