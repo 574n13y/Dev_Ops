@@ -7,8 +7,15 @@
      - `5` for others (read and execute only)
    - This means the owner can read, write, and execute the file, while group members and others can only read and execute it.
 
-
 2. **Networking**: What is an IP address? How do you find your IP address in a Linux terminal?
+   - An IP address is a unique identifier assigned to devices on a network to enable communication between them. In a Linux terminal, you can find your IP address using commands like:
+     ```bash
+     ifconfig      # older systems
+     ip a          # modern systems
+     hostname -I   # quick display of IP address
+     ```
+   - These commands display network configuration details, including IP addresses.
+
 3. **Cloud Computing**: What are Availability Zones? How do they help with fault tolerance in cloud environments?
 4. **DevOps**: Define Continuous Delivery and compare it with Continuous Integration.
 5. **Tools & Technology**: What is Kubernetes? Set up a local Kubernetes cluster using Minikube or kind.
