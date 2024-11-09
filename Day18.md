@@ -41,5 +41,10 @@
        ```
 
 6. **Scenario**: You are tasked with automating a daily report generation process. How would you design a simple pipeline for this?
-
-
+   - To automate a daily report generation process, design a simple pipeline as follows:
+    1. **Scheduler**: Use a tool like `cron` to trigger the pipeline daily.
+    2. **Data Retrieval**: Write a script (e.g., Python) to pull data from sources (databases, APIs).
+    3. **Data Processing**: Process the data (cleaning, aggregating) as needed.
+    4. **Report Generation**: Generate the report in a preferred format (CSV, PDF).
+    5. **Storage & Distribution**: Save the report and send it via email or store it in a shared location.
+    6. **Logging & Notifications**: Log the process and send notifications in case of failure.
