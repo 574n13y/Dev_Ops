@@ -17,6 +17,8 @@
    - These commands display network configuration details, including IP addresses.
 
 3. **Cloud Computing**: What are Availability Zones? How do they help with fault tolerance in cloud environments?
+   - **Availability Zones (AZs)** are distinct, isolated data centers within a specific cloud region, designed to provide high availability and fault tolerance. Resources are spread across multiple AZs to prevent a single point of failure. For example, if one AZ experiences a power outage, resources in other AZs remain unaffected, ensuring resilience.
+
 4. **DevOps**: Define Continuous Delivery and compare it with Continuous Integration.
 5. **Tools & Technology**: What is Kubernetes? Set up a local Kubernetes cluster using Minikube or kind.
 6. **Scenario**: You are tasked with automating a daily report generation process. How would you design a simple pipeline for this?
