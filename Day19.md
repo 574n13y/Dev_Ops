@@ -24,6 +24,10 @@
 
 
 5. **Tools & Technology**: Define containerization. How does Docker help?
+   - Containerization is the technique of packaging applications and their dependencies into isolated units, called containers, that can run reliably across different computing environments. Containers provide lightweight, isolated environments, which differ from traditional VMs by sharing the host’s OS kernel rather than running a full OS.
+   - Docker is a popular containerization platform that makes it easy to build, deploy, and manage containers. Docker enables consistent environments across development, testing, and production, helping eliminate the "works on my machine" problem.
+
+
 6. **Scenario**: An application runs slowly. What initial steps would you take to investigate?
 
 
