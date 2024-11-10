@@ -19,6 +19,10 @@
 
 
 4. **DevOps**: What’s the difference between Continuous Integration and Continuous Deployment?
+   - **Continuous Integration (CI)** is the practice of frequently merging code changes from multiple contributors into a shared repository. CI often includes automated testing to ensure that new code does not break existing functionality.
+   - **Continuous Deployment (CD)** takes CI further by automatically deploying every change that passes automated tests directly to production. CD ensures that code changes are quickly and consistently delivered to end users, while CI focuses on ensuring code quality in the main branch.
+
+
 5. **Tools & Technology**: Define containerization. How does Docker help?
 6. **Scenario**: An application runs slowly. What initial steps would you take to investigate?
 
