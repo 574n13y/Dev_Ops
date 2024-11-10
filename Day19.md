@@ -29,5 +29,10 @@
 
 
 6. **Scenario**: An application runs slowly. What initial steps would you take to investigate?
-
+   - **Identify the Bottleneck**: Determine which part (e.g., CPU, memory, disk, network) is under strain. Use tools like `top`, `htop`, `iotop`, or monitoring solutions like Grafana.
+   - **Check Application Logs**: Review logs for errors or warnings that could indicate why the application is slow.
+   - **Database Performance**: If the app uses a database, check for slow queries, locking issues, or high query volume.
+   - **Network Latency**: Test the network response time if the application relies on external services or APIs.
+   - **Application Profiling**: Use profilers to inspect code performance and detect slow functions or memory leaks.
+   - **Resource Allocation**: Confirm that the application has sufficient CPU, memory, and disk resources to handle the load.
 
