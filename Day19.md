@@ -14,6 +14,10 @@
 
 
 3. **Cloud Computing**: Explain the purpose of Availability Zones.
+   - Availability Zones (AZs) are isolated data center regions within a cloud provider’s infrastructure, designed to provide redundancy and fault tolerance. Each AZ operates independently, so if one AZ goes down due to failure or disaster, others can maintain uptime. 
+   - By distributing resources across multiple AZs, cloud providers improve resilience, allowing applications to stay operational even in the event of localized failures.
+
+
 4. **DevOps**: What’s the difference between Continuous Integration and Continuous Deployment?
 5. **Tools & Technology**: Define containerization. How does Docker help?
 6. **Scenario**: An application runs slowly. What initial steps would you take to investigate?
