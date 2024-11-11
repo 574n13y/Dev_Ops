@@ -45,4 +45,31 @@
 
 
 5. **Tools & Technology**: Install Git. Create a new repository and commit a README file.
+   - **Install Git**:
+    - On Ubuntu/Debian:
+       ```bash
+       sudo apt update
+       sudo apt install git
+       ```
+    - On macOS (Homebrew):
+       ```bash
+       brew install git
+       ```
+   - **Create a New Repository and Commit a README File**:
+    1. **Initialize a Git Repository**:
+        ```bash
+        mkdir my-project
+        cd my-project
+        git init
+        ```
+    2. **Create a README File**:
+        ```bash
+        echo "# My Project" > README.md
+        ```
+    3. **Add and Commit**:
+        ```bash
+        git add README.md
+        git commit -m "Add README file"
+        ```
+
 6. **Scenario**: You need to check if a server is running. What Linux and networking commands would you use?
