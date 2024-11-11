@@ -19,6 +19,19 @@
 
 
 2. **Networking**: Use `ping` to test network connectivity to google.com. What does `ping` verify?
+ * **Networking**: Using `ping` to Test Network Connectivity
+   - **`ping` Command**: The `ping` command checks the network connectivity between your machine and a specified host by sending ICMP (Internet Control Message Protocol) echo requests. If the connection is successful, it receives echo replies. Use `ping` to test if you can reach an external server, like Google:
+     ```bash
+     ping google.com
+     ```
+     Output will show response times and other data, like the time it takes for packets to travel between your computer and the server.
+
+   - **What Does `ping` Verify?**:
+     - **Network connectivity** to the target host.
+     - **Round-trip time** for packets to reach the host and return.
+     - **Packet loss**, indicating any connection issues.
+   
+
 3. **Cloud Computing**: Define cloud computing and list the three main types of cloud services.
 4. **DevOps**: Describe DevOps in your own words.
 5. **Tools & Technology**: Install Git. Create a new repository and commit a README file.
