@@ -39,6 +39,10 @@
      2. **PaaS (Platform as a Service)**: Provides a platform allowing developers to build, deploy, and manage applications without dealing with infrastructure.
      3. **SaaS (Software as a Service)**: Delivers software applications over the internet, accessible via a web browser.
 
+
 4. **DevOps**: Describe DevOps in your own words.
+   - **DevOps** is a set of practices that combines development (Dev) and operations (Ops) to accelerate the software development lifecycle. By fostering collaboration, automation, and continuous improvement, DevOps helps teams to deliver better software faster, ensuring that changes are reliable and easily integrated into production environments.
+
+
 5. **Tools & Technology**: Install Git. Create a new repository and commit a README file.
 6. **Scenario**: You need to check if a server is running. What Linux and networking commands would you use?
