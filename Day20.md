@@ -19,7 +19,6 @@
 
 
 2. **Networking**: Use `ping` to test network connectivity to google.com. What does `ping` verify?
- * **Networking**: Using `ping` to Test Network Connectivity
    - **`ping` Command**: The `ping` command checks the network connectivity between your machine and a specified host by sending ICMP (Internet Control Message Protocol) echo requests. If the connection is successful, it receives echo replies. Use `ping` to test if you can reach an external server, like Google:
      ```bash
      ping google.com
@@ -33,6 +32,13 @@
    
 
 3. **Cloud Computing**: Define cloud computing and list the three main types of cloud services.
+   - **Definition**: Cloud computing is the on-demand delivery of IT resources over the internet. Rather than owning physical data centers or servers, organizations can access technology services on an as-needed basis from a cloud provider.
+
+   - **Three Main Types of Cloud Services**:
+     1. **IaaS (Infrastructure as a Service)**: Provides virtualized computing resources over the internet, like servers and storage.
+     2. **PaaS (Platform as a Service)**: Provides a platform allowing developers to build, deploy, and manage applications without dealing with infrastructure.
+     3. **SaaS (Software as a Service)**: Delivers software applications over the internet, accessible via a web browser.
+
 4. **DevOps**: Describe DevOps in your own words.
 5. **Tools & Technology**: Install Git. Create a new repository and commit a README file.
 6. **Scenario**: You need to check if a server is running. What Linux and networking commands would you use?
