@@ -73,3 +73,25 @@
         ```
 
 6. **Scenario**: You need to check if a server is running. What Linux and networking commands would you use?
+   - **Check if the Server is Running**:
+    - **`ping`**: Use `ping` to see if the server is reachable (if ICMP responses are allowed).
+       ```bash
+       ping <server-address>
+       ```
+    - **`curl` or `wget`**: For web servers, check HTTP response codes:
+       ```bash
+       curl -I http://<server-address>
+       ```
+    - A `200 OK` response indicates that the server is responding to HTTP requests.
+    - **`netstat` or `ss`**: Check open ports and if the server is listening on a specific port (e.g., 80 or 443 for web services):
+       ```bash
+       netstat -tuln | grep <port>
+       ```
+    - **`telnet`**: Use `telnet` to see if a port is open, which is useful if the server has specific services running on specific ports.
+       ```bash
+       telnet <server-address> <port>
+       ```
+    - **`systemctl`** (if on the server itself): Check if a specific service is active.
+       ```bash
+       sudo systemctl status <service-name>
+       ```
