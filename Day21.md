@@ -20,6 +20,12 @@
 
 
 3. **Cloud Computing**: What is IaaS? Name two IaaS providers.
+   -  Infrastructure as a Service (IaaS) provides virtualized computing resources over the internet. It includes services like virtual machines, storage, and networks, enabling businesses to scale infrastructure without managing physical hardware. Two popular IaaS providers are:
+    - **Amazon Web Services (AWS)**
+    - **Microsoft Azure**
+    - **Google Cloud (GCP)**
+    - ** Oracle Cloud (OCI)**
+
 4. **DevOps**: Define CI/CD and explain the purpose of each.
 5. **Tools & Technology**: Install Docker and run a `hello-world` container.
 6. **Scenario**: A team needs to share files on a server. Which permissions would you set up?
