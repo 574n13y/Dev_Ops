@@ -3,7 +3,7 @@
 ---
 
 1. **Linux**: Use `ls -l`. What does each column mean?
-   - **Linux (`ls -l`)**: The `ls -l` command lists files in long format. Here’s what each column means:
+   - **`ls -l`**: The `ls -l` command lists files in long format. Here’s what each column means:
     - **Column 1**: File type and permissions (e.g., `-rw-r--r--`).
     - **Column 2**: Number of hard links.
     - **Column 3**: Owner of the file.
@@ -48,4 +48,13 @@
 
 
 6. **Scenario**: A team needs to share files on a server. Which permissions would you set up?
-
+   - File Sharing Permissions)**:
+    - For a team sharing files on a server, set up **read** and **write** permissions for the group associated with the files. For example, to set read/write for the group, use:
+      ```bash
+      chmod g+rw shared_file
+      ```
+    - Additionally, if files are stored in a shared directory, setting the **setgid** bit on the directory can ensure that new files inherit the directory’s group. Use:
+      ```bash
+      chmod g+s shared_directory
+      ```
+    - This setup enables controlled file access for team members while preventing unauthorized changes.
