@@ -14,6 +14,11 @@
 
 
 2. **Networking**: What is an IP address? Find your system's IP address.
+    * ** IP address **: An IP address is a unique identifier assigned to each device connected to a network, allowing it to communicate within the network. To find your system’s IP address on Linux, use:
+    - `ip a` (or `ip addr show`), which shows all network interfaces and their IPs.
+    - Alternatively, `hostname -I` will directly show your IP address.
+
+
 3. **Cloud Computing**: What is IaaS? Name two IaaS providers.
 4. **DevOps**: Define CI/CD and explain the purpose of each.
 5. **Tools & Technology**: Install Docker and run a `hello-world` container.
