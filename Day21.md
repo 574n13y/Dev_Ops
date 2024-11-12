@@ -33,7 +33,19 @@
     - **CD (Continuous Delivery/Deployment)**: Automates the release process so that new code can be deployed to production frequently and reliably, either on demand (continuous delivery) or automatically (continuous deployment).
 
 
-
 5. **Tools & Technology**: Install Docker and run a `hello-world` container.
+   - (Docker Installation)**:
+    - To install Docker:
+      ```bash
+      sudo apt update
+      sudo apt install docker-ce docker-ce-cli containerd.io
+      ```
+    - After installation, run the `hello-world` container to confirm Docker is working:
+      ```bash
+      sudo docker run hello-world
+      ```
+    - This command downloads a test image and runs it in a container, printing a message if successful.
+
+
 6. **Scenario**: A team needs to share files on a server. Which permissions would you set up?
 
