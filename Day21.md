@@ -26,7 +26,14 @@
     - **Google Cloud (GCP)**
     - ** Oracle Cloud (OCI)**
 
+
 4. **DevOps**: Define CI/CD and explain the purpose of each.
+   - CI/CD stands for **Continuous Integration** and **Continuous Delivery/Deployment**:
+    - **CI (Continuous Integration)**: Developers regularly integrate code into a shared repository, with automated testing to detect issues early.
+    - **CD (Continuous Delivery/Deployment)**: Automates the release process so that new code can be deployed to production frequently and reliably, either on demand (continuous delivery) or automatically (continuous deployment).
+
+
+
 5. **Tools & Technology**: Install Docker and run a `hello-world` container.
 6. **Scenario**: A team needs to share files on a server. Which permissions would you set up?
 
