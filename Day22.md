@@ -35,5 +35,14 @@
 
 
 4. **DevOps**: Why is version control essential in DevOps?
+   - Version control is critical in DevOps as it enables collaboration, tracks changes, and ensures that code versions are consistent.
+   - It helps to:
+    - Manage code changes across different environments.
+    - Revert to previous versions if issues arise.
+    - Integrate continuous integration and continuous deployment (CI/CD) pipelines effectively, ensuring smoother releases.
+
+
 5. **Tools & Technology**: Use Git to create a branch and merge it.
+
+
 6. **Scenario**: You need to organize code changes from multiple developers. How would you manage this in Git?
