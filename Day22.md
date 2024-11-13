@@ -43,6 +43,17 @@
 
 
 5. **Tools & Technology**: Use Git to create a branch and merge it.
+   - **Creating a Branch**: 
+     ```bash
+     git checkout -b feature-branch
+     ```
+     This command creates a new branch named `feature-branch` and switches to it.
+   - **Merging a Branch**:
+     ```bash
+     git checkout main
+     git merge feature-branch
+     ```
+     This command merges `feature-branch` into the `main` branch. Remember to push changes to the remote repository.
 
 
 6. **Scenario**: You need to organize code changes from multiple developers. How would you manage this in Git?
