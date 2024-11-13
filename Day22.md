@@ -26,6 +26,14 @@
 
 
 3. **Cloud Computing**: Describe the basic concepts of a Virtual Private Cloud (VPC).
+   - A Virtual Private Cloud (VPC) is a logically isolated network environment within a public cloud.
+   - Key concepts include:
+    - **Isolation**: VPCs provide security through isolated networks.
+    - **Subnets**: Allows segmentation of the VPC, enabling separation of resources.
+    - **Security Controls**: Implemented through firewalls, route tables, and network access control lists (ACLs).
+    - **Flexible Configuration**: Users can define IP ranges, configure routing, and manage network gateways.
+
+
 4. **DevOps**: Why is version control essential in DevOps?
 5. **Tools & Technology**: Use Git to create a branch and merge it.
 6. **Scenario**: You need to organize code changes from multiple developers. How would you manage this in Git?
