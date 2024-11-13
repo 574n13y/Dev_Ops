@@ -57,3 +57,9 @@
 
 
 6. **Scenario**: You need to organize code changes from multiple developers. How would you manage this in Git?
+   - Managing Code Changes from Multiple Developers in Git**:
+    - **Branching Strategy**: Adopt a branching strategy like Gitflow, where each developer works on a feature branch, avoiding conflicts with others.
+    - **Pull Requests (PRs)**: Encourage each developer to submit a PR for review before merging into the main branch.
+    - **Code Reviews**: Set up mandatory code reviews for quality control and consistency.
+    - **Automated Testing**: Integrate automated testing in PRs to ensure code quality before merging.
+    - **Conflict Resolution**: Encourage frequent commits and rebases to reduce the chance of conflicts, and establish a protocol for conflict resolution if they arise.
