@@ -43,6 +43,27 @@
 
 
 3. **Cloud Computing**: List the benefits of using the cloud vs. on-premises infrastructure.
+   - **Cost Efficiency**:
+    - Cloud: Pay-as-you-go pricing, no upfront hardware costs.
+    - On-Premises: Significant upfront investment for hardware and maintenance.
+
+   - **Scalability**:
+    - Cloud: Easily scale resources up or down.
+    - On-Premises: Limited by physical hardware; scaling can be slow and expensive.
+
+   - **Maintenance**:
+    - Cloud: Handled by the cloud provider.
+    - On-Premises: Requires dedicated IT staff for maintenance.
+
+   - **Accessibility**:
+    - Cloud: Accessible from anywhere with an internet connection.
+    - On-Premises: Requires VPN or physical presence.
+
+   - **Innovation and Speed**:
+    - Cloud: Access to cutting-edge technology and rapid deployments.
+    - On-Premises: Slower adoption of new technologies.
+
+
 4. **DevOps**: What is continuous integration?
 5. **Tools & Technology**: Install Node.js and run a basic script.
 6. **Scenario**: Your team wants to automate testing in a CI/CD pipeline. How would you set it up?
