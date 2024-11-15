@@ -65,6 +65,15 @@
 
 
 4. **DevOps**: What is continuous integration?
+   - Continuous Integration (CI) is a DevOps practice where developers frequently merge their code changes into a shared repository. Automated tests and builds are triggered to ensure code quality and functionality.
+
+   - **Benefits**:
+    - Detects bugs early.
+    - Reduces integration issues.
+    - Speeds up development and deployment cycles.
+   - **Popular Tools**: Jenkins, GitHub Actions, GitLab CI, CircleCI.
+
+
 5. **Tools & Technology**: Install Node.js and run a basic script.
 6. **Scenario**: Your team wants to automate testing in a CI/CD pipeline. How would you set it up?
 
