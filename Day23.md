@@ -25,6 +25,23 @@
 
 
 2. **Networking**: What is a MAC address, and how is it different from an IP address?
+   - **MAC Address**:
+    - Stands for **Media Access Control** address.
+    - It is a unique hardware identifier assigned to a network interface card (NIC).
+    - Format: **6 pairs of hexadecimal digits** (e.g., `00:1A:2B:3C:4D:5E`).
+    - Works at the **Data Link Layer** (Layer 2) of the OSI model.
+    - Typically remains constant and is device-specific.
+
+   - **IP Address**:
+    - Stands for **Internet Protocol** address.
+    - It is a logical address assigned to a device on a network.
+   - Format: 
+    - IPv4: Four decimal numbers separated by dots (e.g., `192.168.1.1`).
+    - IPv6: Eight groups of hexadecimal digits (e.g., `2001:0db8::1`).
+    - Operates at the **Network Layer** (Layer 3).
+    - Can change (e.g., dynamic IPs via DHCP).
+
+
 3. **Cloud Computing**: List the benefits of using the cloud vs. on-premises infrastructure.
 4. **DevOps**: What is continuous integration?
 5. **Tools & Technology**: Install Node.js and run a basic script.
