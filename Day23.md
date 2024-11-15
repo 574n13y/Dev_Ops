@@ -75,5 +75,28 @@
 
 
 5. **Tools & Technology**: Install Node.js and run a basic script.
+   - **Install Node.js**:
+    1. On Linux:  
+     ```
+     sudo apt update
+     sudo apt install nodejs npm
+     ```
+    2. Verify installation:  
+     ```
+     node -v
+     npm -v
+     ```
+
+   - **Run a basic script**:
+    1. Create a file named `app.js`:  
+     ```javascript
+     console.log("Hello, Node.js!");
+     ```
+    2. Run the script:  
+     ```
+     node app.js
+     ```
+
+
 6. **Scenario**: Your team wants to automate testing in a CI/CD pipeline. How would you set it up?
 
