@@ -99,4 +99,25 @@
 
 
 6. **Scenario**: Your team wants to automate testing in a CI/CD pipeline. How would you set it up?
-
+   - To set up automated testing in a CI/CD pipeline:
+    1. **Choose a CI/CD Tool**: Use a tool like Jenkins, GitHub Actions, or GitLab CI.
+    2. **Write Test Scripts**: Ensure your application has test scripts (e.g., unit tests, integration tests) using a testing framework like Jest, Mocha, or Pytest.
+    3. **Integrate Testing into CI/CD**:
+    - Add a test stage in your pipeline configuration file.
+    - Example (GitHub Actions for a Node.js project):  
+     ```yaml
+     name: CI Pipeline
+     on: [push, pull_request]
+     jobs:
+       test:
+         runs-on: ubuntu-latest
+         steps:
+           - uses: actions/checkout@v3
+           - name: Set up Node.js
+             uses: actions/setup-node@v3
+             with:
+               node-version: 16
+           - run: npm install
+           - run: npm test
+     ```
+    4. **Trigger the Pipeline**: Set the pipeline to trigger on events like pushes or pull requests.
