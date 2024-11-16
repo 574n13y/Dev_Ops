@@ -126,4 +126,24 @@
 
 
 6. **Scenario**: A server needs to run scripts at specific intervals. How would you set this up?
+   - Use Cron Jobs (Linux)**
+    1. **Open the Cron Editor**:
+     ```bash
+      crontab -e
+     ```
+    2. **Add a Cron Job**:
+     ```bash
+     # Syntax: minute hour day month day_of_week command
+     */5 * * * * /path/to/script.sh
+     ```
+     This runs `script.sh` every 5 minutes.
+    3. **Save and Exit**:
+    - For `vim`: Press `ESC`, type `:wq`, and hit `Enter`.
+    4. **Verify the Cron Job**:
+     ```bash
+     crontab -l
+     ```
+
+    **Alternative**:
+     For more advanced scheduling, use tools like **systemd timers** or **AWS Lambda with CloudWatch Events** for cloud-based solutions.
 
