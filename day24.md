@@ -68,6 +68,29 @@
 
 
 4. **DevOps**: Explain the concept of Infrastructure as Code (IaC).
+    **Concept**:
+    Infrastructure as Code (IaC) is the practice of defining and managing infrastructure (servers, networks, etc.) using code. It enables automation, repeatability, and version control.
+
+    **Key Benefits**:
+   1. Consistency: Ensures environments are identical across deployments.
+   2. Automation: Eliminates manual configuration errors.
+   3. Scalability: Quickly deploy infrastructure at scale.
+
+   **Popular Tools**:
+   - **Terraform**: Cloud-agnostic IaC tool.
+   - **AWS CloudFormation**: Manages AWS resources.
+   - **Ansible**: Automates configuration and deployment.
+
+   **Example**:
+   A Terraform script to deploy an AWS EC2 instance:
+   ```hcl
+   resource "aws_instance" "example" {
+     ami           = "ami-12345678"
+     instance_type = "t2.micro"
+    }
+   ```
+
+
 5. **Tools & Technology**: Install the AWS CLI and configure a user.
 6. **Scenario**: A server needs to run scripts at specific intervals. How would you set this up?
 
