@@ -92,5 +92,38 @@
 
 
 5. **Tools & Technology**: Install the AWS CLI and configure a user.
+   **Install AWS CLI**:
+   1. **On Linux**:
+    ```bash
+     curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+     unzip awscliv2.zip
+     sudo ./aws/install
+    ```
+
+   2. **On macOS**:
+    ```bash
+     brew install awscli
+    ```
+
+   3. **On Windows**:
+    - Download the installer from [AWS CLI Downloads](https://aws.amazon.com/cli/).
+
+    **Configure AWS CLI**:
+   1. Run the configuration command:
+     ```bash
+     aws configure
+     ```
+   2. Enter the following details:
+    - Access Key ID
+    - Secret Access Key
+    - Default Region (e.g., `us-east-1`)
+    - Output Format (`json`, `table`, or `text`)
+
+    **Verify Installation**:
+   ```bash
+   aws --version
+   ```
+
+
 6. **Scenario**: A server needs to run scripts at specific intervals. How would you set this up?
 
