@@ -29,6 +29,28 @@
 
 
 2. **Networking**: Explain the purpose of the `traceroute` command.
+   
+   - The `traceroute` command is a network diagnostic tool used to trace the path packets take from the source to the destination.
+
+    **Purpose**:
+   1. Identify intermediate routers/hops between two systems.
+   2. Diagnose connectivity issues or identify bottlenecks.
+   3. Understand network latency and routing.
+
+   **Syntax**:
+   ```bash
+   traceroute [options] hostname_or_IP
+   ```
+
+   **Example**:
+   ```bash
+   traceroute google.com
+   ```
+
+   **Output**:
+    The output displays the hops (routers) along the path and the response time for each hop.
+
+
 3. **Cloud Computing**: Describe cloud regions and availability zones in AWS.
 4. **DevOps**: Explain the concept of Infrastructure as Code (IaC).
 5. **Tools & Technology**: Install the AWS CLI and configure a user.
