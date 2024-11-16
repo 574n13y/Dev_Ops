@@ -52,6 +52,21 @@
 
 
 3. **Cloud Computing**: Describe cloud regions and availability zones in AWS.
+   - **Regions**:
+    - Geographically isolated locations worldwide (e.g., `us-east-1`, `eu-west-1`).
+    - Each region contains multiple availability zones.
+    - Data transfer across regions incurs additional costs.
+
+   - **Availability Zones (AZs)**:
+    - Data centers within a region, isolated but interconnected.
+    - Provide fault tolerance and high availability.
+    - Examples: `us-east-1a`, `us-east-1b`.
+
+   **Purpose**:
+    - Regions ensure global coverage.
+    - AZs enhance reliability and scalability by enabling redundancy.
+
+
 4. **DevOps**: Explain the concept of Infrastructure as Code (IaC).
 5. **Tools & Technology**: Install the AWS CLI and configure a user.
 6. **Scenario**: A server needs to run scripts at specific intervals. How would you set this up?
