@@ -139,6 +139,39 @@ When you open a website (e.g., `www.example.com`):
 
 
 5. **Tools & Technology**: Use Docker to create a custom image.
+   #### **Steps to Create a Custom Docker Image**
+   1. **Create a Dockerfile**:
+      ```Dockerfile
+      # Use the official Python base image
+      FROM python:3.9-slim
+
+      # Set the working directory
+      WORKDIR /app
+
+      # Copy application files
+      COPY . .
+
+      # Install dependencies
+      RUN pip install -r requirements.txt
+
+      # Specify the command to run the app
+      CMD ["python", "app.py"]
+      ```
+
+   2. **Build the Docker Image**:
+      ```bash
+      docker build -t my-python-app .
+      ```
+
+   3. **Run the Container**:
+      ```bash
+      docker run -d -p 5000:5000 my-python-app
+      ```
+
+   4. **Access the Application**:
+   Open a browser and navigate to `http://localhost:5000`.
+
+
 6. **Scenario**: An application needs to run on multiple servers. How would you design the deployment?
 
 
