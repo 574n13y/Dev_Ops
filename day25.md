@@ -99,6 +99,34 @@ When you open a website (e.g., `www.example.com`):
 
 
 3. **Cloud Computing**: Describe AWS IAM roles and policies.
+   #### **IAM Roles**
+- Used to delegate access permissions to AWS resources.
+- Assigned to AWS services or users.
+- Do not require access keys; instead, temporary credentials are issued.
+
+#### **IAM Policies**
+- JSON documents that define permissions.
+- Can be attached to users, groups, or roles.
+- Specify actions, resources, and conditions.
+
+**Example Policy**: Grant `S3:Read` access to a specific bucket.
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::example-bucket/*"
+    }
+  ]
+}
+```
+
+**Use Case**:
+- Attach a role with this policy to an EC2 instance to allow it to access the S3 bucket.
+
+
 4. **DevOps**: Explain the benefits of containerization.
 5. **Tools & Technology**: Use Docker to create a custom image.
 6. **Scenario**: An application needs to run on multiple servers. How would you design the deployment?
