@@ -173,5 +173,25 @@ When you open a website (e.g., `www.example.com`):
 
 
 6. **Scenario**: An application needs to run on multiple servers. How would you design the deployment?
+   #### **Solution: Use a Load Balancer with Orchestrated Containers**
+
+   1. **Design**:
+    - Deploy the application on multiple servers using container orchestration (e.g., Kubernetes or Docker Swarm).
+    - Place a load balancer in front to distribute traffic.
+
+   2. **Steps**:
+   - **Containerize the Application**:
+     Use Docker to package the app into an image.
+   - **Set Up Orchestration**:
+     Deploy using Kubernetes:
+   - Create a `Deployment` to manage replicas.
+    - Use a `Service` to expose the application.
+   - **Configure Load Balancer**:
+    - Use AWS Elastic Load Balancer (ELB) or Nginx as a reverse proxy.
+
+   3. **Tools**:
+   - **Docker Compose** for local multi-container setups.
+   - **Terraform** for automated infrastructure provisioning.
+   - **Kubernetes** for production-grade orchestration.
 
 
