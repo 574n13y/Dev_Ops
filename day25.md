@@ -32,6 +32,72 @@ This will show identical inodes for `original.txt` and `hardlink.txt`, while `so
 
 
 2. **Networking**: What are network layers, and how do they work?
+   ### **What Are Network Layers, and How Do They Work?**
+
+Network layers are conceptual divisions of a communication system that describe how data moves from one device to another over a network. The most widely known model for network layers is the **OSI (Open Systems Interconnection) Model**, which consists of seven layers, each with a specific role in data communication.
+
+---
+
+### **The OSI Model: 7 Layers**
+
+1. **Physical Layer (Layer 1)**  
+   - **Role**: Deals with the hardware aspects of network communication, such as cables, switches, and transmission of raw bits (0s and 1s).  
+   - **Examples**: Ethernet cables, Wi-Fi signals.  
+   - **Functionality**: Converts digital data into electrical, optical, or radio signals.
+
+2. **Data Link Layer (Layer 2)**  
+   - **Role**: Ensures reliable node-to-node data transfer and handles error detection and correction.  
+   - **Examples**: MAC (Media Access Control) addresses, Ethernet.  
+   - **Functionality**: Organizes data into frames for transmission and adds hardware addresses.
+
+3. **Network Layer (Layer 3)**  
+   - **Role**: Responsible for routing data packets between devices across different networks.  
+   - **Examples**: IP (Internet Protocol), routers.  
+   - **Functionality**: Adds logical addressing (IP addresses) and chooses the best path for data delivery.
+
+4. **Transport Layer (Layer 4)**  
+   - **Role**: Ensures end-to-end communication, reliability, and flow control.  
+   - **Examples**: TCP (Transmission Control Protocol), UDP (User Datagram Protocol).  
+   - **Functionality**: Breaks data into segments, ensures delivery, and manages retransmissions if needed.
+
+5. **Session Layer (Layer 5)**  
+   - **Role**: Establishes, manages, and terminates sessions between applications.  
+   - **Examples**: APIs, session tokens.  
+   - **Functionality**: Keeps track of data streams and ensures proper synchronization.
+
+6. **Presentation Layer (Layer 6)**  
+   - **Role**: Converts data into a format suitable for the application layer and handles encryption and compression.  
+   - **Examples**: SSL/TLS encryption, JPEG, PNG.  
+   - **Functionality**: Translates data between the application layer and the network.
+
+7. **Application Layer (Layer 7)**  
+   - **Role**: Provides a user interface and access to network services.  
+   - **Examples**: HTTP, FTP, DNS.  
+   - **Functionality**: Enables users and applications to interact with the network.
+
+---
+
+### **How They Work Together**
+- **Data Encapsulation**: When sending data, each layer adds its own header (control information). For example:
+  1. The application layer generates the message.
+  2. The transport layer segments the data and adds a header.
+  3. The network layer adds IP addresses.
+  4. The data link layer organizes it into frames with MAC addresses.
+  5. The physical layer transmits the data over the medium.
+
+- **Data Decapsulation**: On the receiving end, the layers process the data in reverse, stripping headers at each layer and passing the payload to the next layer.
+
+---
+
+### **Real-World Example**
+When you open a website (e.g., `www.example.com`):
+1. **Application Layer**: Sends an HTTP request to load the page.
+2. **Transport Layer**: Breaks the request into segments using TCP.
+3. **Network Layer**: Routes the request using IP to the destination server.
+4. **Data Link and Physical Layers**: Transmit the request over the internet to the server.
+5. The server processes the request and sends back the response, which follows the same layered process in reverse.
+
+
 3. **Cloud Computing**: Describe AWS IAM roles and policies.
 4. **DevOps**: Explain the benefits of containerization.
 5. **Tools & Technology**: Use Docker to create a custom image.
