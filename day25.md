@@ -128,6 +128,16 @@ When you open a website (e.g., `www.example.com`):
 
 
 4. **DevOps**: Explain the benefits of containerization.
+   #### **Key Benefits**
+    1. **Consistency**: Ensures the application behaves the same across environments.
+    2. **Isolation**: Encapsulates applications and their dependencies.
+    3. **Scalability**: Easily scale containers horizontally.
+    4. **Portability**: Containers can run on any system with a container runtime.
+    5. **Resource Efficiency**: Shares the host OS kernel, reducing overhead compared to VMs.
+    6. **Simplified CI/CD**: Streamlines building, testing, and deploying applications.
+**Popular Tool**: Docker is the most widely used containerization tool.
+
+
 5. **Tools & Technology**: Use Docker to create a custom image.
 6. **Scenario**: An application needs to run on multiple servers. How would you design the deployment?
 
