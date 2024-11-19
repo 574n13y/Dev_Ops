@@ -74,6 +74,33 @@ Developers may work in a development environment with debugging tools enabled, w
 
 
 5. **Tools & Technology**: Use Docker Compose to start multiple containers.
+   * Docker Compose is a tool for defining and managing multi-container Docker applications using a YAML file.  
+
+#### Steps to Start Multiple Containers:
+1. **Create a `docker-compose.yml` file**:
+   ```yaml
+   version: '3.8'
+   services:
+     web:
+       image: nginx:latest
+       ports:
+         - "80:80"
+     database:
+       image: mysql:latest
+       environment:
+         MYSQL_ROOT_PASSWORD: rootpassword
+   ```  
+2. **Start the containers**:
+   ```bash
+   docker-compose up
+   ```
+3. **Stop the containers**:
+   ```bash
+   docker-compose down
+   ```
+
+This setup starts an Nginx web server and a MySQL database together.
+
 
 6. **Scenario**: How would you isolate development and production environments in the cloud?
 
