@@ -61,6 +61,18 @@ In a web application, ELB distributes user requests across multiple EC2 instance
 
 4. **DevOps**: Describe the differences between development and production environments.
 
+| **Aspect**             | **Development Environment**                      | **Production Environment**              |  
+|-------------------------|--------------------------------------------------|-----------------------------------------|  
+| **Purpose**             | Used for building, testing, and debugging code. | Hosts the live application for end-users. |  
+| **Stability**           | Can be unstable due to ongoing changes.         | Must be highly stable and reliable.      |  
+| **Access**              | Accessible to developers and testers.           | Accessible to end-users.                 |  
+| **Data**                | Uses dummy or test data.                        | Uses real user data.                     |  
+| **Monitoring**          | Focuses on debugging and profiling.             | Focuses on performance and uptime.       |  
+
+#### Example:
+Developers may work in a development environment with debugging tools enabled, while end-users access a highly optimized and secure production environment.
+
+
 5. **Tools & Technology**: Use Docker Compose to start multiple containers.
 
 6. **Scenario**: How would you isolate development and production environments in the cloud?
