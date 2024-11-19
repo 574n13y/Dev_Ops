@@ -47,6 +47,17 @@ For the IP address `192.168.1.10` with a subnet mask of `255.255.255.0`:
 
 
 3. **Cloud Computing**: Describe the role of Elastic Load Balancer (ELB) in AWS.
+   * An **Elastic Load Balancer (ELB)** in AWS automatically distributes incoming traffic across multiple targets, such as EC2 instances, containers, or IP addresses, to ensure high availability and fault tolerance.  
+
+#### Key Roles:
+- **Traffic Distribution**: Balances traffic across multiple instances or availability zones.  
+- **Health Monitoring**: Detects unhealthy targets and routes traffic only to healthy ones.  
+- **Scalability**: Supports auto-scaling by adapting to changing traffic loads.  
+- **SSL Termination**: Handles SSL/TLS encryption for secure communication.  
+
+#### Example:
+In a web application, ELB distributes user requests across multiple EC2 instances, ensuring consistent performance and high availability.
+
 
 4. **DevOps**: Describe the differences between development and production environments.
 
