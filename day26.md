@@ -103,8 +103,24 @@ This setup starts an Nginx web server and a MySQL database together.
 
 
 6. **Scenario**: How would you isolate development and production environments in the cloud?
+   * To isolate development and production environments in the cloud:  
 
+#### 1. **Use Separate AWS Accounts or Projects**  
+- Use distinct AWS accounts for development and production to achieve physical and billing separation.  
 
+#### 2. **Define Separate VPCs**  
+- Create separate Virtual Private Clouds (VPCs) for development and production environments to isolate network traffic.  
 
+#### 3. **Apply IAM Policies**  
+- Restrict access using AWS Identity and Access Management (IAM). Grant developers access only to the development environment and restrict production access to authorized personnel.
+
+#### 4. **Implement Tagging**  
+- Use tags like `Environment:Development` and `Environment:Production` to differentiate resources.  
+
+#### 5. **Use Different Deployment Pipelines**  
+- Configure separate CI/CD pipelines for each environment to ensure code undergoes proper testing before being deployed to production.
+
+#### Example:
+In AWS, the development environment might run on smaller EC2 instances in a less secure VPC, while production runs on high-performance instances with strict network and access policies.
 
 
