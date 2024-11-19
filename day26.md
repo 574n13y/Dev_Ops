@@ -31,6 +31,20 @@ rm [options] <file/directory>
 
 
 2. **Networking**: Explain the purpose of a subnet mask.
+   * A **subnet mask** is a 32-bit number used in IP networking to divide an IP address into two parts:
+    1. **Network Portion**: Identifies the network to which the device belongs.  
+    2. **Host Portion**: Identifies individual devices within the network.  
+
+#### Purpose:
+- **Subnetting**: Helps partition a larger network into smaller, manageable sub-networks.
+- **Efficient IP Usage**: Reduces wastage of IP addresses.
+- **Improved Security**: Isolates segments for better access control.
+
+#### Example:
+For the IP address `192.168.1.10` with a subnet mask of `255.255.255.0`:
+- **Network Portion**: `192.168.1.0`
+- **Host Portion**: `.10`
+
 
 3. **Cloud Computing**: Describe the role of Elastic Load Balancer (ELB) in AWS.
 
