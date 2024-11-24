@@ -69,5 +69,29 @@ Other tools like `less`, `more`, or `head`/`tail` can be alternatives for specif
 
 
 5. **Tools & Technology**: Set up a basic Docker network between two containers.
+    * To set up a network connecting two containers:
+
+1. **Create a Custom Network**:  
+   ```bash
+   docker network create my-network
+   ```
+
+2. **Run Two Containers on the Same Network**:  
+   ```bash
+   docker run -dit --name container1 --network my-network alpine
+   docker run -dit --name container2 --network my-network alpine
+   ```
+
+3. **Test Connectivity Between Containers**:  
+   - Log into `container1`:  
+     ```bash
+     docker exec -it container1 sh
+     ```
+   - Ping `container2` by its name:  
+     ```bash
+     ping container2
+     ```
+
+
 6. **Scenario**: You need to troubleshoot connectivity issues between two containers. What steps would you take?
 
