@@ -57,6 +57,17 @@ Other tools like `less`, `more`, or `head`/`tail` can be alternatives for specif
 
 
 4. **DevOps**: Describe the importance of monitoring in DevOps.
+    * Monitoring is crucial in DevOps for maintaining system reliability and performance. It enables teams to:
+
+- **Detect Issues Early**: Identify and resolve problems before they impact users.
+- **Ensure Uptime**: Monitor metrics like CPU, memory, and response times to prevent downtime.
+- **Enable Continuous Improvement**: Gather data to optimize applications and infrastructure.
+- **Support Collaboration**: Share insights across teams to align development and operations goals.
+
+- **Example**:  
+  Tools like **Prometheus** and **Grafana** are often used to monitor and visualize system health in real time.
+
+
 5. **Tools & Technology**: Set up a basic Docker network between two containers.
 6. **Scenario**: You need to troubleshoot connectivity issues between two containers. What steps would you take?
 
