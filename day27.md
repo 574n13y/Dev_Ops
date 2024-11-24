@@ -94,4 +94,37 @@ Other tools like `less`, `more`, or `head`/`tail` can be alternatives for specif
 
 
 6. **Scenario**: You need to troubleshoot connectivity issues between two containers. What steps would you take?
+    * Steps to troubleshoot connectivity issues:
+
+1. **Verify Network Configuration**:
+   - List available networks:  
+     ```bash
+     docker network ls
+     ```
+   - Inspect the network:  
+     ```bash
+     docker network inspect my-network
+     ```
+
+2. **Check Container Connectivity**:
+   - Log into one container and test connectivity using `ping` or `curl`.
+
+3. **Firewall and Port Issues**:
+   - Ensure the container’s exposed ports are correctly mapped:
+     ```bash
+     docker ps
+     ```
+   - Check firewall rules on the host system.
+
+4. **DNS Resolution**:
+   - Test if containers resolve each other by name:
+     ```bash
+     ping container-name
+     ```
+
+5. **Inspect Logs**:
+   - Review logs of the failing container:
+     ```bash
+     docker logs container-name
+     ```
 
