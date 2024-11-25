@@ -94,6 +94,16 @@
 
 
 4. **DevOps**: What’s source control? Explain its benefits.
+   #### **Definition**
+    - Source control (version control) is the practice of tracking and managing changes to code or documents. Tools like Git are commonly used.
+
+   #### **Benefits**
+    1. **Collaboration**: Multiple developers can work on the same project without conflict.
+    2. **Version History**: Tracks who made changes and when.
+    3. **Rollback**: Revert to a previous version in case of errors.
+    4. **Backup**: Provides a safeguard against accidental data loss.
+    5. **Branching**: Allows parallel development (e.g., new features, bug fixes).
+
 
 5. **Tools & Technology**: Push a Git repository to GitHub.
 
