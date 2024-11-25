@@ -130,3 +130,27 @@
   
 
 6. **Scenario**: An application has multiple versions. How would you handle version control?
+   #### **Approach**
+  1. **Branching Strategy**
+   - Use separate branches for different versions:
+    - `main`: Stable release version.
+    - `development`: Ongoing development work.
+    - `feature/v2.0`: Specific for a new feature.
+
+  2. **Tagging**
+    - Use tags for identifying specific versions (e.g., `v1.0`, `v2.0`).
+     ```bash
+     git tag -a v1.0 -m "Version 1.0 release"
+     git push origin v1.0
+     ```
+
+  3. **Release Management**
+    - Use GitHub releases or similar tools to document each version and provide binaries if needed.
+
+  4. **Versioning Standards**
+   - Adopt Semantic Versioning (e.g., MAJOR.MINOR.PATCH):
+    - **MAJOR**: Breaking changes.
+    - **MINOR**: New features, backward-compatible.
+    - **PATCH**: Bug fixes.
+
+This ensures efficient management of multiple versions while enabling collaboration and tracking.
