@@ -72,6 +72,26 @@
 
 
 3. **Cloud Computing**: Describe the basic components of AWS S3.
+   #### **1. Buckets**
+   - Containers for storing objects (files and metadata).
+   - Each bucket is globally unique within AWS.
+
+   #### **2. Objects**
+   - The files stored in buckets.
+   - Includes data and metadata (key-value pairs).
+
+   #### **3. Storage Classes**
+   - Options for optimizing cost and performance:
+    - **Standard**: Frequent access.
+    - **IA (Infrequent Access)**: Rare access but requires fast retrieval.
+    - **Glacier**: Archival storage.
+
+   #### **4. Permissions**
+   - Access control through bucket policies, ACLs (Access Control Lists), and IAM roles.
+
+   #### **5. Versioning**
+   - Maintains multiple versions of objects, protecting against accidental deletion.
+
 
 4. **DevOps**: What’s source control? Explain its benefits.
 
