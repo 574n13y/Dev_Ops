@@ -106,5 +106,27 @@
 
 
 5. **Tools & Technology**: Push a Git repository to GitHub.
+   #### **Steps**
+    1. **Initialize the Repository**
+      ```bash
+      git init
+      ```
+    2. **Add Files to the Repository**
+      ```bash
+      git add .
+      ```
+    3. **Commit the Changes**
+      ```bash
+      git commit -m "Initial commit"
+      ```
+    4. **Add the Remote Repository**
+      ```bash
+      git remote add origin https://github.com/username/repository.git
+      ```
+    5. **Push to GitHub**
+      ```bash
+      git push -u origin main
+      ```
+  
 
 6. **Scenario**: An application has multiple versions. How would you handle version control?
