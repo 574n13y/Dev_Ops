@@ -51,6 +51,25 @@
 
 
 2. **Networking**: Describe TCP and UDP. What are the differences?
+   #### **TCP (Transmission Control Protocol)**
+    - **Reliable**: Ensures data delivery via acknowledgment and retransmissions.
+    - **Connection-Oriented**: Establishes a connection before data transfer.
+    - **Use Cases**: Web browsing (HTTP/HTTPS), email (SMTP), file transfer (FTP).
+
+   #### **UDP (User Datagram Protocol)**
+    - **Unreliable**: No acknowledgment; data may be lost.
+    - **Connectionless**: Sends data without setting up a session.
+    - **Use Cases**: Streaming, gaming, VoIP.
+
+   #### **Key Differences**
+   | Feature            | TCP                     | UDP               |
+   |--------------------|-------------------------|-------------------|
+   | **Reliability**    | Reliable (ACKs)         | Unreliable        |
+   | **Speed**          | Slower (overhead)       | Faster            |
+   | **Connection**     | Connection-Oriented     | Connectionless    |
+   | **Data Loss**      | Prevents                | May occur         |
+   | **Use Case**       | File transfer, emails   | Streaming, DNS    |
+
 
 3. **Cloud Computing**: Describe the basic components of AWS S3.
 
