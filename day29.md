@@ -44,6 +44,13 @@
 
 
 4. **DevOps**: What’s the difference between continuous delivery and continuous deployment?
+   
+   | **Aspect**             | **Continuous Delivery**                                  | **Continuous Deployment**                                  |
+   |-------------------------|---------------------------------------------------------|-----------------------------------------------------------|
+   | **Definition**          | Software is always in a deployable state but requires manual approval for release. | Software is automatically released to production without manual intervention. |
+   | **Automation Level**    | Automated testing and integration; deployment approval remains manual. | Fully automated, including deployment to production.       |
+   | **Use Case**            | Scenarios needing compliance checks or manual oversight. | High-trust environments with minimal risk of failure.      |
+
 
 5. **Tools & Technology**: Set up a basic Jenkins job.
 
