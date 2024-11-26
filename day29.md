@@ -33,6 +33,15 @@
 
 
 3. **Cloud Computing**: Discuss the benefits of serverless architecture.
+  * Serverless architecture allows developers to build and run applications without managing servers. The cloud provider handles the infrastructure.  
+
+   - **Benefits:**  
+    - **Cost Efficiency:** Pay only for execution time (e.g., per function invocation).  
+    - **Scalability:** Automatically scales up or down based on demand.  
+    - **Reduced Operational Overhead:** No server management, patching, or provisioning required.  
+    - **Faster Time-to-Market:** Focus solely on application logic.  
+    - **Event-Driven:** Ideal for applications with unpredictable workloads or microservices.  
+
 
 4. **DevOps**: What’s the difference between continuous delivery and continuous deployment?
 
