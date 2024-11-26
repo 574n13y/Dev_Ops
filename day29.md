@@ -17,6 +17,20 @@
 
 
 2. **Networking**: Explain ARP and how it works.
+  * **ARP** maps an IP address to a physical MAC address on a local network. It operates within the Link Layer of the OSI model.  
+
+   - **How it works:**  
+    1. When a device wants to communicate with another device on the same network, it checks its ARP table for the MAC address of the target IP.  
+    2. If the MAC address is missing, it sends a broadcast ARP request.  
+    3. The device with the requested IP responds with its MAC address.  
+    4. The sender updates its ARP table and proceeds with communication.  
+
+   - **Command Example:**  
+     ```bash
+     arp -a
+     ```
+  This displays the ARP cache.  
+
 
 3. **Cloud Computing**: Discuss the benefits of serverless architecture.
 
