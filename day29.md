@@ -53,6 +53,22 @@
 
 
 5. **Tools & Technology**: Set up a basic Jenkins job.
+  * **Steps to Set Up a Basic Jenkins Job:**  
+   1. **Install Jenkins:** Ensure Jenkins is installed and accessible via a web interface.  
+   2. **Create a New Job:**  
+    - Navigate to the Jenkins dashboard.  
+    - Click **New Item** and enter a name for the job.  
+    - Select **Freestyle Project** and click **OK**.  
+   3. **Configure the Job:**  
+    - **Source Code Management:** Link the repository (e.g., Git).  
+    - **Build Triggers:** Configure triggers, such as polling SCM or a webhook.  
+    - **Build Steps:** Add build commands, e.g., a shell script:  
+      ```bash
+      echo "Building the project"
+      ```
+    - **Post-Build Actions:** Define steps like archiving artifacts or notifications.  
+   4. **Save and Run:** Click **Save** and **Build Now** to trigger the job.  
+
 
 6. **Scenario**: An application needs automated testing before deployment. How would you set this up?
 
