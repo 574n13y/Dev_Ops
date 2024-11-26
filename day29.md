@@ -71,5 +71,19 @@
 
 
 6. **Scenario**: An application needs automated testing before deployment. How would you set this up?
+  * To set up automated testing for an application before deployment:  
+
+   1. **Choose a CI/CD Tool:** Use tools like Jenkins, GitLab CI, or GitHub Actions.  
+   2. **Create a Test Pipeline:**  
+    - **Fetch Code:** Clone the repository in a pipeline step.  
+    - **Install Dependencies:** Use package managers (e.g., `npm install`, `pip install`).  
+    - **Run Tests:** Execute automated test scripts (e.g., unit tests, integration tests):  
+      ```bash
+      pytest tests/
+      ```  
+   3. **Integrate with Version Control:** Trigger the pipeline on pull requests or code pushes.  
+   4. **Configure Notifications:** Alert developers about test results via email or Slack.  
+   5. **Deploy on Success:** If all tests pass, deploy the code to staging or production using tools like Terraform or Kubernetes.  
+
 
 
