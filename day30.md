@@ -46,6 +46,15 @@ This simplifies network management by avoiding manual IP address assignments.
 
 
 4. **DevOps**: Define blue-green deployment.
+   * **Blue-green deployment** is a release strategy that minimizes downtime and risks by running two environments:
+    - **Blue**: The current live environment.
+    - **Green**: The new environment with updated features.
+
+    **Process:**
+   1. Deploy the new version to the green environment.
+   2. Redirect traffic from blue to green once verified.
+   3. Retain blue as a backup for rollback.
+
 
 5. **Tools & Technology**: Install Terraform and create a simple EC2 instance.
 
