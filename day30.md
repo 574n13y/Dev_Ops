@@ -20,6 +20,16 @@ This searches for a specific process. Use `kill <PID>` to terminate it if needed
 
 
 2. **Networking**: What is DHCP, and how does it work?
+   * **Dynamic Host Configuration Protocol (DHCP)** automates the assignment of IP addresses, subnet masks, gateways, and other network parameters to devices on a network.
+
+     **How It Works:**
+   1. **Discovery**: A client broadcasts a DHCP request to locate servers.
+   2. **Offer**: A DHCP server responds with an IP address and configuration offer.
+   3. **Request**: The client requests the offered configuration.
+   4. **Acknowledgment**: The server acknowledges and finalizes the configuration.
+
+This simplifies network management by avoiding manual IP address assignments.
+
 
 3. **Cloud Computing**: Describe AWS Lambda.
 
