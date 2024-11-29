@@ -32,6 +32,18 @@ This simplifies network management by avoiding manual IP address assignments.
 
 
 3. **Cloud Computing**: Describe AWS Lambda.
+   * AWS Lambda is a **serverless compute service** that automatically runs your code in response to events. It scales automatically and only charges for the compute time used.
+
+    **Key Features:**
+   - **Trigger-Based Execution**: Events from AWS services like S3, DynamoDB, or API Gateway.
+   - **No Server Management**: AWS handles the infrastructure.
+   - **Pay-as-You-Go**: Billed based on execution time and requests.
+
+    **Use Cases:**
+   - Real-time data processing.
+   - Backend for APIs.
+   - Automation tasks.
+
 
 4. **DevOps**: Define blue-green deployment.
 
