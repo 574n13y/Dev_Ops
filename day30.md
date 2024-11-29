@@ -57,6 +57,35 @@ This simplifies network management by avoiding manual IP address assignments.
 
 
 5. **Tools & Technology**: Install Terraform and create a simple EC2 instance.
+   * **Steps:**
+   1. **Install Terraform**:
+    - Download the binary for your OS from [Terraform's website](https://www.terraform.io/downloads).
+    - Extract and move it to your PATH (e.g., `/usr/local/bin/`).
+
+      Verify installation:
+   ```bash
+   terraform version
+   ```
+
+   2. **Write Terraform Configuration** (`main.tf`):
+    ```hcl
+    provider "aws" {
+     region = "us-east-1"
+   }
+
+   resource "aws_instance" "example" {
+     ami           = "ami-0c55b159cbfafe1f0" # Replace with a valid AMI
+     instance_type = "t2.micro"
+   }
+   ```
+
+   3. **Initialize, Plan, and Apply**:
+   ```bash
+   terraform init
+   terraform plan
+   terraform apply
+   ```
+
 
 6. **Scenario**: You need to deploy to multiple environments. How would you set this up?
 
