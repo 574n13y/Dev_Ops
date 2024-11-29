@@ -88,5 +88,28 @@ This simplifies network management by avoiding manual IP address assignments.
 
 
 6. **Scenario**: You need to deploy to multiple environments. How would you set this up?
+   * **Approach**:
+    - Use **Infrastructure as Code (IaC)** tools like Terraform or AWS CloudFormation.
+    - Define variables for environments like `dev`, `staging`, and `prod`.
+    - Store environment-specific configurations in separate files.
 
+     **Example Terraform Setup:**
+   1. **Directory Structure**:
+     ```
+     ├── environments/
+     │   ├── dev.tfvars
+     │   ├── staging.tfvars
+     │   └── prod.tfvars
+     ├── main.tf
+     ├── variables.tf
+     ```
+
+   2. **Run Commands**:
+     ```bash
+     terraform apply -var-file="environments/dev.tfvars"
+     terraform apply -var-file="environments/staging.tfvars"
+     terraform apply -var-file="environments/prod.tfvars"
+     ```
+
+By automating deployments, consistency and efficiency improve across environments.
 
