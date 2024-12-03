@@ -19,7 +19,15 @@
 
  
 2. **Networking**: Describe NAT. Why is it useful?
-   
+   - **NAT (Network Address Translation):**  
+  NAT allows private IP addresses within a local network to communicate with external networks (like the internet) by translating them into a public IP address.
+
+   - **Why is it useful?**
+    - **IP Conservation**: Reduces the need for a large number of public IP addresses.
+    - **Security**: Hides internal network details from external networks.
+    - **Connectivity**: Enables devices in private networks to access the internet while retaining privacy.
+
+ 
 3. **Cloud Computing**: Explain the purpose of CloudWatch in AWS.
    
 4. **DevOps**: Describe the importance of code reviews.
