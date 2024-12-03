@@ -42,7 +42,14 @@
 
    
 4. **DevOps**: Describe the importance of code reviews.
-    
+   - **Why are code reviews important?**
+    - **Error Detection**: Identifies bugs and issues early in development.
+    - **Knowledge Sharing**: Promotes collaboration and learning among team members.
+    - **Code Quality**: Ensures adherence to coding standards and best practices.
+    - **Maintainability**: Encourages clean, readable, and maintainable code.
+    - **Security**: Helps identify potential vulnerabilities.
+
+  
 5. **Tools & Technology**: Write a Terraform script to create an S3 bucket.
    
 6. **Scenario**: How would you monitor application performance in AWS?
