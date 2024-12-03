@@ -51,7 +51,30 @@
 
   
 5. **Tools & Technology**: Write a Terraform script to create an S3 bucket.
-   
+   * Here’s a simple Terraform script:
+
+   ```hcl
+   provider "aws" {
+   region = "us-east-1" # Replace with your desired region
+   }
+
+   resource "aws_s3_bucket" "example_bucket" {
+     bucket = "my-unique-s3-bucket-name" # Replace with your bucket name
+     acl    = "private"
+
+     tags = {
+       Name        = "ExampleBucket"
+       Environment = "Dev"
+       }
+    }
+   ```
+
+   - **Steps to use:**
+    1. Save the script as `main.tf`.
+    2. Run `terraform init` to initialize.
+    3. Run `terraform apply` to create the bucket.
+
+ 
 6. **Scenario**: How would you monitor application performance in AWS?
    
 
