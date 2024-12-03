@@ -29,9 +29,20 @@
 
  
 3. **Cloud Computing**: Explain the purpose of CloudWatch in AWS.
+   - **AWS CloudWatch**:  
+  A monitoring and observability service that provides actionable insights for AWS resources and applications.
+
+   - **Key Features:**
+    - **Metrics Monitoring**: Tracks resource utilization like CPU, memory, and disk usage.
+    - **Logs Management**: Aggregates and analyzes application and system logs.
+    - **Alarms**: Sends notifications or triggers actions when thresholds are breached.
+    - **Dashboards**: Visualizes metrics for quick analysis.
+
+   - **Use Case:** Monitor an EC2 instance's CPU usage and trigger an auto-scaling action when the usage exceeds a threshold.
+
    
 4. **DevOps**: Describe the importance of code reviews.
-   
+    
 5. **Tools & Technology**: Write a Terraform script to create an S3 bucket.
    
 6. **Scenario**: How would you monitor application performance in AWS?
