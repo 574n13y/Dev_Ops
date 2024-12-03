@@ -76,5 +76,24 @@
 
  
 6. **Scenario**: How would you monitor application performance in AWS?
-   
+    -  To monitor application performance in AWS:
+
+   1. **Use AWS CloudWatch**:
+    - Monitor key application metrics (e.g., latency, request count, error rate).
+    - Set up alarms for threshold breaches.
+    - Create dashboards for real-time visualization.
+
+   2. **Enable X-Ray** (for distributed applications):  
+    - Analyze requests and trace performance bottlenecks.
+
+   3. **Integrate CloudWatch Logs**:
+    - Collect and analyze logs for application-specific issues.
+
+   4. **Auto-Scaling Monitoring**:
+    - Set policies to scale instances based on metrics like CPU utilization.
+
+   5. **Third-Party Tools**:
+    - Integrate with tools like **Datadog** or **New Relic** for deeper insights.
+
+ 
 
