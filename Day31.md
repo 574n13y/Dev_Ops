@@ -1,7 +1,23 @@
 # Day 31
 
 1. **Linux**: Explain `df -h` and `du` commands for disk usage.
-   
+   - **`df -h` (Disk Free):**  
+  Displays the amount of disk space available on file systems. The `-h` flag makes the output human-readable (e.g., shows sizes in MB or GB).  
+    Example:  
+     ```bash
+     df -h
+     ```
+  Output shows details like file system name, size, used space, available space, and mount points.
+
+   - **`du` (Disk Usage):**  
+  Shows the disk usage of files and directories. Use `-h` for human-readable format.  
+  Example:  
+     ```bash
+     du -h /path/to/directory
+     ```
+  Output lists the size of each file and subdirectory under the specified path.
+
+ 
 2. **Networking**: Describe NAT. Why is it useful?
    
 3. **Cloud Computing**: Explain the purpose of CloudWatch in AWS.
