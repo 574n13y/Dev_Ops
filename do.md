@@ -40,5 +40,14 @@
 
 
 4. **DevOps**: Explain Infrastructure as Code and its benefits.
+   - **Definition**:  
+  **Infrastructure as Code (IaC)** automates infrastructure management using code, enabling consistent deployments. Tools like Terraform, Ansible, and CloudFormation support IaC.  
+   - **Benefits**:  
+    - **Consistency**: Ensures infrastructure configurations remain uniform across environments.  
+    - **Automation**: Reduces manual errors and speeds up deployment.  
+    - **Version Control**: Code can be versioned, allowing rollbacks and tracking of changes.  
+    - **Scalability**: Facilitates scaling of infrastructure quickly with minimal manual intervention.  
+
+
 5. **Tools & Technology**: Install Ansible and run a basic playbook.
 6. **Scenario**: Your team needs secure remote access to an application. What would you set up?
