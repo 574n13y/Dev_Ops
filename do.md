@@ -78,3 +78,15 @@
 
 
 6. **Scenario**: Your team needs secure remote access to an application. What would you set up?
+   - **Solution**:  
+     Set up a **VPN** for secure remote access.  
+   - **Steps**:  
+    1. Deploy a VPN server (e.g., OpenVPN, AWS Client VPN, or WireGuard).  
+    2. Configure access control rules to allow only authenticated users.  
+    3. Encrypt traffic between the users and the application using the VPN.  
+    4. Optionally, combine VPN with Multi-Factor Authentication (MFA) for enhanced security.  
+   - **Example Tools**:  
+    - **Cloud-native VPNs** like AWS Client VPN for AWS-hosted applications.  
+    - **OpenVPN** for a cost-effective and flexible solution.  
+
+
