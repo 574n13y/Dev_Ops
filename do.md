@@ -21,6 +21,15 @@
 
 
 2. **Networking**: Explain VPN and its usage.
+   - **Definition**:  
+  A **Virtual Private Network (VPN)** creates a secure and encrypted connection over a public network, enabling users to access resources securely.  
+   - **Key Uses**:  
+    - Protects data transmission over public networks.  
+    - Provides remote workers access to company resources securely.  
+    - Bypasses geographic restrictions on content.  
+    - Ensures privacy by masking the user’s IP address.  
+
+
 3. **Cloud Computing**: Describe an EC2 instance and its purpose.
 4. **DevOps**: Explain Infrastructure as Code and its benefits.
 5. **Tools & Technology**: Install Ansible and run a basic playbook.
