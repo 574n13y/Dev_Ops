@@ -50,4 +50,31 @@
 
 
 5. **Tools & Technology**: Install Ansible and run a basic playbook.
+   - **Steps to Install Ansible**:  
+    1. Update the system:  
+       ```bash
+       sudo apt update
+       sudo apt install -y software-properties-common
+       ```
+    2. Add the Ansible PPA and install:  
+       ```bash
+       sudo add-apt-repository --yes --update ppa:ansible/ansible
+       sudo apt install -y ansible
+       ```
+   - **Run a Basic Playbook**:  
+    1. Create a playbook file (`hello.yml`):  
+        ```yaml
+        ---
+         - hosts: localhost
+           tasks:
+              - name: Print a message
+                debug:
+                msg: "Hello, Ansible!"
+        ```
+    2. Execute the playbook:  
+       ```bash
+       ansible-playbook hello.yml
+       ```
+
+
 6. **Scenario**: Your team needs secure remote access to an application. What would you set up?
