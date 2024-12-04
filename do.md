@@ -31,6 +31,14 @@
 
 
 3. **Cloud Computing**: Describe an EC2 instance and its purpose.
+   - **Definition**:  
+  An **EC2 instance** (Elastic Compute Cloud) is a virtual server in Amazon Web Services (AWS). It provides resizable compute capacity in the cloud.  
+   - **Purpose**:  
+    - Host applications, websites, or backends.  
+    - Scale compute resources up or down based on demand.  
+    - Run batch jobs, data analysis, or development environments.  
+
+
 4. **DevOps**: Explain Infrastructure as Code and its benefits.
 5. **Tools & Technology**: Install Ansible and run a basic playbook.
 6. **Scenario**: Your team needs secure remote access to an application. What would you set up?
