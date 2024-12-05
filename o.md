@@ -141,4 +141,21 @@
 
 
 6. **Scenario**: A client needs an autoscaling app. How would you set this up?
+   1. **Use Case:** A client needs a scalable app.
+   2. **Solution:**
+    - **Infrastructure:** Use AWS Auto Scaling with EC2 or AWS Elastic Beanstalk.
+    - **Steps:**
+    1. **Launch Template:**
+    - Create a launch template defining the EC2 configuration.
+    2. **Scaling Group:**
+    - Create an Auto Scaling Group linked to the launch template.
+    - Set desired capacity, min/max instances, and scaling policies (CPU-based).
+    3. **Load Balancer:**
+    - Attach an Application Load Balancer to distribute traffic.
+    4. **Monitoring:**
+    - Enable CloudWatch alarms for scaling triggers.
+
+   3. **Serverless Alternative:**
+    - Use AWS Lambda with API Gateway for a fully managed autoscaling application.
+
 
