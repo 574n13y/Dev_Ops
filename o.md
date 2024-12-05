@@ -44,6 +44,26 @@
 
 
 3. **Cloud Computing**: Set up a simple Lambda function.
+   1. **Create a Lambda Function (AWS Console):**
+    - Go to **AWS Lambda** > Create function > **Author from scratch**.
+   - Fill in:
+    - Function name: `MyLambdaFunction`
+    - Runtime: `Python 3.x` or preferred language.
+   - Add a simple handler:
+     ```python
+     def lambda_handler(event, context):
+         return {
+             'statusCode': 200,
+             'body': 'Hello from Lambda!'
+         }
+     ```
+
+   2. **Test the Function:**
+    - Click **Test**, create a sample test event, and verify the response.
+
+   3. **Deploy via CLI (Optional):**
+    - Use `aws lambda create-function` or `update-function-code`.
+
 
 4. **DevOps**: Describe a build pipeline and how it works.
 
