@@ -27,6 +27,21 @@
 
 
 2. **Networking**: Explain OSI Model layers.
+    - The **OSI (Open Systems Interconnection)** model has 7 layers:
+
+     | Layer       | Function                                       | Protocols/Examples       |
+     |-------------|------------------------------------------------|--------------------------|
+     | **7. Application** | User interface and services             | HTTP, FTP, SMTP          |
+     | **6. Presentation** | Data translation and encryption        | SSL/TLS, JPEG, MPEG      |
+     | **5. Session**     | Establish/manage/terminate sessions     | NetBIOS, RPC             |
+     | **4. Transport**   | Reliable data transfer (TCP/UDP)        | TCP, UDP                 |
+     | **3. Network**     | Routing and addressing                 | IP, ICMP, ARP            |
+     | **2. Data Link**   | Frames and MAC addressing               | Ethernet, Wi-Fi          |
+     | **1. Physical**    | Transmission of raw bits               | Cables, Hubs, NIC        |
+
+   - **Key Insight:**
+    - Helps understand how data flows from applications to physical devices and vice versa.
+
 
 3. **Cloud Computing**: Set up a simple Lambda function.
 
