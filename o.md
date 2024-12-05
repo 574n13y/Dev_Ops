@@ -66,6 +66,17 @@
 
 
 4. **DevOps**: Describe a build pipeline and how it works.
+   - **Definition:** Automates code compilation, testing, and deployment.
+   - **Stages:**
+    1. **Source:** Pull code from a repository (e.g., Git).
+    2. **Build:** Compile code and resolve dependencies.
+    3. **Test:** Run unit, integration, and other tests.
+    4. **Release:** Package and deploy the application.
+    5. **Deploy:** Deploy to staging or production environments.
+
+   - **Tools:**
+    - CI/CD platforms like Jenkins, GitLab CI, or GitHub Actions.
+
 
 5. **Tools & Technology**: Use Terraform to create an EC2 and a security group.
 
