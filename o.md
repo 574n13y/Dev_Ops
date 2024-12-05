@@ -3,6 +3,28 @@
 
 
 1. **Linux**: Understand `chown` and change file ownership.
+   - **`chown` Syntax:**
+       ```bash
+       chown [OPTIONS] USER[:GROUP] FILE
+       ```
+   - **Examples:**
+    - Change file owner:
+      ```bash
+      sudo chown user1 file.txt
+      ```
+    - Change owner and group:
+      ```bash
+      sudo chown user1:group1 file.txt
+      ```
+    - Recursively change ownership:
+      ```bash
+      sudo chown -R user1:group1 /path/to/directory
+      ```
+
+   - **Why It’s Important:**
+    - Controls file access by defining ownership.
+    - Helps maintain security and permissions in multi-user environments.
+
 
 2. **Networking**: Explain OSI Model layers.
 
