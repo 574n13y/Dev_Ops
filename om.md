@@ -50,6 +50,19 @@
 
 
 3. **Cloud Computing**: Explain AWS EC2 instance types and use cases.
+   - AWS EC2 offers various instance types categorized by their use cases:
+
+     | **Type**      | **Purpose**                         | **Examples**                | **Use Cases**                         |
+     |---------------|-------------------------------------|-----------------------------|---------------------------------------|
+     | **General**   | Balanced compute, memory, storage  | `t2.micro`, `m5.large`      | Web servers, dev/test environments    |
+     | **Compute**   | High CPU for compute-intensive tasks | `c5.large`, `c6g.large`    | Gaming, media encoding, scientific apps |
+     | **Memory**    | High memory for large datasets     | `r5.large`, `x1e.xlarge`    | In-memory databases, analytics        |
+     | **Storage**   | Optimized storage performance      | `i3.large`, `d2.large`      | Data warehouses, Big Data             |
+     | **Accelerated**| GPUs for ML and graphics processing | `p3.large`, `g4dn.xlarge`   | AI/ML workloads, video rendering      |
+
+   - **Key Factors for Selection:** 
+    - Workload type, budget, performance requirements.
+
 
 4. **DevOps**: What is configuration management? Describe its purpose.
 
