@@ -65,6 +65,20 @@
 
 
 4. **DevOps**: What is configuration management? Describe its purpose.
+   - **Definition:**
+    - Configuration Management (CM) involves maintaining consistency of systems, software, and resources.
+    - Tools ensure systems are in a desired state by automating configuration tasks.
+
+   - **Purpose:**
+    - Reduce configuration drift across environments.
+    - Automate repetitive tasks.
+    - Improve reliability and predictability.
+
+   - **Examples of CM Tools:**
+    - **Ansible:** Agentless, YAML-based.
+    - **Chef:** Code-driven, Ruby-based.
+    - **Puppet:** Declarative language for infrastructure.
+
 
 5. **Tools & Technology**: Install and configure a basic Nginx server.
 
