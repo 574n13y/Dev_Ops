@@ -37,6 +37,17 @@
 
 
 2. **Networking**: Describe HTTP vs. HTTPS. What are the main differences?
+   - Networking: HTTP vs. HTTPS**
+     | Feature           | HTTP (HyperText Transfer Protocol)    | HTTPS (HTTP Secure)                      |
+     |-------------------|----------------------------------------|------------------------------------------|
+     | **Encryption**    | No encryption, plain text             | Encrypted using SSL/TLS                  |
+     | **Port**          | Port 80                               | Port 443                                 |
+     | **Security**      | Vulnerable to man-in-the-middle attacks | Protects data from eavesdropping         |
+     | **Certificate**   | No certificates required              | Requires an SSL/TLS certificate          |
+     | **Speed**         | Slightly faster due to no encryption   | Slightly slower due to encryption/decryption |
+
+   - **Key Point:** Always use HTTPS for secure communications and to gain user trust.
+
 
 3. **Cloud Computing**: Explain AWS EC2 instance types and use cases.
 
