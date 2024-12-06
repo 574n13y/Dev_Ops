@@ -112,4 +112,19 @@
 
 
 6. **Scenario**: Your team needs a static website. How would you deploy it on a server?
+   - **Steps:**
+    1. **Set Up a Web Server:**
+    - Use Nginx or Apache to serve static content.
+    2. **Upload Website Files:**
+    - Place files in the web server’s root directory:
+       ```bash
+       /var/www/html/
+       ```
+    3. **Test Deployment:**
+    - Access the website via the server’s IP or domain.
+    4. **Optional: Use a CDN:**
+    - Configure a CDN like AWS CloudFront for faster delivery.
+
+   - **Alternative:** Use a cloud storage solution (e.g., AWS S3, Azure Blob) with static website hosting enabled.
+
 
