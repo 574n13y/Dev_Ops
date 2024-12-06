@@ -81,6 +81,35 @@
 
 
 5. **Tools & Technology**: Install and configure a basic Nginx server.
+   1. **Install Nginx:**
+    - For Debian/Ubuntu:
+      ```bash
+      sudo apt update
+      sudo apt install nginx
+      ```
+    - For CentOS/RHEL:
+      ```bash
+      sudo yum install nginx
+      ```
+
+   2. **Start and Enable Nginx:**
+      ```bash
+      sudo systemctl start nginx
+      sudo systemctl enable nginx
+      ```
+
+   3. **Test Nginx:**
+    - Access your server’s IP in a browser:
+      ```
+      http://<SERVER_IP>
+      ```
+
+   4. **Serve a Custom HTML File:**
+    - Replace default HTML:
+      ```bash
+      echo "<h1>Welcome to Nginx</h1>" | sudo tee /var/www/html/index.html
+      ```
+
 
 6. **Scenario**: Your team needs a static website. How would you deploy it on a server?
 
