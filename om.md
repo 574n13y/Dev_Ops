@@ -135,5 +135,24 @@ Experiment with different flags like `-user`, `-group`, and `-perm` to tailor yo
 
 
 6. **Scenario**: A large team works on the same codebase. What Git strategies would you recommend?
+   * **Recommended Git Strategies:**
+   1. **Git Flow** for structured projects:
+    - Developers create feature branches from `develop`.
+    - Release and hotfix branches ensure stability in `main`.
+
+   2. **GitHub Flow** for simplicity:
+    - Use short-lived feature branches.
+    - Pull requests for code reviews before merging into `main`.
+
+   3. **Trunk-Based Development** for rapid releases:
+    - Continuous integration ensures all changes in `main` are tested.
+    - Feature flags manage incomplete work in production.
+
+    **Best Practices for Teams**:
+   - Enforce code reviews using pull requests.
+   - Use CI/CD pipelines to test branches before merging.
+   - Regularly sync branches to avoid large conflicts.
+   - Use protected branches to prevent direct commits.
+
 
 
