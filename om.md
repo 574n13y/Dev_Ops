@@ -53,6 +53,22 @@ Experiment with different flags like `-user`, `-group`, and `-perm` to tailor yo
 
 
 3. **Cloud Computing**: Discuss the benefits of Elastic Block Store (EBS) volumes.
+    *  **Benefits of EBS:**
+   1. **Scalability**: Supports volumes up to 16 TiB.
+   2. **High Performance**:
+    - SSD options for low-latency, IOPS-intensive applications.
+    - HDD options for throughput-intensive workloads.
+   3. **Durability**: Replicated within the same Availability Zone (AZ) for fault tolerance.
+   4. **Snapshots**: Easy backups to Amazon S3 for recovery or migration.
+   5. **Flexibility**: Attach and detach volumes to EC2 instances as needed.
+   6. **Encryption**: Built-in encryption to secure data at rest.
+   7. **Cost-Effective**: Pay only for the provisioned storage.
+
+   **Use Cases**:
+    - Databases (e.g., MySQL, MongoDB).
+    - Transaction-heavy workloads.
+    - Hosting applications that require low-latency storage.
+
 
 4. **DevOps**: Explain what Git branching strategies are and why they’re useful.
 
