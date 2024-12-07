@@ -102,6 +102,37 @@ Experiment with different flags like `-user`, `-group`, and `-perm` to tailor yo
 
 
 5. **Tools & Technology**: Set up Git with branching. Practice merging and resolving conflicts.
+   *   **Practice Branching and Merging:**
+    1. **Initialize a Git Repository**:
+       ```bash
+       git init
+       ```
+    2. **Create and Switch to a New Branch**:
+       ```bash
+       git checkout -b feature-branch
+       ```
+    3. **Make Changes and Commit**:
+       ```bash
+       echo "Feature Work" > feature.txt
+       git add feature.txt
+       git commit -m "Add feature work"
+       ```
+    4. **Merge Branch into `main`**:
+       ```bash
+       git checkout main
+       git merge feature-branch
+       ```
+    5. **Handle Conflicts**:
+    - Edit files with conflicts.
+    - Mark conflicts as resolved:
+       ```bash
+       git add resolved-file.txt
+       ```
+    - Commit the merge:
+       ```bash
+       git commit -m "Resolve merge conflicts"
+       ```
+
 
 6. **Scenario**: A large team works on the same codebase. What Git strategies would you recommend?
 
