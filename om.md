@@ -59,6 +59,27 @@
 
 
 5. **Tools & Technology**: Create a backup script using `rsync`.
+   * The following script uses `rsync` to backup a directory to a remote server:  
+    ```bash
+    #!/bin/bash
+
+    # Variables
+    SOURCE="/path/to/source"
+    DESTINATION="user@remote_server:/path/to/destination"
+    LOGFILE="/path/to/backup.log"
+    DATE=$(date +"%Y-%m-%d %H:%M:%S")
+
+    # Run rsync
+    rsync -avz --delete "$SOURCE" "$DESTINATION" &>> "$LOGFILE"
+
+    # Log Completion
+    echo "Backup completed at $DATE" >> "$LOGFILE"
+    ```
+
+   **Steps to Use:**  
+    1. Replace `SOURCE`, `DESTINATION`, and `LOGFILE` with actual paths.  
+    2. Schedule the script using `cron` for automation.  
+
 
 6. **Scenario**: A system needs regular data backups. How would you automate them?
 
