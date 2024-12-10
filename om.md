@@ -82,4 +82,15 @@
 
 
 6. **Scenario**: A system needs regular data backups. How would you automate them?
+   * **Solution**
+    1. **Choose Backup Method:** Use tools like `rsync`, `tar`, or cloud-native services (AWS Backup).  
+    2. **Write a Backup Script:** Example provided in step 5.  
+    3. **Schedule Backups:**  
+    - Use `cron` to run the backup script periodically.  
+    - Example cron job for daily backups at midnight:  
+       ```bash
+       0 0 * * * /path/to/backup_script.sh
+       ```
+    4. **Monitor and Validate:** Implement logs and alerts to verify backup success and periodically test data restoration.  
 
+This ensures consistency, reliability, and minimal manual intervention. 
