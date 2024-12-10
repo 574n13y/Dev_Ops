@@ -20,12 +20,12 @@
 2. **Networking**: Explain SSL/TLS and how it secures data.
    * **SSL (Secure Sockets Layer)** and **TLS (Transport Layer Security)** are cryptographic protocols used to secure communication over a network.  
    
-      **Key Features of SSL/TLS:**  
+     **Key Features of SSL/TLS:**  
     - **Encryption:** Protects data in transit from eavesdropping.  
     - **Authentication:** Uses certificates to verify the identity of communicating parties.  
     - **Integrity:** Ensures transmitted data is not altered using message digests and hashing algorithms.  
 
-    **How It Works:**  
+   **How It Works:**  
    1. **Handshake Phase:**  
     - Client and server negotiate supported SSL/TLS versions and ciphers.  
     - Server presents its certificate, verified by the client.  
@@ -35,6 +35,16 @@
 
 
 3. **Cloud Computing**: What is an AWS VPC? Describe its basic components.
+   * **AWS VPC (Virtual Private Cloud):**  
+     A logically isolated network within AWS, enabling users to define and control network configurations similar to an on-premise data center.  
+
+   **Key Components:**  
+   - **Subnets:** Divides the VPC into public and private sections.  
+   - **Route Tables:** Defines how traffic flows within the VPC and to external destinations.  
+   - **Internet Gateway:** Allows access to the internet for resources in public subnets.  
+   - **NAT Gateway:** Enables private subnet instances to access the internet without being directly exposed.  
+   - **Security Groups and Network ACLs:** Control inbound and outbound traffic at the instance and subnet levels.  
+
 
 4. **DevOps**: Describe the importance of backup and restore strategies.
 
