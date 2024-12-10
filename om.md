@@ -47,6 +47,16 @@
 
 
 4. **DevOps**: Describe the importance of backup and restore strategies.
+   * **Backup and Restore Strategies Are Vital for:**  
+    - **Data Protection:** Safeguarding against accidental deletions, corruption, or cyberattacks.  
+    - **Business Continuity:** Ensuring quick recovery to minimize downtime during disasters.  
+    - **Compliance:** Meeting regulatory requirements for data retention and recovery.  
+
+   **Best Practices:**  
+    - Automate backups with tools like `rsync` or cloud-native services.  
+    - Use a combination of on-site, off-site, and cloud storage.  
+    - Periodically test restore processes to ensure backup validity.  
+
 
 5. **Tools & Technology**: Create a backup script using `rsync`.
 
