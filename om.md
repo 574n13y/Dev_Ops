@@ -48,6 +48,21 @@
 
 
 3. **Cloud Computing**: Describe Amazon RDS and its key features.
+#### **What is Amazon RDS?**
+- **Amazon Relational Database Service (RDS)** is a managed database service that simplifies the setup, operation, and scaling of relational databases in the cloud.
+
+#### **Key Features**
+- **Support for Popular Engines**: MySQL, PostgreSQL, MariaDB, Oracle, SQL Server, and Amazon Aurora.
+- **Automated Maintenance**: Handles database patches and backups.
+- **High Availability**: Supports multi-AZ deployments for failover.
+- **Scalability**: Easy to scale compute and storage resources.
+- **Security**: Integrated with AWS IAM, KMS, and VPC for robust security.
+
+#### **Use Cases**
+- E-commerce platforms.
+- Analytics and reporting.
+- Scalable web applications.
+
 
 4. **DevOps**: What are secrets management and environment variables?
 
