@@ -65,6 +65,26 @@
 
 
 4. **DevOps**: What are secrets management and environment variables?
+#### **Secrets Management**
+- The process of securely storing, accessing, and managing sensitive data such as API keys, passwords, and certificates.
+
+#### **Best Practices**
+- Use tools like **HashiCorp Vault**, **AWS Secrets Manager**, or **Azure Key Vault**.
+- Encrypt secrets at rest and in transit.
+- Regularly rotate credentials and keys.
+- Implement least privilege access for secrets.
+
+#### **Environment Variables**
+- Key-value pairs stored in the system that applications can read at runtime.
+- Commonly used to store configuration details or sensitive information.
+
+#### **Comparison**
+| **Secrets Management**            | **Environment Variables**          |
+|-----------------------------------|-------------------------------------|
+| Centralized storage for secrets   | Scattered across different systems |
+| Encrypted storage and access      | Often stored in plain text         |
+| Supports access policies and logs | No built-in access control         |
+
 
 5. **Tools & Technology**: Install Vault for secret management and set up a basic secret.
 
