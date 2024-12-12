@@ -31,6 +31,21 @@
 
    
 2. **Networking**: Explain the concept of load balancing and its benefits.
+#### **Concept**
+- **Load Balancing** is the process of distributing incoming network traffic across multiple servers to ensure no single server is overwhelmed.
+
+#### **Benefits**
+- **Scalability**: Handles increased traffic by distributing load across multiple servers.
+- **High Availability**: Ensures system uptime by redirecting traffic from failing servers.
+- **Improved Performance**: Reduces latency by routing requests to the nearest or least-loaded server.
+- **Fault Tolerance**: Automatically redirects traffic when a server is down.
+
+#### **Load Balancing Algorithms**
+- **Round Robin**: Distributes traffic sequentially.
+- **Least Connections**: Directs traffic to the server with the fewest active connections.
+- **IP Hash**: Routes traffic based on the client’s IP address.
+- **Weighted Algorithms**: Assigns weights to servers based on their capacity.
+
 
 3. **Cloud Computing**: Describe Amazon RDS and its key features.
 
