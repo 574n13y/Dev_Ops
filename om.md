@@ -114,5 +114,36 @@
 
 
 6. **Scenario**: Your team needs to secure application credentials. How would you handle it?
+#### **Task**: Your team needs to secure application credentials.  
+#### **Steps to Handle It**
+1. **Evaluate Current State**:
+   - Identify credentials currently stored in plaintext or hardcoded in applications.
+2. **Select a Secrets Management Tool**:
+   - Choose a tool like **Vault**, **AWS Secrets Manager**, or **Azure Key Vault**.
+3. **Integrate Secrets Management**:
+   - Replace hardcoded credentials with API calls to fetch secrets at runtime.
+4. **Encrypt Existing Secrets**:
+   - Migrate existing secrets to the secrets management tool and encrypt them.
+5. **Define Access Policies**:
+   - Use RBAC (Role-Based Access Control) to limit who or what can access each secret.
+6. **Automate Rotation**:
+   - Set up automatic key and credential rotation for enhanced security.
+7. **Monitor Access**:
+   - Use audit logs to monitor who accessed secrets and when.
+8. **Educate the Team**:
+   - Train developers on securely accessing secrets via APIs or environment variables.
+
+#### **Example**
+If using **Vault**:
+- Store credentials:
+  ```bash
+  vault kv put secret/app1 db_username="user1" db_password="pass123"
+  ```
+- Application retrieves the credentials dynamically:
+  ```bash
+  VAULT_TOKEN=$(vault login -token-only)
+  curl --header "X-Vault-Token: $VAULT_TOKEN" http://127.0.0.1:8200/v1/secret/data/app1
+  ```
+
 
 
