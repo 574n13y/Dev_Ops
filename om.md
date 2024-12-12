@@ -87,6 +87,31 @@
 
 
 5. **Tools & Technology**: Install Vault for secret management and set up a basic secret.
+#### **Steps to Install Vault**
+1. **Download Vault**:
+   ```bash
+   curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+   sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+   sudo apt update && sudo apt install vault
+   ```
+2. **Start Vault in Development Mode**:
+   ```bash
+   vault server -dev
+   ```
+3. **Initialize Vault**:
+   - Open a new terminal and set the environment variable:
+     ```bash
+     export VAULT_ADDR='http://127.0.0.1:8200'
+     ```
+4. **Store a Secret**:
+   ```bash
+   vault kv put secret/my-app username="admin" password="mypassword"
+   ```
+5. **Retrieve the Secret**:
+   ```bash
+   vault kv get secret/my-app
+   ```
+
 
 6. **Scenario**: Your team needs to secure application credentials. How would you handle it?
 
