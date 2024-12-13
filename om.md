@@ -132,4 +132,44 @@
 
 
 6. **Scenario**: How would you deploy a microservices application locally?
+#### **Steps**:
+    1. **Set Up Services**:
+   - Break the application into independent services (e.g., authentication, API, database).
+   - Write Dockerfiles for each service.
+    
+    2. **Create a `docker-compose.yml` File**:
+   Example:
+   ```yaml
+   version: '3.8'
+   services:
+     auth:
+       build: ./auth
+       ports:
+         - "5001:5000"
+     api:
+       build: ./api
+       ports:
+         - "5002:5000"
+     db:
+       image: postgres
+       environment:
+         POSTGRES_USER: admin
+         POSTGRES_PASSWORD: password
+         POSTGRES_DB: mydb
+       ports:
+         - "5432:5432"
+   ```
+    
+    3. **Start Services**:
+   ```bash
+   docker-compose up --build
+   ```
+    
+    4. **Test Interactions**:
+   - Use tools like **Postman** or **curl** to test API endpoints.
+   - Verify logs and service health using `docker logs`.
+    
+    5. **Monitor and Debug**:
+   - Use **Docker Desktop**, **Grafana**, or **Prometheus** for monitoring.
+
 
