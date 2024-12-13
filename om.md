@@ -60,6 +60,16 @@
 
 
 3. **Cloud Computing**: Describe the differences between Amazon S3 and EBS.
+| Feature                        | **Amazon S3**                                                                                  | **Amazon EBS**                                                                                       |
+|--------------------------------|------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| **Type**                       | Object storage                                                                                 | Block storage                                                                                       |
+| **Purpose**                    | Store unstructured data like files, images, and backups.                                       | Attachable to EC2 instances for file systems, databases, or applications requiring low-latency I/O. |
+| **Scalability**                | Infinitely scalable.                                                                           | Limited to the size of the volume (max 16 TiB).                                                     |
+| **Data Access**                | Accessible over the internet via APIs.                                                        | Accessible only when attached to an EC2 instance.                                                  |
+| **Use Case**                   | Backup, archival, static website hosting.                                                     | Persistent storage for running applications or databases.                                           |
+| **Pricing**                    | Pay-per-use based on storage size and requests.                                               | Pay for provisioned storage size, regardless of usage.                                             |
+
+
 
 4. **DevOps**: What’s a microservices architecture, and why is it used?
 
