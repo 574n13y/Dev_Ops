@@ -40,6 +40,24 @@
 
 
 2. **Networking**: Explain the concept of latency and its impact on network performance.
+#### **What is Latency?**
+- Latency is the time taken for a data packet to travel from the source to the destination and back (round-trip time).
+- Measured in milliseconds (ms).
+
+#### **Impact on Network Performance**
+- **High Latency**:
+  - Causes delays in communication.
+  - Degrades user experience in real-time applications (e.g., video calls, gaming).
+- **Causes of High Latency**:
+  - Network congestion.
+  - Geographical distance.
+  - Inefficient routing or hardware bottlenecks.
+
+#### **Reducing Latency**
+- Use a **Content Delivery Network (CDN)** to cache data closer to users.
+- Optimize network routes and infrastructure.
+- Use low-latency protocols (e.g., UDP for streaming).
+
 
 3. **Cloud Computing**: Describe the differences between Amazon S3 and EBS.
 
