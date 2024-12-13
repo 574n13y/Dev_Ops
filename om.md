@@ -72,6 +72,25 @@
 
 
 4. **DevOps**: What’s a microservices architecture, and why is it used?
+#### **What is Microservices Architecture?**
+- A software design approach where an application is broken into small, independently deployable services.
+- Each service focuses on a specific business capability.
+
+#### **Why Use Microservices?**
+1. **Scalability**:
+   - Scale services independently based on demand.
+2. **Flexibility**:
+   - Easier to adopt different tech stacks for individual services.
+3. **Fault Isolation**:
+   - A failure in one service doesn’t crash the entire system.
+4. **Faster Deployment**:
+   - Teams can develop, test, and deploy services independently.
+
+#### **Challenges**:
+- Requires robust monitoring and logging tools (e.g., Prometheus, Grafana).
+- Complex inter-service communication (e.g., service meshes like Istio).
+
+
 
 5. **Tools & Technology**: Set up Docker Compose for a multi-container application.
 
