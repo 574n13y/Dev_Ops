@@ -93,6 +93,43 @@
 
 
 5. **Tools & Technology**: Set up Docker Compose for a multi-container application.
+#### **Steps to Set Up**
+    1. **Install Docker and Docker Compose**:
+   - Ensure Docker is installed:
+     ```bash
+     docker --version
+     ```
+   - Install Docker Compose:
+     ```bash
+     sudo apt install docker-compose
+     ```
+   
+    2. **Create a `docker-compose.yml` File**:
+   Example for a multi-container app:
+   ```yaml
+   version: '3.8'
+   services:
+     web:
+       image: nginx
+       ports:
+         - "8080:80"
+     app:
+       image: python:3.9
+       volumes:
+         - ./app:/usr/src/app
+       command: python /usr/src/app/app.py
+   ```
+   
+    3. **Start the Containers**:
+   ```bash
+   docker-compose up
+   ```
+   
+    4. **Stop the Containers**:
+   ```bash
+   docker-compose down
+   ```
+
 
 6. **Scenario**: How would you deploy a microservices application locally?
 
