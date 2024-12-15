@@ -74,6 +74,44 @@ CI/CD pipelines automate the process of building, testing, and deploying code to
 - Automated deployments reduce human error.  
 
 5. **Tools & Technology**: Set up a basic pipeline in Jenkins to build and test code.
+   * **Steps to Create a Jenkins Pipeline:**  
+
+   1. **Install Jenkins:**  
+   - Download and install Jenkins from [jenkins.io](https://jenkins.io).  
+   - Configure Jenkins with required plugins (e.g., Git, Pipeline).  
+
+   2. **Create a New Pipeline Job:**  
+   - Navigate to Jenkins dashboard → **New Item** → Select **Pipeline**.  
+
+   3. **Define the Pipeline Script:**  
+   - Example Script for a Build and Test Pipeline:
+     ```groovy
+     pipeline {
+         agent any
+         stages {
+             stage('Clone Repository') {
+                 steps {
+                     git 'https://github.com/your-repo.git'
+                 }
+             }
+             stage('Build') {
+                 steps {
+                     sh './build.sh'
+                 }
+             }
+             stage('Test') {
+                 steps {
+                     sh './test.sh'
+                 }
+             }
+         }
+     }
+     ```
+
+   4. **Run the Pipeline:**  
+   - Save and build the job to execute the pipeline.
+
+
 
 6. **Scenario**: A team needs automatic testing for every code commit. How would you set it up?
 
