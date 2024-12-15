@@ -58,6 +58,20 @@ AWS IAM is a service that enables secure access control for AWS resources by man
 
 
 4. **DevOps**: Define CI/CD pipelines and list their components.
+   * **CI/CD (Continuous Integration/Continuous Deployment):**  
+CI/CD pipelines automate the process of building, testing, and deploying code to production.
+
+   **Components of a CI/CD Pipeline:**  
+   1. **Source Stage:** Monitors version control systems (e.g., Git) for code commits.  
+   2. **Build Stage:** Compiles code and packages artifacts.  
+   3. **Test Stage:** Runs automated tests (unit, integration, and end-to-end).  
+   4. **Deploy Stage:** Deploys the application to staging, testing, or production environments.  
+   5. **Monitoring Stage:** Observes application performance and detects deployment issues.  
+
+**Benefits:**  
+- Faster delivery cycles.  
+- Early bug detection.  
+- Automated deployments reduce human error.  
 
 5. **Tools & Technology**: Set up a basic pipeline in Jenkins to build and test code.
 
