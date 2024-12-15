@@ -41,6 +41,21 @@
 
 
 3. **Cloud Computing**: Describe the concept of IAM (Identity and Access Management) in AWS.
+   * **AWS IAM:**  
+AWS IAM is a service that enables secure access control for AWS resources by managing users, roles, and permissions.
+
+   **Core Concepts:**  
+   - **Users:** Individual accounts for people or applications.  
+   - **Groups:** Collections of users that share the same permissions.  
+   - **Roles:** Temporary access permissions assigned to users or services for specific tasks.  
+   - **Policies:** JSON-based documents defining permissions for users, groups, and roles.  
+
+   **Best Practices:**  
+   - Enforce the principle of least privilege.  
+   - Use MFA (Multi-Factor Authentication) for sensitive accounts.  
+   - Rotate access keys and credentials regularly.  
+   - Monitor access using AWS CloudTrail.  
+
 
 4. **DevOps**: Define CI/CD pipelines and list their components.
 
