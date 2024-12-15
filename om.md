@@ -28,6 +28,17 @@
      ```
 
 2. **Networking**: What is DNS? Explain how it works.
+    * **DNS (Domain Name System):**  
+    DNS is a hierarchical system that translates human-readable domain names (e.g., `example.com`) into IP addresses (e.g., `192.0.2.1`), enabling computers to locate resources over a network.  
+
+   * **How It Works:**  
+    1. **User Query:** The user enters a domain name in their browser.  
+    2. **DNS Resolver:** The request is sent to a DNS resolver, often managed by the ISP.  
+    3. **Root Servers:** If the resolver doesn't know the IP address, it queries a root server, which directs it to the appropriate **TLD (Top-Level Domain)** server (e.g., `.com`, `.org`).  
+    4. **Authoritative DNS Server:** The TLD server provides the location of the authoritative DNS server for the domain, which returns the IP address.  
+    5. **Caching:** The resolver caches the result for faster future access.  
+    6. **Response:** The resolver returns the IP address to the browser, which establishes a connection to the web server.  
+
 
 3. **Cloud Computing**: Describe the concept of IAM (Identity and Access Management) in AWS.
 
