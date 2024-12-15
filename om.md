@@ -114,5 +114,44 @@ CI/CD pipelines automate the process of building, testing, and deploying code to
 
 
 6. **Scenario**: A team needs automatic testing for every code commit. How would you set it up?
+   * **Solution:**  
+    1. **Set Up a Version Control System:**  
+    - Use GitHub, GitLab, or Bitbucket to store code.  
 
+   2. **Integrate CI/CD Pipeline with the Repository:**  
+   - Configure Jenkins to trigger builds automatically upon code commits (webhook setup).  
+
+   3. **Automate Tests:**  
+   - Include automated testing scripts (e.g., `./test.sh`) in the pipeline.  
+
+   4. **Pipeline Configuration Example:**  
+   ```groovy
+   pipeline {
+       agent any
+       triggers {
+           pollSCM('H/5 * * * *') // Trigger every 5 minutes
+       }
+       stages {
+           stage('Clone Repository') {
+               steps {
+                   git 'https://github.com/your-repo.git'
+               }
+           }
+           stage('Build') {
+               steps {
+                   sh './build.sh'
+               }
+           }
+           stage('Test') {
+               steps {
+                   sh './test.sh'
+               }
+           }
+       }
+   }
+   ```
+
+   5. **Benefits:**  
+   - Code is automatically tested on every commit, ensuring quality.  
+   - Issues are identified early in the development cycle.
 
