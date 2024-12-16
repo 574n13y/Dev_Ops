@@ -117,5 +117,53 @@ resource "aws_instance" "example" {
 
 
 6. **Scenario**: Your team requires automated deployment of infrastructure. How would you set this up?
+   * **Solution: Implement Infrastructure as Code with CI/CD Integration**
+   1. **Tooling Selection:**
+    - Use **Terraform** for infrastructure provisioning.
+    - Use a CI/CD tool like **Jenkins**, **GitHub Actions**, or **GitLab CI** for automation.
+
+   2. **Workflow:**
+    - Developers push Terraform configurations to a Git repository.
+    - The CI/CD pipeline is triggered on every push or merge to the main branch.
+    - The pipeline validates the configuration (using `terraform validate`).
+    - After validation, the pipeline applies the configuration (`terraform apply`) to the target environment.
+
+   3. **Example CI/CD Workflow in GitHub Actions:**
+      ```yaml
+   name: Deploy Infrastructure
+   on:
+     push:
+       branches:
+         - main
+
+   jobs:
+     deploy:
+       runs-on: ubuntu-latest
+
+       steps:
+         - name: Checkout Code
+           uses: actions/checkout@v2
+
+         - name: Set up Terraform
+           uses: hashicorp/setup-terraform@v2
+           with:
+             terraform_version: 1.5.0
+
+         - name: Terraform Init
+           run: terraform init
+
+         - name: Terraform Plan
+           run: terraform plan
+
+         - name: Terraform Apply
+           run: terraform apply -auto-approve
+      ```
+
+   4. **Infrastructure Separation:**
+    - Use Terraform workspaces or separate configuration files for different environments (e.g., dev, staging, prod).
+
+   5. **State Management:**
+    - Store Terraform state files in a remote backend like AWS S3 for collaboration and disaster recovery.
+
 
 
