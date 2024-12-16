@@ -34,7 +34,7 @@ Packet sniffing is the process of capturing and analyzing network traffic data. 
    - **Debugging Communication Issues:** Verify proper communication between systems.
    - **Protocol Analysis:** Examine packets for compliance with expected protocols.
 
-#### **Common Tools for Packet Sniffing:**
+  #### **Common Tools for Packet Sniffing:**
    - **Wireshark:** A popular GUI-based packet analysis tool.
    - **tcpdump:** A CLI-based tool for capturing network packets in real-time.
 
@@ -44,7 +44,25 @@ Packet sniffing is the process of capturing and analyzing network traffic data. 
    ```
 
 
+
 3. **Cloud Computing**: Explain the role of security groups in AWS.
+   #### **What Are Security Groups?**
+Security Groups are virtual firewalls that control inbound and outbound traffic for AWS resources like EC2 instances. They operate at the instance level and are stateful, meaning changes to outbound rules are automatically reflected in inbound responses.
+
+   #### **Key Features:**
+   1. **Inbound Rules:** Define what traffic is allowed to reach the resource.
+   2. **Outbound Rules:** Define what traffic is allowed to leave the resource.
+   3. **Stateful Nature:** Automatically allows return traffic for initiated requests.
+   4. **Granular Control:** Can allow or block traffic based on IP ranges, ports, and protocols.
+
+   #### **Example Use Case:**
+   - Allow SSH access to an EC2 instance only from a specific IP:
+    - Inbound Rule:
+    - Protocol: TCP
+    - Port Range: 22
+    - Source: `<Your-IP-Address>/32`
+
+
 
 4. **DevOps**: What is Infrastructure as Code (IaC)?
 
