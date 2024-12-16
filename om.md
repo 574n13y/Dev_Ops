@@ -65,6 +65,21 @@ Security Groups are virtual firewalls that control inbound and outbound traffic 
 
 
 4. **DevOps**: What is Infrastructure as Code (IaC)?
+   * #### **Definition:**
+Infrastructure as Code (IaC) is a DevOps practice where infrastructure (servers, networks, databases) is provisioned and managed using code rather than manual processes. This enables versioning, automation, and repeatability.
+
+   #### **Benefits of IaC:**
+   1. **Consistency:** Eliminates configuration drift across environments.
+   2. **Automation:** Speeds up provisioning and deployment processes.
+   3. **Scalability:** Simplifies scaling infrastructure to meet demand.
+   4. **Version Control:** Infrastructure definitions can be stored in repositories like Git.
+
+   #### **Popular IaC Tools:**
+   - **Terraform:** A cloud-agnostic tool for provisioning infrastructure.
+   - **AWS CloudFormation:** Manages AWS resources using templates.
+   - **Ansible:** Automates configuration management and application deployment.
+
+
 
 5. **Tools & Technology**: Write a Terraform configuration to create an EC2 instance.
 
