@@ -82,6 +82,39 @@ Infrastructure as Code (IaC) is a DevOps practice where infrastructure (servers,
 
 
 5. **Tools & Technology**: Write a Terraform configuration to create an EC2 instance.
+   * Here is an example Terraform configuration to create an EC2 instance:
+
+```hcl
+provider "aws" {
+  region = "us-east-1"
+}
+
+resource "aws_instance" "example" {
+  ami           = "ami-0c55b159cbfafe1f0"  # Replace with a valid AMI ID
+  instance_type = "t2.micro"
+
+  tags = {
+    Name = "Terraform-Instance"
+  }
+}
+```
+
+   #### Steps to Deploy:
+   1. **Initialize Terraform:**
+      ```bash
+      terraform init
+      ```
+
+   2. **Plan Infrastructure:**
+      ```bash
+      terraform plan
+      ```
+
+   3. **Apply Configuration:**
+      ```bash
+      terraform apply
+      ```
+
 
 6. **Scenario**: Your team requires automated deployment of infrastructure. How would you set this up?
 
