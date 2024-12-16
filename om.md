@@ -25,6 +25,24 @@
 
 
 2. **Networking**: What is packet sniffing, and how is it used in troubleshooting?
+   * #### **What is Packet Sniffing?**
+Packet sniffing is the process of capturing and analyzing network traffic data. It involves intercepting data packets that travel across a network for monitoring and troubleshooting purposes.
+
+  #### **Uses in Troubleshooting:**
+   - **Diagnosing Network Latency:** Analyze packets to identify bottlenecks or delays.
+   - **Inspecting Security Issues:** Detect unauthorized traffic or potential attacks.
+   - **Debugging Communication Issues:** Verify proper communication between systems.
+   - **Protocol Analysis:** Examine packets for compliance with expected protocols.
+
+#### **Common Tools for Packet Sniffing:**
+   - **Wireshark:** A popular GUI-based packet analysis tool.
+   - **tcpdump:** A CLI-based tool for capturing network packets in real-time.
+
+   Example (using `tcpdump`):
+   ```bash
+   tcpdump -i eth0 port 80  # Capture HTTP traffic on eth0 interface.
+   ```
+
 
 3. **Cloud Computing**: Explain the role of security groups in AWS.
 
