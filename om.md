@@ -128,4 +128,17 @@
 
  
 6. **Scenario**: Your CI/CD pipeline needs a place to store build artifacts. What would you recommend?
-   * 
+   * **Recommendation: Use JFrog Artifactory or Sonatype Nexus.**
+
+   #### **Why?**
+    1. **Centralized Storage**: Both tools provide secure and centralized repositories for storing build artifacts.  
+    2. **Versioning**: Artifacts are versioned, making it easy to manage multiple builds and rollbacks.  
+    3. **Integration**: They integrate seamlessly with CI/CD tools like Jenkins, GitLab CI, and AWS CodePipeline.  
+    4. **Efficiency**: Reduces pipeline runtime by reusing stored artifacts.
+
+   #### **Example Workflow:**
+   1. **CI Step**: Jenkins or GitLab CI builds the code and generates artifacts (e.g., `.jar`, `.war`, Docker images).  
+   2. **Upload Artifacts**: The artifacts are uploaded to a Nexus or Artifactory repository.  
+   3. **CD Step**: Deployment tools fetch the artifacts from the repository to deploy them to production.
+
+ 
