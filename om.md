@@ -99,6 +99,33 @@
 
  
 5. **Tools & Technology**: Install and configure Nexus or Artifactory as an artifact repository.
-   * 
+   * **Steps to Install and Configure Nexus:**
+
+   1. **Download Nexus OSS**:
+    - Download the latest Nexus Repository Manager from [Sonatype’s website](https://www.sonatype.com).
+
+   2. **Install Nexus:**
+      ```bash
+      wget https://download.sonatype.com/nexus/3/latest-unix.tar.gz
+      tar -xvf latest-unix.tar.gz
+      cd nexus-<version>
+      ```
+
+   3. **Run Nexus:**
+      ```bash
+      ./bin/nexus start
+      ```
+
+   4. **Access Nexus Web Interface:**
+    - Open `http://<server_ip>:8081` in a browser.
+    - Log in with default credentials (admin/admin123) and change the password.
+
+   5. **Create a Repository**:
+    - Go to **Administration > Repositories**.
+    - Choose a repository format (e.g., Maven, Docker).
+    - Configure the repository with required policies and storage.
+
+
+ 
 6. **Scenario**: Your CI/CD pipeline needs a place to store build artifacts. What would you recommend?
    * 
