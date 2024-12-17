@@ -84,7 +84,20 @@
  
 
 4. **DevOps**: Describe the role of artifact repositories in CI/CD.
-   * 
+   * **Artifact repositories** are centralized storage systems that manage, version, and distribute build artifacts in a CI/CD pipeline.
+
+   #### **Roles of Artifact Repositories:**
+   1. **Storage and Management**: Store compiled code, libraries, binaries, and other artifacts generated during the build process.
+   2. **Versioning**: Keeps track of different versions of artifacts to support rollbacks and traceability.
+   3. **Distribution**: Provides easy access for deployment tools to fetch artifacts for testing and production.
+   4. **Efficiency**: Reduces build times by reusing existing artifacts.
+
+   #### **Popular Tools:**
+    - **Nexus Repository**: A versatile artifact repository manager.
+    - **JFrog Artifactory**: Supports multiple package formats like Maven, Docker, and NPM.
+    - **AWS CodeArtifact**: A fully managed artifact repository on AWS.
+
+ 
 5. **Tools & Technology**: Install and configure Nexus or Artifactory as an artifact repository.
    * 
 6. **Scenario**: Your CI/CD pipeline needs a place to store build artifacts. What would you recommend?
