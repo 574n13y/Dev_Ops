@@ -48,7 +48,22 @@
 
 
 2. **Networking**: Describe NAT and its purpose in networking.
-   * 
+   * **Network Address Translation (NAT)** is a method used to map private IP addresses to a public IP address when devices communicate over the internet.
+
+   #### **Purpose of NAT:**
+   1. **IP Address Conservation**: NAT allows multiple devices in a private network to share a single public IP address.  
+   2. **Improved Security**: Hides internal private IP addresses from the external network, adding a layer of protection.  
+   3. **Connectivity**: Enables private IPs (not routable over the internet) to access external networks.
+
+   #### **Types of NAT:**
+   1. **Static NAT**: One-to-one mapping of private to public IPs.
+   2. **Dynamic NAT**: Maps private IPs to a pool of public IPs.
+   3. **PAT (Port Address Translation)**: Multiple private IPs share a single public IP by using different port numbers.
+
+   #### **Example of PAT:**
+    - Multiple devices with private IPs (e.g., 192.168.1.10, 192.168.1.11) connect to the internet using the same public IP (e.g., 203.0.113.1), but with unique port numbers.
+
+ 
 3. **Cloud Computing**: What is AWS CloudTrail, and how is it used?
    * 
 4. **DevOps**: Describe the role of artifact repositories in CI/CD.
