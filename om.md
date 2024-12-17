@@ -65,7 +65,24 @@
 
  
 3. **Cloud Computing**: What is AWS CloudTrail, and how is it used?
-   * 
+   * **AWS CloudTrail** is a service that records **API calls** made within an AWS account, providing a detailed log of activities for governance, compliance, and operational auditing.
+
+   #### **Key Features:**
+   1. **Audit Activity**: Tracks all actions (e.g., user logins, resource creation) across AWS services.
+   2. **Log Storage**: CloudTrail logs are stored in Amazon S3, enabling long-term storage and analysis.
+   3. **Integration**: Works with CloudWatch for real-time alerts and with AWS Athena for querying logs.
+   4. **Multi-Region Support**: Ensures consistent activity logging across all AWS regions.
+
+   #### **Use Cases:**
+    - **Security Auditing**: Detect unauthorized access or API calls.
+    - **Operational Troubleshooting**: Identify errors by analyzing API usage.
+    - **Compliance Monitoring**: Meet standards like GDPR or HIPAA.
+
+   #### **Example:**
+    - Enable CloudTrail to log all API calls and send logs to an S3 bucket for analysis.
+
+ 
+
 4. **DevOps**: Describe the role of artifact repositories in CI/CD.
    * 
 5. **Tools & Technology**: Install and configure Nexus or Artifactory as an artifact repository.
