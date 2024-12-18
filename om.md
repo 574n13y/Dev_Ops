@@ -75,5 +75,26 @@
 
 
 6. **Scenario**: A new feature is released. How would you manage code versions for easy rollback?
-   * 
+   * To manage code versions for easy rollback:  
+
+   1. **Use Git Branching**:  
+    - Develop the feature in a separate branch (e.g., `feature/new-feature`).  
+    - Merge the branch into `main` or `release` after testing.  
+
+   2. **Tag Stable Releases**:  
+    - Tag the production-ready code before deploying (e.g., `v1.0`, `v1.1`).  
+
+   3. **Implement Rollback Strategy**:  
+    - If the new feature breaks production, revert to a previous stable release:  
+      ```bash
+      git checkout v1.0
+      git push origin main
+      ```  
+
+   4. **CI/CD Integration**:  
+    - Automate testing to catch issues early.  
+    - Deploy only after passing all tests.  
+
+   5. **Maintain Backups**:  
+    - Back up the database and application state before deploying major changes to ensure recovery if necessary.  
 
