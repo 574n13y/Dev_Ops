@@ -21,7 +21,15 @@
 
 
 2. **Networking**: What is a VPN, and how does it secure data transmission?
-   * 
+   * A **VPN (Virtual Private Network)** is a technology that creates a secure, encrypted connection between your device and a remote server.  
+
+   **How VPN Secures Data Transmission**:  
+    1. **Encryption**: All data sent through the VPN is encrypted using protocols like OpenVPN, IKEv2, or WireGuard.  
+    2. **Tunneling**: It encapsulates data within secure "tunnels," preventing unauthorized access.  
+    3. **IP Masking**: Hides your real IP address by routing traffic through a VPN server.  
+    4. **Data Integrity**: Ensures data is not tampered with during transmission.  
+
+
 3. **Cloud Computing**: Explain AWS’s Shared Responsibility Model.
    * 
 4. **DevOps**: What is version control, and why is it essential?
