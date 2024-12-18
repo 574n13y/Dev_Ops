@@ -57,7 +57,23 @@
 
 
 5. **Tools & Technology**: Use Git to tag a release version in your repository.
-   * 
+   * **Git Tags** mark specific commits as important, often used for release versions.  
+
+   **Steps to Tag a Release**:  
+    1. Create a tag:  
+       ```bash
+       git tag -a v1.0 -m "Release version 1.0"
+       ```  
+    2. Push the tag to the remote repository:  
+       ```bash
+       git push origin v1.0
+       ```  
+    3. List all tags:  
+       ```bash
+       git tag
+       ```  
+
+
 6. **Scenario**: A new feature is released. How would you manage code versions for easy rollback?
    * 
 
