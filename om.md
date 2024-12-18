@@ -45,7 +45,17 @@
 
 
 4. **DevOps**: What is version control, and why is it essential?
-   * 
+   * **Version Control** is the practice of tracking and managing changes to code or files over time.  
+
+   **Why Version Control is Essential**:  
+    1. **Collaboration**: Allows multiple developers to work on the same project simultaneously without conflicts.  
+    2. **Tracking Changes**: Maintains a history of edits, enabling rollbacks to previous versions if needed.  
+    3. **Branching and Merging**: Developers can create isolated branches for new features and merge them after testing.  
+    4. **Backup**: Acts as a safety net, storing all versions of the code in a central repository.  
+
+   **Popular Tools**: Git, Mercurial, and Subversion.  
+
+
 5. **Tools & Technology**: Use Git to tag a release version in your repository.
    * 
 6. **Scenario**: A new feature is released. How would you manage code versions for easy rollback?
