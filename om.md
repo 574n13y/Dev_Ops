@@ -31,7 +31,19 @@
 
 
 3. **Cloud Computing**: Explain AWS’s Shared Responsibility Model.
-   * 
+   * The AWS **Shared Responsibility Model** outlines the division of security responsibilities between AWS and its customers:  
+
+   - **AWS’s Responsibility (Security *of* the Cloud)**:  
+     AWS secures the underlying infrastructure, including hardware, software, networking, and physical facilities.  
+
+   - **Customer’s Responsibility (Security *in* the Cloud)**:  
+     Customers are responsible for managing the security of their applications, data, operating systems, and configurations.  
+
+   **Example**:  
+   - AWS manages EC2 infrastructure.  
+   - Customers secure their EC2 instances, including firewall rules and application security.  
+
+
 4. **DevOps**: What is version control, and why is it essential?
    * 
 5. **Tools & Technology**: Use Git to tag a release version in your repository.
