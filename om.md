@@ -95,6 +95,42 @@
 
 
 5. **Tools & Technology**: Use Jenkins to set up a basic deployment pipeline.
+   * **Steps to Create a Basic Deployment Pipeline**:  
+
+   1. **Install Jenkins**: Ensure Jenkins is installed and running.  
+   2. **Integrate Source Code**:
+    - Add your Git repository to Jenkins.
+    - Configure webhooks to trigger builds on new commits.  
+
+   3. **Build Stage**: Compile and package the application.  
+    - Example: Use Maven for a Java project:
+     ```groovy
+     stage('Build') {
+         steps {
+             sh 'mvn clean install'
+         }
+     }
+     ```
+
+   4. **Test Stage**: Run automated tests.
+    - Example: Execute unit tests:
+     ```groovy
+     stage('Test') {
+         steps {
+             sh 'mvn test'
+         }
+     }
+     ```
+
+   5. **Deploy Stage**: Deploy to staging or production environments.
+    - Example for Docker deployment:
+     ```groovy
+     stage('Deploy') {
+         steps {
+             sh 'docker-compose up -d'
+         }
+     }
+     ```
 
 6. **Scenario**: Your team wants to reduce deployment downtime. Which strategy would you recommend?
 
