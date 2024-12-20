@@ -55,6 +55,20 @@
 
 
 3. **Cloud Computing**: Describe AWS Route 53 and its use cases.
+   * **AWS Route 53** is a scalable and highly available **DNS (Domain Name System)** web service.  
+
+   #### **Key Features**:
+    1. **Domain Registration**: Register and manage domain names.
+    2. **DNS Routing**: Map domain names to resources like EC2 instances or load balancers.
+    3. **Health Checks**: Monitor endpoint health and failover automatically.
+    4. **Traffic Management**: Use routing policies for efficient traffic distribution.
+
+   #### **Use Cases**:
+    - **Simple DNS Routing**: Map a domain to a single resource (e.g., `www.example.com` → `EC2 instance`).
+    - **Load Balancing with Weighted Routing**: Distribute traffic across multiple servers based on weight.
+    - **Failover**: Automatically redirect traffic to a healthy endpoint in case of failure.
+    - **Geo-location Routing**: Direct users to resources based on their geographic location.
+
 
 4. **DevOps**: Explain deployment strategies: rolling, blue-green, and canary.
 
