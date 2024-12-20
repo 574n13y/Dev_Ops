@@ -71,6 +71,28 @@
 
 
 4. **DevOps**: Explain deployment strategies: rolling, blue-green, and canary.
+   * Deployment strategies help minimize downtime and risks associated with deploying changes to applications.  
+
+   #### **1. Rolling Deployment**:
+    - Gradually update instances with new versions without downtime.
+    - Example: Deploy changes to 10% of servers, test, then proceed to the next batch.
+    - **Pros**: No downtime, easy rollback.
+    - **Cons**: Complexity in managing versions during deployment.
+
+   #### **2. Blue-Green Deployment**:
+    - Two environments: **Blue** (current live) and **Green** (new version).  
+    - Deploy to Green, then switch traffic from Blue to Green.  
+    - **Pros**: Immediate rollback, minimal risk.  
+    - **Cons**: Requires duplicate infrastructure.  
+
+   #### **3. Canary Deployment**:
+    - Release changes to a small subset of users (e.g., 5%), monitor, then gradually scale.  
+    - **Pros**: Safer testing in production.  
+    - **Cons**: Requires robust monitoring and routing mechanisms.
+
+   **Recommended Strategy**:  
+  For reducing downtime, **Blue-Green Deployment** is ideal as it ensures seamless user experience and immediate rollback capabilities.
+
 
 5. **Tools & Technology**: Use Jenkins to set up a basic deployment pipeline.
 
