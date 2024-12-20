@@ -133,5 +133,18 @@
      ```
 
 6. **Scenario**: Your team wants to reduce deployment downtime. Which strategy would you recommend?
+   * #### **Recommendation**: Blue-Green Deployment
+    **Why?**
+    - Zero downtime during deployment.
+    - Immediate rollback capability in case of issues.
+    - Seamless user experience during transitions.
+
+   **Implementation Steps**:
+    1. Set up two identical environments: Blue (current) and Green (new).
+    2. Deploy the new application version to the Green environment.
+    3. Test Green for functionality and performance.
+    4. Use Route 53 to switch DNS traffic from Blue to Green.
+    5. Monitor performance in Green; keep Blue as a rollback option.
+
 
 
