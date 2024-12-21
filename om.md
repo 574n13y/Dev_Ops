@@ -76,6 +76,20 @@
 
 
 5. **Tools & Technology**: Set up monitoring in Grafana with a basic dashboard.
+   * **Steps**:
+   1. **Install Prometheus and Grafana**:
+    - Follow the official documentation for installation on your platform.
+
+   2. **Configure Prometheus as a Data Source**:
+    - Access Grafana at `http://<grafana-server>:3000`.
+    - Go to **Configuration → Data Sources → Add Data Source**.
+    - Select **Prometheus** and provide the Prometheus server URL (e.g., `http://localhost:9090`).
+
+   3. **Create a Dashboard**:
+    - Go to **Dashboards → New Dashboard → Add New Panel**.
+    - Add a query (e.g., `rate(http_requests_total[5m])`).
+    - Save the dashboard.
+
 
 6. **Scenario**: An application needs real-time monitoring. How would you set it up?
 
