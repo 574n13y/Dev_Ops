@@ -48,6 +48,19 @@
 
 
 3. **Cloud Computing**: Discuss the purpose of AWS Auto Scaling.
+   - **What is Auto Scaling?**
+    - Automatically adjusts the number of EC2 instances (or other resources) in response to traffic demands.
+
+   - **Benefits**:
+    1. **Cost Optimization**: Only pay for resources when needed.
+    2. **High Availability**: Ensures applications remain available under heavy traffic.
+    3. **Scalability**: Handles sudden traffic spikes without manual intervention.
+
+   - **Components**:
+    1. **Auto Scaling Groups (ASG)**: A collection of EC2 instances managed together.
+    2. **Launch Template/Configuration**: Defines instance details like AMI, instance type, etc.
+    3. **Scaling Policies**: Rules that define when to scale in or out.
+
 
 4. **DevOps**: Define continuous monitoring and its role in DevOps.
 
