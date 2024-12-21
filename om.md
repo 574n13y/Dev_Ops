@@ -1,6 +1,33 @@
 # Day 44
 
 1. **Linux**: Practice with `ln` to create hard and symbolic links.
+   - **Hard Links**:  
+    - A hard link is a direct reference to the physical data on disk.
+    - Deleting the original file doesn’t affect the hard link.
+
+   **Command**:
+     ```bash
+     ln file1.txt hardlink_file1.txt
+     ```
+
+   **Verify**:
+     ```bash
+     ls -li
+     ```
+
+   - **Symbolic Links (Soft Links)**:  
+    - A soft link is a pointer to the original file. It breaks if the original file is deleted.
+
+   **Command**:
+     ```bash
+     ln -s file1.txt symlink_file1.txt
+     ```
+
+   **Verify**:
+     ```bash
+     ls -l
+     ```
+
 
 2. **Networking**: What is a default gateway, and why is it necessary?
 
