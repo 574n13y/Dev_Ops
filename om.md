@@ -30,6 +30,22 @@
 
 
 2. **Networking**: What is a default gateway, and why is it necessary?
+   - **Default Gateway**:  
+    - A router or network node that routes traffic from a local network to other networks or the internet.  
+    - It serves as the access point for devices to communicate with external networks.  
+
+   - **Why Necessary?**:  
+    - Without a default gateway, devices on a local network would be unable to send or receive data outside their network.  
+
+  **Example**:
+    ```plaintext
+    Device IP: 192.168.1.10
+    Subnet Mask: 255.255.255.0
+    Default Gateway: 192.168.1.1
+    ```
+
+    Here, 192.168.1.1 routes traffic to external networks like the internet.
+
 
 3. **Cloud Computing**: Discuss the purpose of AWS Auto Scaling.
 
