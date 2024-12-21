@@ -63,6 +63,17 @@
 
 
 4. **DevOps**: Define continuous monitoring and its role in DevOps.
+   - **Continuous Monitoring (CM):**
+    - The practice of observing applications, infrastructure, and services in real time to identify and resolve issues promptly.
+
+   - **Role in DevOps**:
+    1. **Proactive Issue Detection**: Identifies problems before they impact users.
+    2. **Enhanced Collaboration**: Provides feedback to development, QA, and operations teams.
+    3. **Improved Reliability**: Ensures systems meet SLAs (Service Level Agreements).
+
+   - **Tools**:
+    - Prometheus, Grafana, ELK Stack (Elasticsearch, Logstash, Kibana), Datadog.
+
 
 5. **Tools & Technology**: Set up monitoring in Grafana with a basic dashboard.
 
