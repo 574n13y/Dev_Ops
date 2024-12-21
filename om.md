@@ -92,5 +92,25 @@
 
 
 6. **Scenario**: An application needs real-time monitoring. How would you set it up?
+   * **Plan for Real-Time Monitoring**:
+
+   1. **Select Monitoring Tools**:
+    - **Metrics**: Use Prometheus for collecting real-time metrics.
+    - **Visualization**: Use Grafana for visualizing metrics.
+    - **Logs**: Use ELK Stack for centralized logging.
+
+   2. **Deploy Monitoring Agents**:
+    - Install exporters (e.g., **node_exporter** for system metrics) on application servers.
+
+   3. **Configure Alerts**:
+    - Set up alerting rules in Prometheus.
+    - Integrate Grafana with communication tools like Slack, PagerDuty, or email for notifications.
+
+   4. **Create Dashboards**:
+    - Build dashboards for key metrics like CPU, memory, request latency, and error rates.
+
+   5. **Test Monitoring Setup**:
+    - Simulate high CPU or memory usage to verify alerting and visualization.
+
 
 
