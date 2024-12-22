@@ -93,6 +93,51 @@
 
 
 5. **Tools & Technology**: Write a simple CloudFormation template for a VPC.
+   #### **Example CloudFormation Template for a VPC**:
+    ```yaml
+    AWSTemplateFormatVersion: "2010-09-09"
+    Description: "CloudFormation template for a VPC"
+
+    Resources:
+       MyVPC:
+         Type: "AWS::EC2::VPC"
+         Properties:
+           CidrBlock: "10.0.0.0/16"
+           EnableDnsSupport: true
+           EnableDnsHostnames: true
+           Tags:
+              - Key: "Name"
+                Value: "MyVPC"
+
+       PublicSubnet:
+         Type: "AWS::EC2::Subnet"
+         Properties:
+           VpcId: !Ref MyVPC
+           CidrBlock: "10.0.1.0/24"
+           MapPublicIpOnLaunch: true
+           AvailabilityZone: !Select [ 0, !GetAZs "" ]
+           Tags:
+             - Key: "Name"
+               Value: "PublicSubnet"
+
+       PrivateSubnet:
+          Type: "AWS::EC2::Subnet"
+          Properties:
+          VpcId: !Ref MyVPC
+          CidrBlock: "10.0.2.0/24"
+          AvailabilityZone: !Select [ 1, !GetAZs "" ]
+          Tags:
+            - Key: "Name"
+              Value: "PrivateSubnet"
+    ```
+
+   #### **Steps to Deploy**:
+    1. Save the template as `vpc-template.yaml`.
+    2. Use the AWS Management Console or CLI to deploy:
+       ```bash
+       aws cloudformation create-stack --stack-name MyVPCStack --template-body file://vpc-template.yaml
+       ```
+
 
 6. **Scenario**: Your team needs automated cloud resources. How would you implement this?
 
