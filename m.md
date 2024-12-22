@@ -61,6 +61,20 @@
 
 
 3. **Cloud Computing**: Describe the purpose of AWS CloudFormation.
+   #### **What is AWS CloudFormation?**
+   AWS CloudFormation is an Infrastructure as Code (IaC) service that automates the creation, management, and deployment of AWS resources through templates.
+
+   #### **Benefits**:
+   - **Automation**: Simplifies repetitive tasks.
+   - **Consistency**: Ensures resources are provisioned identically across environments.
+   - **Scalability**: Facilitates rapid scaling by deploying resources quickly.
+   - **Cost Management**: Allows tracking of infrastructure as a single stack for easier budgeting.
+
+   #### **Use Cases**:
+   - Deploying VPCs, EC2 instances, RDS databases, and more.
+   - Automating multi-region or multi-account infrastructure.
+   - Managing complex applications using nested stacks.
+
 
 4. **DevOps**: What is A/B testing, and why is it used?
 
