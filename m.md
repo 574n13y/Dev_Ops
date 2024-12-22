@@ -77,6 +77,20 @@
 
 
 4. **DevOps**: What is A/B testing, and why is it used?
+   #### **What is A/B Testing?**
+   A/B testing is a deployment strategy used to test two versions (A and B) of an application or feature to determine which performs better based on user metrics.
+
+   #### **Why It’s Used**:
+   - **Performance Optimization**: Test changes in UI/UX, performance, or functionality.
+   - **Risk Mitigation**: Gradually introduce changes to a subset of users without affecting all users.
+   - **Data-Driven Decisions**: Make improvements based on actual user behavior and feedback.
+
+   #### **Steps in A/B Testing**:
+   1. Deploy version A (existing version) and version B (new version).
+   2. Split traffic between the two versions (e.g., 50/50 or 80/20).
+   3. Collect and analyze metrics (e.g., click rates, page load times, conversions).
+   4. Gradually roll out the winning version to all users.
+
 
 5. **Tools & Technology**: Write a simple CloudFormation template for a VPC.
 
