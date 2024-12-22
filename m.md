@@ -32,6 +32,33 @@
 
 
 2. **Networking**: Explain IP forwarding and when it’s used.
+   **What is IP Forwarding?**
+   - IP forwarding is the process where a system acts as a router, forwarding packets between different network interfaces. It enables communication between networks.
+
+   #### **When It’s Used**:
+   - **Routing**: To connect multiple networks (e.g., in a router or gateway).
+   - **NAT (Network Address Translation)**: In setups where private IP addresses communicate with public networks.
+   - **VPNs**: For enabling traffic forwarding between a private network and VPN clients.
+
+   #### **Enable IP Forwarding**:
+   - Check current status:
+     ```bash
+     sysctl net.ipv4.ip_forward
+     ```
+   - Enable temporarily:
+     ```bash
+     sudo sysctl -w net.ipv4.ip_forward=1
+     ```
+   - Enable permanently:
+     Add the following to `/etc/sysctl.conf`:
+     ```bash
+     net.ipv4.ip_forward = 1
+     ```
+     Then apply:
+     ```bash
+     sudo sysctl -p
+     ```
+
 
 3. **Cloud Computing**: Describe the purpose of AWS CloudFormation.
 
