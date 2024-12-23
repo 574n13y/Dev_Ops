@@ -66,7 +66,6 @@
 
 
 4. **DevOps**: What’s the difference between build, test, and deploy stages in CI/CD?
-   * -
    1. **Build Stage**:
    - **Purpose**: Converts source code into executable artifacts.
    - **Processes**:
@@ -115,5 +114,17 @@
 
 
 6. **Scenario**: Your team wants to distribute content globally. What solutions would you suggest?
+   ##### **Solution**: Use a **Content Delivery Network (CDN)** like **Amazon CloudFront**.
+
+   **Benefits**:
+    1. **Global Reach**: Delivers content from edge locations closest to users, reducing latency.
+    2. **Scalability**: Handles traffic spikes without impacting performance.
+    3. **Cost Efficiency**: Reduces load on the origin server, lowering operational costs.
+    4. **Security**: Protects content with AWS Shield and enables secure HTTPS delivery.
+
+   **Implementation**:
+    1. Configure an S3 bucket as the origin for CloudFront.
+    2. Enable caching for static assets like images, videos, and scripts.
+    3. Use custom domain names and SSL certificates for branding and security.
 
 
