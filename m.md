@@ -48,6 +48,22 @@
 
 
 3. **Cloud Computing**: Explain the role of Amazon CloudFront.
+   * **Amazon CloudFront** is a global **Content Delivery Network (CDN)** service designed to accelerate content delivery by caching data at edge locations around the world.
+
+   ##### **Key Features**:
+   1. **Low Latency**: Delivers content from edge locations closest to users.
+   2. **High Performance**: Caches frequently accessed data to reduce load on origin servers.
+   3. **Security**:
+    - Integrated with AWS Shield for DDoS protection.
+    - Supports HTTPS for secure content delivery.
+   4. **Customizable**: Configurable caching behavior and origin server settings.
+   5. **Global Reach**: Over 400 points of presence (POPs) worldwide.
+
+   ##### **Use Cases**:
+    - Serving static assets like images, CSS, and JavaScript.
+    - Streaming video or audio content.
+    - Accelerating APIs and dynamic web content.
+
 
 4. **DevOps**: What’s the difference between build, test, and deploy stages in CI/CD?
 
