@@ -93,6 +93,26 @@
 
 
 5. **Tools & Technology**: Set up a Jenkins job to deploy code to an S3 bucket.
+   ##### **Steps**:
+   1. **Install Jenkins Plugins**:
+    - Install the **AWS CLI** and **S3 Publisher** plugins.
+
+   2. **Create a New Jenkins Job**:
+    - Go to Jenkins dashboard > **New Item** > **Freestyle Project**.
+
+   3. **Configure Source Code Management**:
+    - Use Git to pull code from the repository.
+
+   4. **Add Build Steps**:
+    - Install AWS CLI on the Jenkins server.
+    - Add a build step to deploy code to an S3 bucket:
+     ```bash
+     aws s3 cp /path/to/your/files s3://your-bucket-name/ --recursive
+     ```
+
+  5. **Trigger the Job**:
+    - Trigger manually or use a webhook for automated deployment.
+
 
 6. **Scenario**: Your team wants to distribute content globally. What solutions would you suggest?
 
