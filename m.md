@@ -66,6 +66,31 @@
 
 
 4. **DevOps**: What’s the difference between build, test, and deploy stages in CI/CD?
+   * -
+   1. **Build Stage**:
+   - **Purpose**: Converts source code into executable artifacts.
+   - **Processes**:
+    - Compiling code.
+    - Resolving dependencies.
+    - Packaging into formats like `.jar`, `.war`, or `.docker`.
+   - **Tools**: Maven, Gradle, Docker.
+
+   2. **Test Stage**:
+   - **Purpose**: Ensures code quality and functionality through automated tests.
+   - **Processes**:
+    - Unit testing.
+    - Integration testing.
+    - Performance and security testing.
+   - **Tools**: JUnit, Selenium, JMeter.
+
+   3. **Deploy Stage**:
+   - **Purpose**: Releases the built and tested application to production or staging environments.
+   - **Processes**:
+    - Infrastructure provisioning.
+    - Deploying artifacts to servers or containers.
+    - Configuring monitoring tools.
+   - **Tools**: Terraform, Ansible, Kubernetes.
+
 
 5. **Tools & Technology**: Set up a Jenkins job to deploy code to an S3 bucket.
 
