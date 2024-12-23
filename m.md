@@ -27,6 +27,25 @@
 
 
 2. **Networking**: Describe network latency and its impact on applications.
+   * **Network latency** refers to the time it takes for a data packet to travel from the source to the destination and back. It’s often measured in milliseconds (ms). 
+
+   ##### **Impact of Latency on Applications**:
+    - **Web Applications**: High latency causes slow page loads, reducing user satisfaction.
+    - **Streaming Services**: Increased buffering and degraded quality.
+    - **Real-Time Applications**: Critical for applications like online gaming and video conferencing; high latency disrupts user experience.
+    - **APIs**: Impacts response times, leading to slower client-server interactions.
+
+   ##### **Common Causes**:
+    1. Physical distance between client and server.
+    2. Network congestion.
+    3. Inefficient routing.
+    4. Hardware or software limitations.
+
+   ##### **Mitigation Strategies**:
+    - Use Content Delivery Networks (CDNs) to serve content closer to users.
+    - Optimize application code and database queries.
+    - Implement caching mechanisms.
+
 
 3. **Cloud Computing**: Explain the role of Amazon CloudFront.
 
