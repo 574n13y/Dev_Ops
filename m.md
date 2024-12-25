@@ -64,7 +64,20 @@
     - Retrieval times: 12+ hours.
     - Cost: $
 
+
 4. **DevOps**: Define load testing, stress testing, and performance testing.
+   - **Load Testing**:
+    - Tests system behavior under expected load conditions.
+    - Goal: Ensure the system meets performance expectations.
+
+   - **Stress Testing**:
+    - Tests system behavior under extreme conditions (beyond maximum capacity).
+    - Goal: Identify system breaking points.
+
+   - **Performance Testing**:
+    - Broad category encompassing load and stress tests.
+    - Goal: Evaluate system speed, scalability, and responsiveness.
+
 
 5. **Tools & Technology**: Set up a basic load test with Apache JMeter.
 
