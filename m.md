@@ -33,6 +33,36 @@
 
 
 3. **Cloud Computing**: Explain the differences between AWS S3 storage classes.
+   - **S3 Storage Classes**:
+   1. **S3 Standard**:  
+    - High availability, durability, and performance.  
+    - Best for frequently accessed data.
+    - Cost: $$$
+
+   2. **S3 Intelligent-Tiering**:  
+    - Automatically moves data between access tiers based on usage.
+    - Best for data with unpredictable access patterns.
+    - Cost: $$ (monitoring fee applies).
+
+   3. **S3 Standard-IA (Infrequent Access)**:  
+    - Lower storage costs, higher retrieval costs.
+    - Best for infrequently accessed data.
+    - Cost: $
+
+   4. **S3 One Zone-IA**:  
+    - Same as Standard-IA but stored in a single AZ.
+    - Best for data that can be recreated if lost.
+    - Cost: $
+
+   5. **S3 Glacier**:  
+    - Low-cost storage for long-term archiving.
+    - Retrieval times: Minutes to hours.
+    - Cost: $$ (retrieval fees).
+
+   6. **S3 Glacier Deep Archive**:  
+    - Cheapest option for data accessed once or twice a year.
+    - Retrieval times: 12+ hours.
+    - Cost: $
 
 4. **DevOps**: Define load testing, stress testing, and performance testing.
 
