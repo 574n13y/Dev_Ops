@@ -17,6 +17,20 @@
 
 
 2. **Networking**: What is ICMP, and how does it work?
+  - **ICMP (Internet Control Message Protocol)**:
+   - A network-layer protocol used by devices to communicate error messages and operational information.
+   - Common uses:
+    - **Ping**: Checks if a host is reachable.
+    - **Traceroute**: Diagnoses the path packets take.
+    - **Error Reporting**: Reports unreachable hosts or network issues.
+
+  - **How it works**:
+   - ICMP packets are encapsulated within IP packets but do not carry application data.
+   - Types of ICMP messages:
+    - Type 0: Echo Reply (response to ping)
+    - Type 3: Destination Unreachable
+    - Type 8: Echo Request (ping)
+
 
 3. **Cloud Computing**: Explain the differences between AWS S3 storage classes.
 
