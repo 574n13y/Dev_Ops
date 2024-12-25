@@ -99,5 +99,14 @@
 
 
 6. **Scenario**: An application needs to handle sudden traffic spikes. How would you test it?
+   - **Testing for Traffic Spikes**:
+   1. Set up **Load Testing** tools (e.g., JMeter, Locust).
+   2. Simulate varying traffic conditions:
+    - Gradual increase to peak traffic.
+    - Sudden surge to simulate spikes.
+   3. Monitor application behavior:
+    - Check for latency, error rates, and throughput.
+   4. Use **Auto Scaling** (e.g., AWS EC2 Auto Scaling or Kubernetes HPA) to handle spikes dynamically.
+
 
 
