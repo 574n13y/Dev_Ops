@@ -80,6 +80,23 @@
 
 
 5. **Tools & Technology**: Set up a basic load test with Apache JMeter.
+   * **Steps to Set Up Apache JMeter**:
+   1. **Download and Install JMeter**:
+    - Download: [JMeter Official Site](https://jmeter.apache.org/download_jmeter.cgi).
+    - Extract and run:  
+       ```bash
+       ./jmeter
+       ```
+
+   2. **Create a Test Plan**:
+    - Add a **Thread Group** (number of users, ramp-up time, loops).
+    - Add a **Sampler** (HTTP Request) to simulate API calls.
+    - Add a **Listener** (View Results Tree) to view the test outcome.
+
+   3. **Run the Test**:
+    - Start the test by clicking the green triangle button.
+    - Analyze the results in the Listener.
+
 
 6. **Scenario**: An application needs to handle sudden traffic spikes. How would you test it?
 
