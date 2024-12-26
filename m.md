@@ -128,4 +128,14 @@
 
 
 6. **Scenario**: A high-availability application needs shared storage. What AWS solution would you recommend?
+   - **Recommendation**: AWS Elastic File System (EFS).
+   - **Why?**  
+    - Fully managed and highly available across multiple AZs.
+    - Scalable and supports simultaneous access from multiple EC2 instances.
+    - Compatible with services like Kubernetes (EKS) and Lambda.
+
+   - **Alternative Options**:
+    - **Amazon FSx**: For Windows- or Lustre-based workloads.
+    - **Amazon S3**: For object-based storage with higher durability.
+
 
