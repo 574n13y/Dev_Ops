@@ -34,7 +34,22 @@
    - `bzip2`: Slower, better compression.
 
 
+
 2. **Networking**: Explain the purpose and basics of IPsec.
+   - **What is IPsec?**  
+  Internet Protocol Security (IPsec) is a suite of protocols designed to secure IP communications by authenticating and encrypting each packet in a data stream.
+
+   - **Purpose**:
+    - Provides **data integrity**, **authentication**, and **encryption**.
+    - Protects data during transit over untrusted networks like the Internet.
+    - Used in VPNs (Virtual Private Networks) to secure connections.
+
+   - **Key Components**:
+    1. **Authentication Header (AH)**: Ensures data integrity and authenticity.
+    2. **Encapsulating Security Payload (ESP)**: Provides confidentiality, integrity, and authentication.
+    3. **IKE (Internet Key Exchange)**: Establishes security associations and manages encryption keys.
+
+
 
 3. **Cloud Computing**: Describe AWS Elastic File System (EFS) and its use cases.
 
