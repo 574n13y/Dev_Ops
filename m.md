@@ -52,6 +52,23 @@
 
 
 3. **Cloud Computing**: Describe AWS Elastic File System (EFS) and its use cases.
+   - **What is EFS?**  
+  AWS Elastic File System (EFS) is a fully managed, scalable, shared file storage service for use with AWS services like EC2.
+
+  - **Features**:
+   - **Elastic**: Automatically scales up or down.
+   - **Shared Access**: Multiple EC2 instances can mount the same file system.
+   - **Durability**: Stores data redundantly across multiple Availability Zones (AZs).
+   - **Performance Modes**:
+    - General Purpose: Low latency.
+    - Max I/O: High throughput for massive workloads.
+
+   - **Use Cases**:
+    - Shared storage for web servers.
+    - Content management systems.
+    - Machine learning and big data analytics.
+
+
 
 4. **DevOps**: What is release management, and why is it important?
 
