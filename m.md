@@ -87,6 +87,45 @@
 
 
 5. **Tools & Technology**: Use Terraform to deploy an EFS mount to an EC2 instance.
+   * **Steps to Set Up Using Terraform**:
+
+   1. **Define an EFS File System**:
+      ```hcl
+      resource "aws_efs_file_system" "example" {
+        creation_token = "efs-example"
+        lifecycle_policy {
+            transition_to_ia = "AFTER_30_DAYS"
+          }
+       }
+      ```
+
+   2. **Create a Security Group**:
+      ```hcl
+      resource "aws_security_group" "efs_sg" {
+         name_prefix = "efs-sg-"
+           ingress {
+             from_port   = 2049
+             to_port     = 2049
+             protocol    = "tcp"
+             cidr_blocks = ["0.0.0.0/0"]
+            }
+         }
+      ```
+
+   3. **Attach EFS to EC2 Instance**:
+    - Mount the EFS file system in your user data script:
+       ```bash
+       sudo yum install -y amazon-efs-utils
+       sudo mount -t efs fs-12345678:/ /mnt/efs
+       ```
+
+   4. **Deploy with Terraform**:
+      ```bash
+      terraform init
+      terraform apply
+      ```
+
+
 
 6. **Scenario**: A high-availability application needs shared storage. What AWS solution would you recommend?
 
