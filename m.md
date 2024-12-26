@@ -71,6 +71,20 @@
 
 
 4. **DevOps**: What is release management, and why is it important?
+   - **Release Management**:  
+  The process of planning, scheduling, and controlling the deployment of software releases to ensure they are delivered efficiently and with minimal risk.
+
+   - **Key Activities**:
+    - Coordinating between teams (Dev, QA, Ops).
+    - Creating release plans and schedules.
+    - Managing rollback plans in case of failure.
+
+   - **Importance**:
+    - Ensures **reliable deployments** with minimal downtime.
+    - Provides **visibility** and control over changes.
+    - Improves **customer satisfaction** by delivering high-quality features.
+
+
 
 5. **Tools & Technology**: Use Terraform to deploy an EFS mount to an EC2 instance.
 
