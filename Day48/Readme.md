@@ -125,7 +125,7 @@
       terraform apply
       ```
 
-
+   - Click [Here](https://github.com/574n13y/dev/blob/main/deploy_Efs%26_attach_to_Ec2.tf) for  complete tf script 
 
 6. **Scenario**: A high-availability application needs shared storage. What AWS solution would you recommend?
    - **Recommendation**: AWS Elastic File System (EFS).
