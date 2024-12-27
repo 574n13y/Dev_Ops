@@ -37,6 +37,26 @@
 
 
 3. **Cloud Computing**: Explain AWS IAM policies and how to attach them to users or groups.
+   - **What are IAM Policies?**
+    - JSON documents defining permissions for AWS services and resources.
+    - Types of Policies:
+    1. **Managed Policies**: Predefined by AWS or created by the user.
+    2. **Inline Policies**: Directly attached to a user, group, or role.
+
+   - **Key Elements**:
+    - **Version**: Specifies the policy language version.
+    - **Statement**: Defines permissions (effect, action, resource, condition).
+
+   - **Attaching Policies**:
+    - To a user:
+      ```bash
+      aws iam attach-user-policy --user-name <user_name> --policy-arn <policy_arn>
+      ```
+    - To a group:
+      ```bash
+      aws iam attach-group-policy --group-name <group_name> --policy-arn <policy_arn>
+      ```
+
 
 4. **DevOps**: What are the key principles of GitOps?
 
