@@ -59,6 +59,16 @@
 
 
 4. **DevOps**: What are the key principles of GitOps?
+   - **GitOps Principles**:
+    1. **Versioned Infrastructure**: Store infrastructure definitions in Git.
+    2. **Declarative Configuration**: Define the desired system state in code.
+    3. **Automated Deployment**: Use CI/CD pipelines to apply changes.
+    4. **Self-Healing Systems**: Continuously sync the desired state using tools like ArgoCD or Flux.
+    5. **Auditability**: Every change is recorded in Git, ensuring traceability.
+
+   - **Why GitOps?**
+    - Ensures consistency, scalability, and fast recovery during failures.
+
 
 5. **Tools & Technology**: Install Ansible and write a basic playbook to install Apache.
 
