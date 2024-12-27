@@ -116,5 +116,15 @@
 
 
 6. **Scenario**: Your organization wants automated server setups. How would you implement this with Ansible?
+   - **Implementation Plan**:
+   1. **Centralized Playbooks**:
+    - Create playbooks to standardize server configurations (e.g., installing software, configuring firewalls).
+   2. **Inventory Management**:
+    - Use dynamic inventory for cloud environments like AWS.
+   3. **CI/CD Integration**:
+    - Automate playbook execution using Jenkins or GitLab CI/CD pipelines.
+   4. **Testing**:
+    - Use tools like Molecule to test playbooks.
+
 
 
