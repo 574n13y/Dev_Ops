@@ -22,6 +22,19 @@
 
 
 2. **Networking**: Describe the concept of VLANs and how they work in networking.
+   - **What is a VLAN?**
+    - A **Virtual Local Area Network (VLAN)** is a logical grouping of devices in the same broadcast domain, even if they are physically in different locations.
+
+   - **How It Works**:
+    - VLANs use **tagging** (802.1Q standard) to separate traffic between devices.
+    - A VLAN ID (1–4094) is assigned to each group of devices.
+    - Switches route traffic between VLANs using VLAN tags.
+
+   - **Advantages**:
+    - Improves **network segmentation** and security.
+    - Reduces broadcast traffic.
+    - Simplifies network management.
+
 
 3. **Cloud Computing**: Explain AWS IAM policies and how to attach them to users or groups.
 
