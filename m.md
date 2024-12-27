@@ -71,6 +71,49 @@
 
 
 5. **Tools & Technology**: Install Ansible and write a basic playbook to install Apache.
+   * **Installation**:
+   1. Install Ansible:
+      ```bash
+      sudo apt update
+      sudo apt install ansible -y
+      ```
+   2. Verify installation:
+      ```bash
+      ansible --version
+      ```
+
+   **Write a Playbook**:
+   - Create a file named `apache_install.yml`:
+     ```yaml
+     ---
+     - name: Install Apache Web Server
+       hosts: all
+       become: true
+       tasks:
+         - name: Install Apache
+           apt:
+             name: apache2
+             state: present
+
+         - name: Ensure Apache is running
+             service:
+             name: apache2
+             state: started
+             enabled: true
+     ```
+
+   **Run the Playbook**:
+   1. Create an inventory file `inventory`:
+      ```
+      [web]
+      <your_server_ip> ansible_user=ubuntu ansible_ssh_private_key_file=<path_to_private_key>
+      ```
+
+   2. Execute the playbook:
+      ```bash
+      ansible-playbook -i inventory apache_install.yml
+      ```
+
 
 6. **Scenario**: Your organization wants automated server setups. How would you implement this with Ansible?
 
