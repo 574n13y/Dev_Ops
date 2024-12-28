@@ -22,6 +22,18 @@
 
 
 2. **Networking**: What is DHCP, and how does it assign IP addresses?
+   - **Dynamic Host Configuration Protocol (DHCP)** automates the assignment of IP addresses, subnet masks, gateways, and DNS servers to devices on a network.
+    - A DHCP server maintains a pool of IP addresses and assigns them dynamically to clients.
+   - Process:
+    1. **Discover**: Client broadcasts a DHCP discover message.
+    2. **Offer**: DHCP server responds with an available IP.
+    3. **Request**: Client requests the offered IP.
+    4. **Ack**: Server acknowledges and assigns the IP.
+
+   **Use Case:
+    - Ensures efficient use of IP addresses in large networks.
+    - Reduces manual configuration errors.
+
 
 3. **Cloud Computing**: Explain the purpose of AWS EC2 AMIs (Amazon Machine Images).
 
