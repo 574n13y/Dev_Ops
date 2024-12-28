@@ -67,6 +67,40 @@
 
 
 5. **Tools & Technology**: Create a simple playbook in Ansible to install NGINX on multiple servers.
+   * **Inventory File (hosts.yml):**
+     ```yaml
+     [web_servers]
+     server1 ansible_host=192.168.1.101 ansible_user=ubuntu
+     server2 ansible_host=192.168.1.102 ansible_user=ubuntu
+     ```
+
+   * **Ansible Playbook (install_nginx.yml):**
+     ```yaml
+     - name: Install and configure NGINX on web servers
+       hosts: web_servers
+       become: true
+       tasks:
+         - name: Update apt cache
+            apt:
+             update_cache: yes
+
+         - name: Install NGINX
+            apt:
+             name: nginx
+             state: present
+
+         - name: Ensure NGINX is running
+             service:
+             name: nginx
+             state: started
+             enabled: true
+     ```
+
+   **Execute Playbook:**
+     ```bash
+     ansible-playbook -i hosts.yml install_nginx.yml
+     ```
+
 
 6. **Scenario**: Your team needs to provision a web server fleet. How would you automate it?
 
