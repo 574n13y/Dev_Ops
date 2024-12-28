@@ -30,12 +30,26 @@
     3. **Request**: Client requests the offered IP.
     4. **Ack**: Server acknowledges and assigns the IP.
 
-   **Use Case:
+   **Use Case**:
     - Ensures efficient use of IP addresses in large networks.
     - Reduces manual configuration errors.
 
 
 3. **Cloud Computing**: Explain the purpose of AWS EC2 AMIs (Amazon Machine Images).
+   - **Amazon Machine Images (AMIs)** are pre-configured virtual machine templates that include:
+    - Operating system (e.g., Ubuntu, Amazon Linux).
+    - Application software.
+    - Custom configurations.
+   - AMIs allow you to:
+    - Quickly launch new instances with identical configurations.
+    - Create backups of your current EC2 instances.
+    - Share pre-configured environments across accounts.
+
+   **Types of AMIs**:
+    - **Public**: Shared by AWS or other users.
+    - **Private**: Created by you and only accessible to your account.
+    - **AWS Marketplace**: Paid AMIs with third-party software.
+
 
 4. **DevOps**: Describe how GitOps is different from traditional CI/CD.
 
