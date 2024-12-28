@@ -103,5 +103,17 @@
 
 
 6. **Scenario**: Your team needs to provision a web server fleet. How would you automate it?
+   - Use **Ansible** to automate the installation of web servers like NGINX or Apache.
+   - Steps:
+    1. Create an inventory file for the target servers.
+    2. Write a playbook to install and configure the web server.
+    3. Use dynamic inventory if the servers are hosted in the cloud (e.g., AWS EC2).
+    4. Schedule the playbook to run periodically or on-demand using tools like Jenkins or cron.
+
+   **Example Workflow:**
+   1. **Provision Servers**: Use Terraform to create EC2 instances.
+   2. **Automate Setup**: Run the Ansible playbook to install NGINX.
+   3. **Load Balancing**: Integrate with AWS ALB (Application Load Balancer) for scalability.
+
 
 
