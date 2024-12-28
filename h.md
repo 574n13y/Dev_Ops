@@ -52,6 +52,19 @@
 
 
 4. **DevOps**: Describe how GitOps is different from traditional CI/CD.
+   - **Traditional CI/CD**:
+    - Focuses on automating build, test, and deploy pipelines.
+    - Developers manually trigger deployments or use pipeline triggers.
+   - **GitOps**:
+    - Entire infrastructure and application state is stored as code in Git repositories.
+    - Deployments are triggered by changes to the Git repository.
+    - Uses tools like ArgoCD or Flux to reconcile desired and actual states.
+
+   **Key Benefits of GitOps**:
+    - Enhanced auditability (all changes are in Git).
+    - Better collaboration (Git as the single source of truth).
+    - Faster rollback by reverting Git commits.
+
 
 5. **Tools & Technology**: Create a simple playbook in Ansible to install NGINX on multiple servers.
 
