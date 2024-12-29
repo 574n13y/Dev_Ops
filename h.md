@@ -113,7 +113,32 @@
        ```
 
 
-
 6. **Scenario**: Your web servers need customized configurations. How would you manage this across multiple servers?
+   - **Approach**:
+    1. **Use Configuration Management Tools**:
+    - Tools like Ansible, Chef, or Puppet can manage configurations across servers consistently.
+    2. **Group Servers Based on Roles**:
+    - Define server groups (e.g., `web`, `db`) in your inventory file.
+    3. **Templates for Customization**:
+    - Use templates (e.g., Jinja2 in Ansible) to generate configuration files dynamically.
+    - Example:
+       ```jinja
+       server_name {{ inventory_hostname }};
+       root /var/www/{{ app_name }};
+       ```
+    4. **Push Configurations with Ansible**:
+       ```yaml
+       - name: Configure web servers
+         hosts: webservers
+         tasks:
+           - name: Deploy Nginx configuration
+             template:
+               src: templates/nginx.conf.j2
+               dest: /etc/nginx/nginx.conf
+               notify: restart nginx
+       ```
+    5. **Test and Validate**:
+    - After deployment, test configurations to ensure correctness.
+
 
 
