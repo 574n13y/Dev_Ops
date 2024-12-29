@@ -86,6 +86,33 @@
 
 
 5. **Tools & Technology**: Set up a basic environment variable file in Ansible.
+   - **Steps**:
+    1. **Create a Variable File**:
+    - Define your environment variables in a YAML file:
+       ```yaml
+       # vars/env_vars.yml
+       app_name: "MyApp"
+       db_host: "db.example.com"
+       db_user: "admin"
+       db_password: "securepassword"
+       ```
+    2. **Include the File in a Playbook**:
+       ```yaml
+       - name: Deploy application
+         hosts: webservers
+         vars_files:
+           - vars/env_vars.yml
+             tasks:
+           - name: Display environment variables
+             debug:
+               msg: "Connecting to database {{ db_host }} as {{ db_user }}"
+       ```
+    3. **Run the Playbook**:
+       ```bash
+       ansible-playbook deploy.yml
+       ```
+
+
 
 6. **Scenario**: Your web servers need customized configurations. How would you manage this across multiple servers?
 
