@@ -16,16 +16,17 @@
     sudo mount -o ro /dev/sdb1 /mnt/mydrive
     ```
 
-  - **Unmounting**:
-   - The `umount` command detaches a mounted filesystem.
-   - Example:
-     ```bash
-     sudo umount /mnt/mydrive
-     ```
-     Alternatively, you can use the device name:
-     ```bash
-     sudo umount /dev/sdb1
-     ```
+   - **Unmounting**:
+    - The `umount` command detaches a mounted filesystem.
+    - Example:
+      ```bash
+      sudo umount /mnt/mydrive
+      ```
+      Alternatively, you can use the device name:
+      ```bash
+      sudo umount /dev/sdb1
+      ```
+
 
 2. **Networking**: Explain ARP (Address Resolution Protocol) and its role in networking.
    - **What is ARP?**
@@ -40,6 +41,7 @@
    - **Role in Networking**:
     - ARP resolves IP addresses to MAC addresses, which are required for Ethernet-based communication.
     - It is critical in ensuring proper routing of packets within local networks.
+
 
 
 3. **Cloud Computing**: Describe the process of creating a custom AMI.
@@ -57,6 +59,7 @@
     - This will create an AMI that can be used to launch instances with the same configuration.
     4. **Verify the AMI**:
     - Launch a new instance using the custom AMI to ensure that everything works as expected.
+
 
 
 4. **DevOps**: What is continuous deployment, and how is it implemented?
@@ -79,6 +82,7 @@
     - Monitor deployments closely.
     - Use feature flags to control new features.
     - Set up rollback mechanisms in case of issues.
+
 
 
 5. **Tools & Technology**: Set up a basic environment variable file in Ansible.
