@@ -28,6 +28,19 @@
      ```
 
 2. **Networking**: Explain ARP (Address Resolution Protocol) and its role in networking.
+   - **What is ARP?**
+    - ARP is a protocol used to map an IP address to a MAC (Media Access Control) address on a local area network.
+    - It ensures that devices can communicate with each other on the same subnet.
+
+   - **How it works**:
+    - When a device wants to send data to another device on the same subnet, it sends an ARP request asking, "Who has this IP address?"
+    - The device with the matching IP replies with its MAC address.
+    - The requesting device then uses this MAC address to send the data at the data link layer.
+
+   - **Role in Networking**:
+    - ARP resolves IP addresses to MAC addresses, which are required for Ethernet-based communication.
+    - It is critical in ensuring proper routing of packets within local networks.
+
 
 3. **Cloud Computing**: Describe the process of creating a custom AMI.
 
