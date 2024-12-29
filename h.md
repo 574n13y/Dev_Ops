@@ -68,14 +68,14 @@
     - It eliminates manual approvals, focusing instead on rigorous automated testing.
 
   - **Implementation Steps**:
-   1. **Version Control**:
+    1. **Version Control**:
     - Use Git or similar tools to track changes in the application code.
-   2. **Automated Builds**:
+    2. **Automated Builds**:
     - Use CI/CD tools like Jenkins, GitLab CI, or GitHub Actions to build the application automatically when changes are pushed.
-   3. **Automated Testing**:
+    3. **Automated Testing**:
     - Implement unit, integration, and system tests.
     - If all tests pass, the pipeline proceeds to deployment.
-   4. **Automated Deployment**:
+    4. **Automated Deployment**:
     - Use deployment tools (e.g., Kubernetes, Terraform, Ansible) to roll out changes to production.
 
    - **Best Practices**:
