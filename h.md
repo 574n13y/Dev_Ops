@@ -60,6 +60,26 @@
 
 
 4. **DevOps**: What is continuous deployment, and how is it implemented?
+   - **What is Continuous Deployment?**
+    - Continuous deployment is the practice of automatically deploying every change that passes automated tests into production.
+    - It eliminates manual approvals, focusing instead on rigorous automated testing.
+
+  - **Implementation Steps**:
+   1. **Version Control**:
+    - Use Git or similar tools to track changes in the application code.
+   2. **Automated Builds**:
+    - Use CI/CD tools like Jenkins, GitLab CI, or GitHub Actions to build the application automatically when changes are pushed.
+   3. **Automated Testing**:
+    - Implement unit, integration, and system tests.
+    - If all tests pass, the pipeline proceeds to deployment.
+   4. **Automated Deployment**:
+    - Use deployment tools (e.g., Kubernetes, Terraform, Ansible) to roll out changes to production.
+
+   - **Best Practices**:
+    - Monitor deployments closely.
+    - Use feature flags to control new features.
+    - Set up rollback mechanisms in case of issues.
+
 
 5. **Tools & Technology**: Set up a basic environment variable file in Ansible.
 
