@@ -43,6 +43,21 @@
 
 
 3. **Cloud Computing**: Describe the process of creating a custom AMI.
+    1. **Prepare the Instance**:
+    - Launch an EC2 instance with the desired OS and configurations.
+    - Install required software, packages, or make customizations.
+    2. **Clean Up the Instance**:
+    - Remove temporary files, logs, and sensitive data.
+    - Stop unnecessary services to reduce the AMI size.
+    3. **Create the AMI**:
+    - Use the AWS Management Console or CLI to create the AMI:
+      ```bash
+      aws ec2 create-image --instance-id <instance_id> --name "<ami_name>" --description "<description>"
+      ```
+    - This will create an AMI that can be used to launch instances with the same configuration.
+    4. **Verify the AMI**:
+    - Launch a new instance using the custom AMI to ensure that everything works as expected.
+
 
 4. **DevOps**: What is continuous deployment, and how is it implemented?
 
