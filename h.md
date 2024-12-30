@@ -69,21 +69,35 @@
 
 
 5. **Tools & Technology**: Set up a monitoring dashboard in CloudWatch for CPU and memory.
-   1. **Navigate to CloudWatch** in the AWS Management Console.
-   2. **Create a Dashboard**:
+    1. **Navigate to CloudWatch** in the AWS Management Console.
+    2. **Create a Dashboard**:
     - Go to the **Dashboards** section.
     - Click **Create Dashboard**.
     - Name the dashboard.
-  3. **Add Widgets**:
+    3. **Add Widgets**:
     - Select the widget type (e.g., Line Graph).
     - Choose the metrics:
     * CPU Utilization: `AWS/EC2 -> InstanceId -> CPUUtilization`.
     * Memory Utilization: Use **CloudWatch Agent** to collect memory metrics.
-  4. **Save the Dashboard**:
+    4. **Save the Dashboard**:
     - Customize the layout and save changes.
     - Set alarms for thresholds like 80% CPU usage.
 
 
 6. **Scenario**: Your application needs performance monitoring. How would you set it up?
+    1. **Enable Monitoring**:
+    - Use AWS CloudWatch to track metrics like CPU, memory, disk I/O, and network usage.
+    - Install the **CloudWatch Agent** for in-depth metrics like memory utilization and disk space.
+    2. **Create Alarms**:
+    - Set alarms for high CPU or memory usage.
+    - Example: Notify via SNS when CPU usage exceeds 80%.
+    3. **Centralized Logs**:
+    - Use **CloudWatch Logs** to collect application and system logs.
+    4. **Visualization**:
+    - Create dashboards to monitor real-time performance.
+    - Add widgets for key metrics and alarms.
+    5. **Scaling**:
+    - Use CloudWatch alarms to trigger **Auto Scaling** for handling high traffic.
 
 
+   
