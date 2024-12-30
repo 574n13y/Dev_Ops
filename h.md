@@ -57,6 +57,16 @@
 
 
 4. **DevOps**: Explain blue-green deployment and its advantages.
+   - **Blue-Green Deployment** involves maintaining two environments:
+   - **Blue**: The current production environment.
+   - **Green**: The environment for deploying the new version.
+   - During deployment, traffic is switched from Blue to Green.
+
+   #### Advantages:
+    - **Zero Downtime**: Traffic is seamlessly routed to the new version.
+    - **Rollback Capability**: If issues arise, traffic can revert to the Blue environment.
+    - **Testing in Production**: Green environment can be tested with real traffic before full switch-over.
+
 
 5. **Tools & Technology**: Set up a monitoring dashboard in CloudWatch for CPU and memory.
 
