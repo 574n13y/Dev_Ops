@@ -27,6 +27,20 @@
 
 
 2. **Networking**: Define MTU (Maximum Transmission Unit) and its effect on networks.
+   - **MTU** is the largest size of a packet that can be transmitted over a network without fragmentation.
+   
+   - Default MTU sizes:
+    - Ethernet: 1500 bytes.
+    - Jumbo frames: Up to 9000 bytes.
+   
+   - **Impact of MTU**:
+    - Larger MTU improves efficiency by reducing the number of packets.
+    - Smaller MTU can reduce latency but increases overhead.
+    - Mismatched MTU settings may cause packet loss or fragmentation.
+
+   #### Use Case:
+    - MTU tuning is essential for applications that transfer large files or stream video to avoid performance degradation.
+
 
 3. **Cloud Computing**: Discuss AWS CloudWatch and its monitoring capabilities.
 
