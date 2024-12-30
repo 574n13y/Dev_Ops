@@ -1,6 +1,30 @@
 # Day 52
 
 1. **Linux**: Use `chown` to change file and directory ownership.
+   - The `chown` command changes the **ownership** of files or directories in Linux.
+   - Ownership has two parts:
+    - **User**: The owner of the file.
+    - **Group**: A group of users that can access the file.
+
+   #### Syntax:
+        ```bash
+        chown [OPTIONS] USER[:GROUP] FILE
+        ```
+
+   #### Examples:
+   - Change the owner of a file:
+     ```bash
+     chown john file.txt
+     ```
+   - Change the owner and group:
+     ```bash
+     chown john:developers file.txt
+     ```
+   - Change ownership recursively (e.g., for directories):
+     ```bash
+     chown -R john:developers /path/to/directory
+     ```
+
 
 2. **Networking**: Define MTU (Maximum Transmission Unit) and its effect on networks.
 
