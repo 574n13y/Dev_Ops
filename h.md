@@ -43,6 +43,18 @@
 
 
 3. **Cloud Computing**: Discuss AWS CloudWatch and its monitoring capabilities.
+   - **AWS CloudWatch** is a monitoring service for AWS resources and applications.
+   - **Capabilities**:
+    - Monitor metrics like CPU usage, memory, and disk utilization.
+    - Collect and analyze logs using CloudWatch Logs.
+    - Set alarms to notify users of thresholds or anomalies.
+    - Create dashboards for real-time monitoring.
+    - Use insights for troubleshooting and debugging.
+
+   #### Use Case:
+    - Monitor an EC2 instance's CPU and memory usage.
+    - Set up alarms to detect when CPU usage exceeds 80%.
+
 
 4. **DevOps**: Explain blue-green deployment and its advantages.
 
