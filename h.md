@@ -62,6 +62,18 @@
 
 
 4. **DevOps**: What is canary deployment, and when would you use it?
+   - **Canary Deployment** is a strategy where new changes are deployed to a small subset of users before being rolled out to the entire user base.
+  
+   #### **Key Features**:
+    1. Gradual rollouts reduce risks associated with failures.
+    2. Allows real-world testing for a controlled audience.
+    3. Metrics and user feedback help validate the deployment.
+
+   #### **When to Use It**:
+    - Launching **new features**.
+    - Rolling out **performance improvements**.
+    - Deploying changes in **high-availability applications**.
+
 
 5. **Tools & Technology**: Configure a load balancer on AWS.
 
