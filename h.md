@@ -95,5 +95,19 @@
 
 
 6. **Scenario**: Your application requires gradual feature rollouts. Which deployment strategy would you choose?
+   #### **Recommended Deployment Strategy**: 
+    **Canary Deployment**
+    - Set up a load balancer to distribute traffic between the stable version and the new version.
+    - Gradually increase traffic to the new version while monitoring key metrics like latency, error rates, and user feedback.
+
+---
+
+   ### **Practice Task**
+    1. Configure an **Application Load Balancer** with:
+    - Two target groups: one for the stable application version and another for the canary version.
+    - Traffic routing rules (e.g., 90% to stable, 10% to canary).
+    
+    2. Use **CloudWatch** metrics to monitor performance and make data-driven decisions about rolling back or scaling up the deployment.
+
 
 
