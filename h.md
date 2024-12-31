@@ -76,6 +76,23 @@
 
 
 5. **Tools & Technology**: Configure a load balancer on AWS.
+   #### **Steps**:
+    1. **Create Target Group**:
+    - Navigate to **EC2 Dashboard > Target Groups**.
+    - Define your targets (EC2 instances, IP addresses).
+    
+    2. **Create an ELB**:
+    - Navigate to **EC2 Dashboard > Load Balancers**.
+    - Choose the type of ELB (Application, Network, etc.).
+    - Configure listeners (e.g., HTTP or HTTPS).
+    
+    3. **Register Targets**:
+    - Associate the target group created earlier.
+    - Perform health checks for target monitoring.
+    
+    4. **Test the Load Balancer**:
+    - Use the DNS name of the ELB to access your application.
+
 
 6. **Scenario**: Your application requires gradual feature rollouts. Which deployment strategy would you choose?
 
