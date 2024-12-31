@@ -37,6 +37,29 @@
 
 
 3. **Cloud Computing**: Describe how AWS Elastic Load Balancing (ELB) works.
+   - **AWS ELB** automatically distributes incoming application traffic across multiple targets, such as EC2 instances, containers, and IP addresses.
+  
+   #### **Types of ELBs**:
+    1. **Application Load Balancer (ALB)**:
+    - Operates at the **Layer 7** (HTTP/HTTPS).
+    - Ideal for microservices and content-based routing.
+   
+    2. **Network Load Balancer (NLB)**:
+    - Operates at **Layer 4** (TCP/UDP).
+    - Handles high-performance, low-latency traffic.
+   
+    3. **Gateway Load Balancer (GWLB)**:
+    - Distributes traffic for virtual appliances.
+   
+    4. **Classic Load Balancer (CLB)**:
+    - Operates at both Layer 4 and Layer 7.
+    - Suitable for legacy applications.
+
+   #### **How It Works**:
+    1. Distributes traffic based on the configured routing rules.
+    2. Monitors health of targets using health checks.
+    3. Automatically scales based on traffic demands.
+
 
 4. **DevOps**: What is canary deployment, and when would you use it?
 
