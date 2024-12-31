@@ -25,6 +25,16 @@
 
 
 2. **Networking**: What is IPv6, and why is it important?
+   - **IPv6** (Internet Protocol Version 6) is the successor to IPv4, designed to address the exhaustion of IPv4 addresses. It provides:
+    - A **128-bit address space**: ~340 undecillion unique addresses.
+    - **Built-in security**: IPsec is mandatory for IPv6.
+    - **Efficient routing and autoconfiguration**.
+  
+   #### **Why is IPv6 Important?**
+    1. Addresses the **IPv4 address exhaustion**.
+    2. Improves **performance** for large-scale networks.
+    3. Facilitates **IoT** and other modern technologies requiring massive address allocation.
+
 
 3. **Cloud Computing**: Describe how AWS Elastic Load Balancing (ELB) works.
 
