@@ -95,4 +95,15 @@
 
 
 6. **Scenario**: Your application’s traffic fluctuates significantly. How would you ensure scalability?
+    1. **Implement Auto Scaling**:
+    - Use AWS Auto Scaling with scaling policies tied to traffic metrics like CPU utilization or request count.
+    2. **Use Elastic Load Balancing**:
+    - Distribute traffic evenly across the scaling fleet.
+    3. **Monitor Performance**:
+    - Set up alarms in AWS CloudWatch to track resource usage and scalability.
+    4. **Enable Caching**:
+    - Use services like Amazon CloudFront or ElastiCache to handle repetitive requests.
+    5. **Adopt a CDN**:
+    - Use content delivery networks to reduce server load by caching static content.
+
 
