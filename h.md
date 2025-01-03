@@ -31,6 +31,16 @@
 
 
 3. **Cloud Computing**: Describe the concept of AWS Auto Scaling.
+   - **Definition**:  
+     AWS Auto Scaling automatically adjusts the number of instances in a fleet based on traffic patterns. It helps maintain application performance while minimizing costs.
+   - **Key Features**:
+    - **Dynamic Scaling**: Responds to real-time demand changes.
+    - **Scheduled Scaling**: Scales based on predefined time patterns.
+    - **Health Monitoring**: Replaces unhealthy instances.
+   - **Use Cases**:
+    - Traffic spikes (e.g., during a sale or product launch).
+    - Seasonal workloads.
+
 
 4. **DevOps**: Explain the role of a load balancer in a microservices architecture.
 
