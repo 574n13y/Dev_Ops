@@ -43,6 +43,15 @@
 
 
 4. **DevOps**: Explain the role of a load balancer in a microservices architecture.
+   - **Definition**:  
+     A load balancer distributes incoming traffic across multiple servers to ensure no single server is overwhelmed.  
+   - **Role in Microservices**:
+    1. **Traffic Distribution**: Ensures even load distribution among microservices.
+    2. **Health Monitoring**: Routes traffic only to healthy instances.
+    3. **Failover**: Provides redundancy by rerouting traffic in case of a failure.
+    4. **Service Discovery**: Helps manage service-to-service communication.
+    5. **Improved User Experience**: Reduces latency and increases reliability.
+
 
 5. **Tools & Technology**: Set up Auto Scaling for EC2 instances in AWS.
 
