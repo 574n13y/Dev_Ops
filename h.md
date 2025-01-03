@@ -20,6 +20,15 @@
 
 
 2. **Networking**: What is a subnet mask? How is it used in IP addressing?
+   - **Subnet Mask**: A subnet mask divides an IP address into two parts: the network and host components. It defines the size of a network and determines which part identifies the network and which part identifies the host.  
+   - **Example**:  
+    - IP Address: `192.168.1.10`
+    - Subnet Mask: `255.255.255.0` (CIDR: `/24`)
+    - Network Portion: `192.168.1`
+    - Host Portion: `.10`  
+
+  Subnet masks enable efficient allocation of IP addresses and network segmentation.
+
 
 3. **Cloud Computing**: Describe the concept of AWS Auto Scaling.
 
