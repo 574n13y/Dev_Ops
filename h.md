@@ -54,6 +54,45 @@
 
 
 5. **Tools & Technology**: Set up Auto Scaling for EC2 instances in AWS.
+   * **Steps**:
+    1. **Create a Launch Template**:  
+    - Configure the AMI, instance type, security group, and key pair.
+    - Example Command:  
+      ```bash
+      aws ec2 create-launch-template \
+        --launch-template-name my-template \
+        --version-description my-version \
+        --launch-template-data '{"ImageId":"ami-xxxxxxxx","InstanceType":"t2.micro"}'
+      ```
+   
+    2. **Set Up an Auto Scaling Group (ASG)**:  
+    - Define the desired capacity, min/max instances, and subnets.
+    - Example Command:  
+      ```bash
+      aws autoscaling create-auto-scaling-group \
+        --auto-scaling-group-name my-asg \
+        --launch-template LaunchTemplateName=my-template,Version=1 \
+        --min-size 1 \
+        --max-size 5 \
+        --desired-capacity 2 \
+        --vpc-zone-identifier "subnet-xxxxxxxx,subnet-yyyyyyyy"
+      ```
+   
+    3. **Add Scaling Policies**:  
+    - Define conditions for scaling based on CloudWatch metrics (e.g., CPU utilization).
+    - Example Command:  
+      ```bash
+      aws autoscaling put-scaling-policy \
+        --auto-scaling-group-name my-asg \
+        --policy-name scale-out \
+        --scaling-adjustment 1 \
+        --adjustment-type ChangeInCapacity
+      ```
+   
+    4. **Monitor and Test**:  
+    - Use CloudWatch to monitor scaling activities and ensure proper functionality.
+
+
 
 6. **Scenario**: Your application’s traffic fluctuates significantly. How would you ensure scalability?
 
