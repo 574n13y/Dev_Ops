@@ -41,6 +41,15 @@
 
 
 3. **Cloud Computing**: What is AWS Elastic Beanstalk, and what does it automate?
+   - **Definition**: AWS Elastic Beanstalk is a fully managed service that automates application deployment, scaling, and management.
+   - **What It Automates**:
+    - **Provisioning**: Automatically sets up EC2 instances, load balancers, security groups, etc.
+    - **Scaling**: Handles auto-scaling based on application load.
+    - **Monitoring**: Integrates with CloudWatch for metrics and logs.
+    - **Patching**: Keeps the underlying infrastructure up-to-date.
+    - **Supported Environments**: Web applications in various languages, such as Python, Java, Node.js, Ruby, and .NET.
+    - **Ideal For**: Teams that want to focus on development without managing infrastructure.
+
 
 4. **DevOps**: Describe how a reverse proxy works and its benefits.
 
