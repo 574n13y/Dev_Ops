@@ -52,6 +52,14 @@
 
 
 4. **DevOps**: Describe how a reverse proxy works and its benefits.
+   - **Definition**: A reverse proxy is a server that sits between clients and backend servers, forwarding client requests to the appropriate backend server.
+   - **Benefits**:
+    - **Load Balancing**: Distributes incoming traffic across multiple servers.
+    - **SSL Termination**: Offloads SSL/TLS encryption from backend servers.
+    - **Caching**: Reduces backend load by caching frequent requests.
+    - **Security**: Hides backend server details from clients and protects against DDoS attacks.
+   - **Examples**: NGINX, HAProxy, and Apache HTTP Server.
+
 
 5. **Tools & Technology**: Deploy a sample application with Elastic Beanstalk.
 
