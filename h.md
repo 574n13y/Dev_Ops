@@ -29,6 +29,16 @@
 
 
 2. **Networking**: Explain Quality of Service (QoS) in networking.
+   - **Definition**: QoS is a network feature that prioritizes certain types of traffic to ensure optimal performance, particularly for latency-sensitive applications like video conferencing or VoIP.
+   - **How It Works**:
+    - **Traffic Classification**: Data packets are classified based on their type (e.g., streaming, browsing).
+    - **Prioritization**: High-priority traffic is assigned more bandwidth.
+    - **Traffic Shaping**: Controls the data flow to reduce congestion.
+   - **Use Cases**:
+    - Prioritizing VoIP traffic in an office network.
+    - Ensuring smooth video streaming during peak hours.
+    - Managing bandwidth for mission-critical applications.
+
 
 3. **Cloud Computing**: What is AWS Elastic Beanstalk, and what does it automate?
 
