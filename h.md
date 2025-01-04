@@ -87,4 +87,16 @@
 
 
 6. **Scenario**: Your team needs a quick deployment solution. How would you set up Elastic Beanstalk?
+   * **Steps to Set Up**:
+    1. **Choose Elastic Beanstalk** for a quick and managed deployment solution.
+    2. **Prepare the Application**:
+    - Ensure the application adheres to Elastic Beanstalk's supported frameworks.
+    3. **Deploy**:
+    - Use the AWS Management Console or CLI to upload and deploy the application.
+    4. **Enable Monitoring and Scaling**:
+    - Configure auto-scaling for high traffic.
+    - Monitor application performance using CloudWatch.
+    5. **Integrate with CI/CD**:
+    - Use AWS CodePipeline or GitHub Actions to automate deployments.
 
+Elastic Beanstalk simplifies deployments by managing infrastructure and scaling automatically. It's a great choice for teams prioritizing rapid iteration.
