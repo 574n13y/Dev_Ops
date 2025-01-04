@@ -62,6 +62,29 @@
 
 
 5. **Tools & Technology**: Deploy a sample application with Elastic Beanstalk.
+   * **Steps to Deploy:**
+    1. **Install the Elastic Beanstalk CLI**:
+       ```bash
+       pip install awsebcli
+       ```
+    2. **Initialize the Environment**:
+       ```bash
+       eb init
+       ```
+       Follow the prompts to select your application and region.
+    3. **Create an Application**:
+    - Place your application files (e.g., `app.py` for Python) in a directory.
+    - Ensure a configuration file, such as `requirements.txt` for Python, is included.
+    4. **Deploy the Application**:
+       ```bash
+       eb create my-environment
+       ```
+    5. **Monitor the Deployment**:
+       Use the Elastic Beanstalk dashboard or:
+       ```bash
+       eb status
+       ```
+
 
 6. **Scenario**: Your team needs a quick deployment solution. How would you set up Elastic Beanstalk?
 
