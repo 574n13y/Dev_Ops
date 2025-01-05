@@ -48,6 +48,18 @@
 
 
 4. **DevOps**: Discuss the pros and cons of serverless computing.
+   - **Pros:**
+    - **Scalability:** Automatically scales with demand.
+    - **Cost-Effective:** No idle server costs; pay only for usage.
+    - **Reduced Ops Overhead:** No server management required.
+    - **Faster Development:** Focus on code, not infrastructure.
+   
+   - **Cons:**
+    - **Cold Start Latency:** Initial execution may be delayed.
+    - **Vendor Lock-In:** Limited to the features provided by the serverless platform.
+    - **Limited Runtime:** Functions have execution time limits (e.g., 15 minutes in AWS Lambda).
+    - **Complex Debugging:** Distributed nature can complicate debugging and logging.
+
 
 5. **Tools & Technology**: Deploy a simple AWS Lambda function.
 
