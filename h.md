@@ -62,6 +62,38 @@
 
 
 5. **Tools & Technology**: Deploy a simple AWS Lambda function.
+   * **Steps to Deploy a Lambda Function:**
+   1. **Create the Function:**
+    - Use AWS Management Console or CLI.
+    - Example Python function to log messages:
+     ```python
+     import json
+     
+     def lambda_handler(event, context):
+         print("Event Received: ", event)
+         return {
+             'statusCode': 200,
+             'body': json.dumps('Hello from Lambda!')
+         }
+     ```
+   2. **Package the Code:**
+    - ZIP the code and any dependencies:
+     ```bash
+     zip lambda_function.zip lambda_handler.py
+     ```
+   3. **Deploy the Function:**
+    - Upload it to the AWS Lambda console or use the CLI:
+     ```bash
+     aws lambda create-function \
+       --function-name MyLambdaFunction \
+       --runtime python3.9 \
+       --role arn:aws:iam::account-id:role/execution-role \
+       --handler lambda_handler.lambda_handler \
+       --zip-file fileb://lambda_function.zip
+     ```
+   4. **Add a Trigger:**
+    - Configure triggers like an S3 bucket, API Gateway, or DynamoDB table.
+ 
 
 6. **Scenario**: You need a low-cost, scalable solution for a simple API. Would Lambda be suitable?
 
