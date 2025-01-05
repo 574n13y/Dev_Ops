@@ -34,6 +34,18 @@
 
 
 3. **Cloud Computing**: Define AWS Lambda and its use cases.
+   * AWS Lambda is a serverless compute service that automatically runs your code in response to triggers, eliminating the need to provision servers.  
+   - **Features:**
+    - Pay-per-execution model (only charged for compute time).
+    - Supports multiple languages: Python, Node.js, Java, Go, etc.
+    - Integrates with other AWS services (S3, DynamoDB, API Gateway).
+
+   - **Use Cases:**
+    - **API Backends:** Respond to API requests using Lambda and API Gateway.
+    - **Data Processing:** Process files in S3 or streams in DynamoDB or Kinesis.
+    - **Automation:** Run periodic tasks using CloudWatch Events.
+    - **Event-Driven Applications:** Trigger functions based on events like database changes.
+
 
 4. **DevOps**: Discuss the pros and cons of serverless computing.
 
