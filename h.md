@@ -96,4 +96,14 @@
  
 
 6. **Scenario**: You need a low-cost, scalable solution for a simple API. Would Lambda be suitable?
+   - AWS Lambda is an excellent choice for simple APIs with unpredictable traffic patterns due to its scalability, low cost, and integration with API Gateway.  
+   - **Steps:**
+    1. Write a Lambda function to handle requests.
+    2. Create an API Gateway to expose the Lambda as an HTTP endpoint.
+    3. Configure CORS and security settings for API Gateway.
+    4. Test the API.
+
+   * **Would Lambda be suitable?**  
+     Yes! It’s ideal for this use case, offering a pay-per-use model, scalability, and easy integration, especially for lightweight applications.
+
 
