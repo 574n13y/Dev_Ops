@@ -21,6 +21,17 @@
 
 
 2. **Networking**: Explain the OSI model, especially Layers 4 and 7.
+   - **Layer 4: Transport Layer**
+    - Responsible for end-to-end communication and data delivery.
+    - Protocols: TCP (reliable), UDP (unreliable but faster).
+    - Key functions: Segmentation, error handling, and flow control.
+    - Example: Ensuring a video stream is uninterrupted.
+   
+   - **Layer 7: Application Layer**
+    - Closest to the end user and responsible for network services like email, file transfer, and web browsing.
+    - Protocols: HTTP, HTTPS, SMTP, FTP, DNS.
+    - Example: Serving web content when a URL is accessed.
+
 
 3. **Cloud Computing**: Define AWS Lambda and its use cases.
 
