@@ -23,6 +23,13 @@
 
 
 2. **Networking**: Explain what a CDN is and how it improves performance.
+   -  A **Content Delivery Network (CDN)** is a network of geographically distributed servers designed to deliver content to users with high availability and performance. A CDN works by caching copies of static content (images, videos, HTML, CSS, etc.) at multiple edge locations around the world. 
+   
+   **How a CDN improves performance**:
+    - **Reduced Latency**: Content is delivered from the nearest server, reducing the time it takes to load resources.
+    - **Increased Reliability**: If one server goes down, another can serve the content, improving availability.
+    - **Scalability**: CDNs can handle large amounts of traffic without slowing down, making them ideal for handling traffic spikes.
+
 
 3. **Cloud Computing**: Describe the benefits of serverless architectures.
 
