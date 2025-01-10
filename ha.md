@@ -32,6 +32,14 @@
 
 
 3. **Cloud Computing**: Describe the benefits of serverless architectures.
+   * **Serverless computing** is a cloud computing model where the cloud provider automatically manages the infrastructure for application deployment. You simply write code and deploy it without managing servers.
+
+   * **Benefits**:
+    - **Cost Efficiency**: You only pay for the compute time your code consumes, reducing costs.
+    - **Scalability**: Automatically scales up or down based on demand without manual intervention.
+    - **Reduced Operational Overhead**: No need to manage, provision, or maintain servers.
+    - **Faster Development**: Focus on writing business logic while the cloud provider manages the infrastructure.
+
 
 4. **DevOps**: Explain Infrastructure as Code (IaC) and its benefits.
 
