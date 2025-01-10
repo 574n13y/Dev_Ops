@@ -74,5 +74,11 @@
 
 
 6. **Scenario**: Your application requires static file storage. What options does AWS provide?
+   * AWS provides several options for storing static files, including:
+    - **Amazon S3 (Simple Storage Service)**: The most common and scalable option for static file storage. S3 allows you to store and retrieve any amount of data, including images, videos, HTML files, and backups.
+    - **Amazon EFS (Elastic File System)**: For applications that need a shared file system, EFS provides scalable, elastic file storage that can be mounted across multiple EC2 instances.
+    - **Amazon Glacier**: For archiving static files that are not frequently accessed, Glacier offers low-cost, long-term storage.
+    - **AWS Storage Gateway**: Connects on-premises environments with cloud storage, providing hybrid solutions for static files.
+
 
 
