@@ -42,6 +42,14 @@
 
 
 4. **DevOps**: Explain Infrastructure as Code (IaC) and its benefits.
+   * **Infrastructure as Code (IaC)** is a practice where infrastructure is defined and managed through code rather than manual configuration. IaC tools (e.g., Terraform, Ansible, CloudFormation) allow you to automate the provisioning, configuration, and management of infrastructure.
+
+   * **Benefits**:
+    - **Consistency**: Infrastructure is defined in code, ensuring that environments are consistent and repeatable.
+    - **Version Control**: IaC files can be stored in version control systems (e.g., Git), enabling easy collaboration and rollback.
+    - **Automation**: Enables automated provisioning, reducing manual errors and time spent on repetitive tasks.
+    - **Scalability**: Infrastructure can be easily scaled and adjusted through simple code changes.
+
 
 5. **Tools & Technology**: Write a Terraform script to create a simple S3 bucket.
 
