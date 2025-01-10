@@ -52,6 +52,26 @@
 
 
 5. **Tools & Technology**: Write a Terraform script to create a simple S3 bucket.
+   * Here's a basic Terraform script to create an S3 bucket on AWS:
+
+   ```hcl
+   # Define the provider
+   provider "aws" {
+     region = "us-east-1"
+   }
+
+   # Create an S3 bucket
+   resource "aws_s3_bucket" "my_bucket" {
+     bucket = "my-unique-bucket-name"
+     acl    = "private"
+   }
+   ```
+
+   * **Steps to apply the Terraform script**:
+    1. Save the code above in a file named `main.tf`.
+    2. Run `terraform init` to initialize the provider.
+    3. Run `terraform apply` to create the S3 bucket.
+
 
 6. **Scenario**: Your application requires static file storage. What options does AWS provide?
 
