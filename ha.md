@@ -59,6 +59,37 @@
 
 
 5. **Tools & Technology**: Deploy a CloudFormation stack to create a VPC.
+   - **Step-by-Step Guide**:
+    
+    1. **Prepare the CloudFormation Template**:
+   ```yaml
+   AWSTemplateFormatVersion: "2010-09-09"
+   Resources:
+     MyVPC:
+       Type: "AWS::EC2::VPC"
+       Properties:
+         CidrBlock: "10.0.0.0/16"
+         EnableDnsSupport: true
+         EnableDnsHostnames: true
+         Tags:
+           - Key: "Name"
+             Value: "MyVPC"
+   ```
+    
+    2. **Deploy the Stack**:
+    - Save the file as `vpc-template.yaml`.
+    - Use the AWS Management Console or CLI to deploy:
+     ```bash
+     aws cloudformation create-stack --stack-name MyVPCStack --template-body file://vpc-template.yaml
+     ```
+    
+    3. **Verify the Deployment**:
+    - Use the AWS Console to confirm the VPC is created.
+    - List the stack using the CLI:
+     ```bash
+     aws cloudformation describe-stacks --stack-name MyVPCStack
+     ```
+
 
 6. **Scenario**: Your infrastructure needs a repeatable deployment setup. How would you achieve this?
 
