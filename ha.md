@@ -47,6 +47,16 @@
 
 
 4. **DevOps**: Compare manual provisioning vs. IaC.
+   
+   | **Aspect**             | **Manual Provisioning**                       | **Infrastructure as Code (IaC)**             |
+   |------------------------|-----------------------------------------------|----------------------------------------------|
+   | **Process**            | Resources are provisioned through GUIs or CLI commands. | Resources are defined using code (e.g., Terraform, CloudFormation). |
+   | **Consistency**        | Prone to human error; inconsistent results.   | Ensures consistency and repeatability.       |
+   | **Scalability**        | Difficult to scale due to manual steps.       | Highly scalable through automated scripts.   |
+   | **Version Control**    | No version control for infrastructure changes.| Supports versioning through source control.  |
+   | **Speed**              | Time-consuming and error-prone.              | Fast and automated.                          |
+   | **Collaboration**      | Limited; difficult to share configurations.   | Easy collaboration via code repositories.    |
+
 
 5. **Tools & Technology**: Deploy a CloudFormation stack to create a VPC.
 
