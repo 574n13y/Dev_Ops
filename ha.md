@@ -36,6 +36,15 @@
 
 
 3. **Cloud Computing**: Explain AWS CloudFormation and its advantages.
+   - AWS **CloudFormation** is an Infrastructure as Code (IaC) service that allows you to model, provision, and manage AWS resources using declarative JSON or YAML templates.
+
+   **Advantages**:
+    - **Automation**: Automates the provisioning of resources, reducing manual effort.
+    - **Repeatability**: Ensures consistent infrastructure deployments across environments.
+    - **Version Control**: Templates can be stored in source control, enabling tracking and rollbacks.
+    - **Dependency Management**: Automatically handles dependencies between resources.
+    - **Cost Management**: Enables better tracking of resource usage through stack templates.
+
 
 4. **DevOps**: Compare manual provisioning vs. IaC.
 
