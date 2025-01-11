@@ -27,6 +27,13 @@
 
 
 2. **Networking**: Describe NAT Gateway and its use cases in cloud environments.
+   - A **NAT Gateway (Network Address Translation Gateway)** allows instances in a private subnet to access the internet while preventing incoming traffic from the internet.
+
+   **Use Cases**:
+    1. **Private Subnet Internet Access**: Instances in private subnets can download updates or connect to external APIs.
+    2. **Secure Architectures**: Protects private instances from direct exposure to the internet.
+    3. **Cost Efficiency**: A managed NAT Gateway is easier to maintain compared to custom NAT instances.
+
 
 3. **Cloud Computing**: Explain AWS CloudFormation and its advantages.
 
