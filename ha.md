@@ -2,6 +2,29 @@
 
 
 1. **Linux**: Use `cron` to automate a daily backup.
+   - The `cron` utility in Linux is used to schedule tasks. To automate a daily backup, follow these steps:
+ 
+    1. **Create a Backup Script**:
+   ```bash
+   #!/bin/bash
+   tar -czf /backup/my_backup_$(date +%Y-%m-%d).tar.gz /path/to/files
+   ```
+   Save this script as `backup.sh` and make it executable:
+   ```bash
+   chmod +x backup.sh
+   ```
+  
+    2. **Schedule the Script Using `cron`**:
+   Open the `crontab` editor:
+   ```bash
+   crontab -e
+   ```
+   Add the following line to schedule the backup at 2 AM daily:
+   ```bash
+   0 2 * * * /path/to/backup.sh
+   ```
+   Save and exit. The task will now run daily at the specified time.
+
 
 2. **Networking**: Describe NAT Gateway and its use cases in cloud environments.
 
