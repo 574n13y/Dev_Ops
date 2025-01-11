@@ -92,4 +92,17 @@
 
 
 6. **Scenario**: Your infrastructure needs a repeatable deployment setup. How would you achieve this?
+   - To ensure repeatable deployment, use **Infrastructure as Code (IaC)** with tools like **AWS CloudFormation** or **Terraform**. Here's a plan:
+    
+    1. **Define Infrastructure**:
+    - Use declarative templates (YAML/JSON for CloudFormation or HCL for Terraform) to describe resources.
+    2. **Version Control**:
+    - Store IaC files in a Git repository to track changes and enable collaboration.
+    3. **Automation**:
+    - Use CI/CD pipelines (e.g., Jenkins, GitHub Actions) to automatically deploy infrastructure changes.
+    4. **Environment Consistency**:
+    - Use parameters or variables to customize deployments for dev, staging, and production environments.
+    5. **Testing**:
+    - Implement infrastructure testing (e.g., `terratest`) to validate configurations before deployment.
+
 
