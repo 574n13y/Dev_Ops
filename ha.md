@@ -25,6 +25,16 @@
 
 
 2. **Networking**: Describe TCP three-way handshake.
+   - The TCP three-way handshake establishes a reliable connection between a client and server:
+
+   1. **SYN** (Synchronize): The client sends a SYN packet to initiate the connection, indicating it wants to establish communication.
+
+   2. **SYN-ACK**: The server responds with a SYN-ACK packet to acknowledge the client’s request and indicates it is ready to establish a connection.
+
+   3. **ACK** (Acknowledge): The client sends an ACK packet to acknowledge the server’s response, completing the handshake.
+
+Once the handshake is complete, data transmission begins. This process ensures reliability and agreement on connection parameters.
+
 
 3. **Cloud Computing**: Explain the difference between EC2 and Lambda.
 
