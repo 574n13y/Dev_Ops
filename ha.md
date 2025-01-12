@@ -59,6 +59,43 @@ Once the handshake is complete, data transmission begins. This process ensures r
 
 
 5. **Tools & Technology**: Configure an S3 bucket as an artifact repository.
+   1. **Create an S3 Bucket**:
+   ```bash
+   aws s3 mb s3://my-artifact-repository
+   ```
+
+   2. **Enable Versioning**:
+   ```bash
+   aws s3api put-bucket-versioning --bucket my-artifact-repository --versioning-configuration Status=Enabled
+   ```
+
+   3. **Set Access Control**:
+   - Use a bucket policy to restrict access:
+     ```json
+     {
+       "Version": "2012-10-17",
+       "Statement": [
+         {
+           "Effect": "Allow",
+           "Principal": { "AWS": "arn:aws:iam::123456789012:role/MyRole" },
+           "Action": "s3:*",
+           "Resource": "arn:aws:s3:::my-artifact-repository/*"
+         }
+       ]
+     }
+     ```
+   - Apply the policy:
+     ```bash
+     aws s3api put-bucket-policy --bucket my-artifact-repository --policy file://bucket-policy.json
+     ```
+
+   4. **Upload Artifacts**:
+   ```bash
+   aws s3 cp artifact.zip s3://my-artifact-repository/builds/
+   ```
+
+   5. **Integrate with CI/CD**: Update pipeline scripts to upload/download artifacts from the S3 bucket.
+
 
 6. **Scenario**: Your team wants to store build artifacts. How would you set this up?
 
