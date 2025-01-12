@@ -37,6 +37,15 @@ Once the handshake is complete, data transmission begins. This process ensures r
 
 
 3. **Cloud Computing**: Explain the difference between EC2 and Lambda.
+   
+   | **Aspect**         | **EC2 (Elastic Compute Cloud)**                                           | **Lambda**                                                |
+   |---------------------|---------------------------------------------------------------------------|----------------------------------------------------------|
+   | **Type**           | Virtual server for hosting applications.                                 | Serverless compute service.                              |
+   | **Management**     | Requires manual management of servers, OS, and scaling.                  | Fully managed by AWS, no server management required.     |
+   | **Billing**        | Pay for the uptime of the instance, whether idle or in use.              | Pay only for execution time (per invocation).            |
+   | **Scalability**    | Requires manual setup or auto-scaling configuration.                     | Automatically scales with demand.                        |
+   | **Use Cases**      | Hosting web apps, databases, or applications requiring persistent compute.| Running event-driven tasks or short-lived functions.     |
+
 
 4. **DevOps**: What are build artifacts, and how do you manage them?
 
