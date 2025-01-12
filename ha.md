@@ -98,5 +98,31 @@ Once the handshake is complete, data transmission begins. This process ensures r
 
 
 6. **Scenario**: Your team wants to store build artifacts. How would you set this up?
+   1. **Choose a Storage Solution**:
+   - Use **AWS S3** as a scalable and cost-effective option.
+   - Enable **versioning** for traceability and rollback.
+
+   2. **Set Up a Repository**:
+   - Create an S3 bucket or use tools like **JFrog Artifactory** for advanced management.
+
+   3. **Integrate with CI/CD Pipelines**:
+   - In tools like Jenkins or GitLab CI:
+    - Upload artifacts post-build:
+       ```bash
+       aws s3 cp ./build-output.zip s3://my-artifact-repository/builds/
+       ```
+    - Download artifacts for deployment:
+       ```bash
+       aws s3 cp s3://my-artifact-repository/builds/build-output.zip ./deploy/
+       ```
+
+   4. **Implement Policies**:
+   - Define retention policies to delete outdated artifacts.
+   - Use IAM roles to restrict access based on roles and permissions.
+
+   5. **Test and Monitor**:
+   - Test artifact upload/download processes.
+   - Monitor storage costs and bucket activity using AWS CloudWatch.
+
 
 
