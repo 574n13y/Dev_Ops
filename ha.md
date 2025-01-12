@@ -48,6 +48,15 @@ Once the handshake is complete, data transmission begins. This process ensures r
 
 
 4. **DevOps**: What are build artifacts, and how do you manage them?
+   - **Build Artifacts**: Files generated during the build process, such as binaries, JAR files, Docker images, or compiled assets. These are essential for deploying applications.
+
+   **Management**:
+    1. **Storage**: Use centralized repositories like AWS S3, JFrog Artifactory, or Nexus for storing artifacts.
+    2. **Versioning**: Tag artifacts with version numbers or commit hashes to enable traceability.
+    3. **Retention**: Implement policies to delete old artifacts and reduce storage costs.
+    4. **Access Control**: Use IAM roles or repository settings to control who can read or write artifacts.
+    5. **Automation**: Integrate artifact management into CI/CD pipelines using tools like Jenkins or GitLab CI.
+
 
 5. **Tools & Technology**: Configure an S3 bucket as an artifact repository.
 
