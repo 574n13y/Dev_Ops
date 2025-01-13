@@ -79,6 +79,26 @@
 
 
 5. **Tools & Technology**: Set up AWS Secrets Manager for storing API keys.
+1. **Create a Secret**:
+   - Open AWS Secrets Manager and choose **Store a new secret**.
+   - Select the type of secret (e.g., API key) and input the key-value pair(s).
+
+2. **Define Access Policies**:
+   - Use IAM policies to control who can access the secret.
+
+3. **Enable Encryption**:
+   - Secrets are automatically encrypted using AWS KMS.
+
+4. **Retrieve the Secret**:
+   - Use the AWS SDK, CLI, or Secrets Manager console to fetch the secret.
+   - Example CLI command:  
+     ```bash
+     aws secretsmanager get-secret-value --secret-id <SECRET_NAME>
+     ```
+
+5. **Integrate with Applications**:
+   - Use environment variables or directly access the secret programmatically using the AWS SDK.
+
 
 6. **Scenario**: Your app requires secure management of sensitive data. How would you handle it?
 
