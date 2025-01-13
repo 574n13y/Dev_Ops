@@ -35,6 +35,23 @@
 
 
 3. **Cloud Computing**: Describe EC2 Auto Scaling policies.
+* EC2 Auto Scaling policies automatically manage the number of Amazon EC2 instances in a group based on application demand or predefined schedules. Key policies include:
+
+1. **Target Tracking Scaling**:
+   - Adjusts the number of instances to maintain a specified metric at a target value.
+   - Example: Keeping CPU utilization at 50%.
+
+2. **Step Scaling**:
+   - Adds or removes instances based on metric thresholds that trigger step adjustments.
+   - Example: Adding 2 instances if CPU utilization exceeds 70%.
+
+3. **Scheduled Scaling**:
+   - Scales the number of instances based on a predefined schedule.
+   - Example: Increasing instance count during peak business hours.
+
+4. **Predictive Scaling**:
+   - Uses machine learning to predict future demand and scales capacity in advance.
+
 
 4. **DevOps**: What are the best practices for secrets management?
 
