@@ -18,6 +18,21 @@
 
 
 2. **Networking**: Define network packets and their components.
+* A **network packet** is a formatted unit of data carried across a network. Its components include:
+
+- **Header**:
+  - **Source Address**: The IP address of the sender.
+  - **Destination Address**: The IP address of the recipient.
+  - **Protocol**: Specifies the protocol used (e.g., TCP, UDP).
+  - **Sequence Number**: Identifies the order of the packet in a transmission.
+  - **Checksum**: Ensures data integrity.
+  
+- **Payload**:
+  - Contains the actual data being transmitted (e.g., part of a file, a message).
+  
+- **Trailer**:
+  - Marks the end of the packet and may include error-checking data (e.g., cyclic redundancy check).
+
 
 3. **Cloud Computing**: Describe EC2 Auto Scaling policies.
 
