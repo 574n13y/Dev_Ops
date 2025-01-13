@@ -101,5 +101,26 @@
 
 
 6. **Scenario**: Your app requires secure management of sensitive data. How would you handle it?
+* To securely manage sensitive data in your application:
 
+1. **Use AWS Secrets Manager**:
+   - Store sensitive information like API keys, database credentials, and encryption keys securely.
+   - Implement IAM policies to ensure only authorized applications and users can access the secrets.
+
+2. **Environment Variables**:
+   - Load secrets into environment variables during application runtime.
+
+3. **Encryption**:
+   - Encrypt sensitive data using AWS KMS or a similar encryption service.
+
+4. **Automated Rotation**:
+   - Configure automated secret rotation in AWS Secrets Manager to minimize risks associated with long-lived credentials.
+
+5. **Audit and Monitoring**:
+   - Use AWS CloudTrail to log access to secrets and monitor unusual activity.
+
+6. **Infrastructure as Code**:
+   - Use tools like CloudFormation or Terraform to manage secret configurations programmatically while keeping them out of source code.
+
+This approach ensures the sensitive data is protected against unauthorized access while being easily accessible to authorized resources and applications.
 
