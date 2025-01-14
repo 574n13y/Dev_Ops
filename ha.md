@@ -62,6 +62,20 @@
 
 
 4. **DevOps**: Define automated testing and its importance in CI/CD.
+   * **Automated Testing** involves running predefined test scripts automatically to verify that the application behaves as expected.  
+
+   - **Types of Automated Tests**:  
+    - **Unit Tests**: Validate individual functions or modules.  
+    - **Integration Tests**: Ensure different components work together.  
+    - **End-to-End Tests**: Simulate real-world user scenarios.  
+
+   - **Importance in CI/CD**:  
+    - Detects bugs early in the development cycle.  
+    - Reduces manual testing efforts.  
+    - Ensures consistent testing after every code change.  
+    - Enables faster feedback loops for developers.  
+    - Improves overall software quality and reliability.  
+
 
 5. **Tools & Technology**: Set up a simple testing pipeline in Jenkins.
 
