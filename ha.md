@@ -121,4 +121,24 @@
 
 
 6. **Scenario**: You need to automate unit tests for every code push. How would you do it?
+   - To automate unit tests for every code push:  
+    
+    1. **Set Up a CI/CD Tool**:  
+    - Use tools like Jenkins, GitHub Actions, or GitLab CI/CD.  
+    
+    2. **Integrate with Version Control**:  
+    - Connect the CI/CD tool to your Git repository.  
+    - Configure triggers for builds on every push or pull request.  
+    
+    3. **Define a Build Pipeline**:  
+    - Steps include cloning the repository, installing dependencies, running unit tests, and reporting results.  
+    
+    4. **Run Tests in Parallel**:  
+    - Leverage parallelization to speed up testing for large codebases.  
+    
+    5. **Notify the Team**:  
+    - Send automated notifications (e.g., Slack, email) with build/test results.  
+    
+    6. **Use Test Reports**:  
+    - Generate and store test reports for tracking and debugging.  
 
