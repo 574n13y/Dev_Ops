@@ -34,6 +34,32 @@
 
 
 3. **Cloud Computing**: Discuss how S3 storage tiers work.
+   - Amazon S3 offers different storage tiers to optimize costs based on data access patterns:  
+   
+   1. **S3 Standard**:  
+    - High durability and availability.  
+    - Best for frequently accessed data.  
+   
+   2. **S3 Standard-IA (Infrequent Access)**:  
+    - Lower cost for infrequently accessed data.  
+    - Retrieval fees apply.  
+   
+   3. **S3 One Zone-IA**:  
+    - Stores data in a single availability zone.  
+    - Cheaper than Standard-IA but less durable.  
+   
+   4. **S3 Intelligent-Tiering**:  
+    - Automatically moves data between tiers based on usage patterns.  
+    - No retrieval fees for access pattern changes.  
+   
+   5. **S3 Glacier**:  
+    - Low-cost storage for long-term archiving.  
+    - Retrieval times range from minutes to hours.  
+   
+   6. **S3 Glacier Deep Archive**:  
+    - Lowest-cost storage for data rarely accessed.  
+    - Retrieval times are longer (up to 12 hours).  
+
 
 4. **DevOps**: Define automated testing and its importance in CI/CD.
 
