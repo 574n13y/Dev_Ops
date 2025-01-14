@@ -78,6 +78,47 @@
 
 
 5. **Tools & Technology**: Set up a simple testing pipeline in Jenkins.
+    1. **Install Jenkins**:  
+    - Download and set up Jenkins on your system or server.  
+    - Install necessary plugins, such as Git and Pipeline.  
+   
+    2. **Create a New Pipeline Job**:  
+    - Go to Jenkins dashboard → New Item → Pipeline.  
+   
+    3. **Define a Pipeline Script**:  
+       Example for a Python project with unit tests:  
+       ```groovy  
+       pipeline {  
+           agent any  
+             stages {  
+               stage('Clone Repository') {  
+                   steps {  
+                      git 'https://github.com/your-repo.git'  
+                  }  
+              }   
+             stage('Install Dependencies') {  
+                 steps {  
+                       sh 'pip install -r requirements.txt'  
+                 }  
+              }  
+              stage('Run Tests') {  
+                 steps {  
+                     sh 'pytest --junitxml=test-results.xml'  
+                 }  
+             }  
+         }  
+          post {  
+              always {  
+                  junit 'test-results.xml'  
+                }  
+           }  
+        }  
+       ```  
+   
+    4. **Run the Job**:  
+    - Save the pipeline and trigger the build.  
+    - Jenkins will execute the steps and display results.  
+
 
 6. **Scenario**: You need to automate unit tests for every code push. How would you do it?
 
