@@ -23,6 +23,15 @@
 
 
 3. **Cloud Computing**: Discuss VPC peering in AWS.
+   - **Definition**: VPC Peering allows two Virtual Private Clouds (VPCs) in AWS to communicate privately over the AWS backbone without traversing the public internet.  
+   - **Use Cases**:  
+    - Connecting services in different VPCs for cross-region replication or shared resources.  
+    - Multi-account setups where teams use separate VPCs but require secure communication.  
+   - **Advantages**:  
+    - Low-latency communication.  
+    - No additional hardware required.  
+    - Simple and scalable for interconnecting VPCs.
+
 
 4. **DevOps**: Describe how blue-green deployment reduces downtime.
 
