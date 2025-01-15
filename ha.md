@@ -34,6 +34,18 @@
 
 
 4. **DevOps**: Describe how blue-green deployment reduces downtime.
+   - **Definition**: Blue-green deployment is a deployment strategy where two environments are maintained:  
+    - **Blue**: Current production version.  
+    - **Green**: New version ready for release.  
+   - **Process**:  
+    - The green environment is tested while the blue environment serves traffic.  
+    - Once the green environment is validated, traffic is switched to it (using DNS or a load balancer).  
+    - In case of issues, traffic can be switched back to the blue environment.  
+   - **Benefits**:  
+    - Minimizes downtime.  
+    - Simplifies rollback in case of issues.  
+    - Provides a staging environment identical to production.
+
 
 5. **Tools & Technology**: Set up a blue-green deployment using AWS Elastic Beanstalk.
 
