@@ -69,5 +69,13 @@
 
 
 6. **Scenario**: Your team needs zero-downtime deployment. What would you recommend?
+   - **Recommendation**: Use the **Blue-Green Deployment Strategy** or **Canary Deployment**.  
+   - **Reason**:  
+    - Both approaches allow gradual or immediate switching of traffic, ensuring zero-downtime.  
+    - They provide safe rollback mechanisms in case of failure.  
+   - **Implementation**:  
+    - Use tools like AWS Elastic Beanstalk, Kubernetes, or Jenkins pipelines to automate deployment and traffic routing.  
+    - Include monitoring tools (e.g., Prometheus, Datadog) to track performance during the deployment.
+
 
 
