@@ -48,6 +48,25 @@
 
 
 5. **Tools & Technology**: Set up a blue-green deployment using AWS Elastic Beanstalk.
+    
+    1. **Prepare Two Environments**:  
+    - Create two separate environments in AWS Elastic Beanstalk (e.g., "Blue" for production and "Green" for testing).  
+    
+    2. **Deploy the New Version**:  
+    - Deploy the updated application to the green environment.  
+    
+    3. **Test the Green Environment**:  
+    - Ensure the green environment works correctly and is ready for production.  
+    
+    4. **Swap Environment URLs**:  
+    - Use Elastic Beanstalk's environment URL swapping feature to route traffic from the blue environment to the green environment.  
+    
+    5. **Monitor**:  
+    - Monitor the green environment for issues.  
+    
+    6. **Rollback**:  
+    - If needed, swap the URLs back to the blue environment.
+
 
 6. **Scenario**: Your team needs zero-downtime deployment. What would you recommend?
 
