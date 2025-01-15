@@ -14,6 +14,13 @@
 
 
 2. **Networking**: Explain port forwarding and its applications.
+   - **Definition**: Port forwarding is a technique used to redirect network traffic from one port or address to another.  
+   - **How it Works**: Traffic arriving at a public IP and specific port is forwarded to a private IP and port inside a network.  
+   - **Applications**:  
+    - Accessing services hosted on private networks (e.g., accessing a web server in a home network).  
+    - Enabling remote desktop or SSH connections.  
+    - Gaming and hosting online services.
+
 
 3. **Cloud Computing**: Discuss VPC peering in AWS.
 
