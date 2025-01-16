@@ -86,5 +86,24 @@
 
 
 6. **Scenario**: Your app needs to meet compliance standards. How would you ensure activity logging?
+   * **Steps**:
+    
+    1. **Enable CloudTrail**:
+    - Set up a multi-region trail to capture all API activities.
+    - Store logs in an encrypted S3 bucket.
+    
+    2. **Enable Logging for Data Events**:
+    - Track S3 object-level activity (read/write) and Lambda function invocations.
+    
+    3. **Set Up CloudWatch Alarms**:
+    - Create alarms for unauthorized actions or policy violations.
+    
+    4. **Integrate with AWS Config**:
+    - Use AWS Config to monitor resource configurations and detect non-compliance.
+    
+    5. **Retention and Analysis**:
+    - Retain logs as per compliance requirements (e.g., GDPR mandates).
+    - Use tools like Athena and QuickSight for log analysis and reporting.
+
 
 
