@@ -46,6 +46,16 @@
 
 
 3. **Cloud Computing**: Explain the role of AWS CloudTrail.
+    - AWS CloudTrail is a service that enables governance, compliance, and operational auditing by logging account activity.  
+
+   **Key Features**:
+    - **Activity Logging**: Tracks API calls, SDK calls, CLI commands, and console actions.
+    - **Event History**: Provides detailed records of changes to AWS resources.
+    - **Compliance**: Helps meet regulatory requirements by maintaining an audit trail.
+    - **Integration**: Works with Amazon S3 for log storage and CloudWatch for real-time monitoring.
+
+   **Use Case**: Investigating unauthorized access or troubleshooting service configuration changes.
+
 
 4. **DevOps**: What’s the difference between Canary and A/B testing?
 
