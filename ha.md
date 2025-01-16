@@ -68,6 +68,22 @@
 
 
 5. **Tools & Technology**: Use CloudTrail to track account activity.
+   * **Steps**:  
+    
+    1. **Enable CloudTrail**:
+    - Go to the AWS Management Console.
+    - Create a new trail and specify an S3 bucket for log storage.
+    
+    2. **Set Logging Configuration**:
+    - Enable logs for all regions to ensure comprehensive coverage.
+    - Turn on management and data event logging.
+    
+    3. **Monitor Logs**:
+    - Use **AWS CloudWatch** to create alerts for specific events (e.g., unauthorized access attempts).
+    
+    4. **Query Logs**:
+    - Use **AWS Athena** to query CloudTrail logs stored in S3 for detailed analysis.
+
 
 6. **Scenario**: Your app needs to meet compliance standards. How would you ensure activity logging?
 
