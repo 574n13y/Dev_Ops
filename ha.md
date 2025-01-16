@@ -34,6 +34,16 @@
 
 
 2. **Networking**: Describe DNS resolution.
+   * **DNS Resolution** is the process of translating human-readable domain names (e.g., `example.com`) into IP addresses. It works as follows:
+    1. **Query Initiation**: A user’s device sends a DNS query to a recursive resolver.
+    2. **Recursive Resolver**:
+    - Checks its cache for the IP address.
+    - If not found, it queries a root DNS server.
+    3. **Root Server**: Directs the resolver to the appropriate Top-Level Domain (TLD) nameserver (e.g., `.com`).
+    4. **TLD Nameserver**: Directs the resolver to the authoritative nameserver for the domain.
+    5. **Authoritative Nameserver**: Provides the IP address of the requested domain.
+    6. **Response**: The resolver returns the IP address to the client.
+
 
 3. **Cloud Computing**: Explain the role of AWS CloudTrail.
 
