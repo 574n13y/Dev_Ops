@@ -59,6 +59,14 @@
 
 4. **DevOps**: What’s the difference between Canary and A/B testing?
 
+   | **Aspect**         | **Canary Testing**                                   | **A/B Testing**                                 |
+   |---------------------|-----------------------------------------------------|------------------------------------------------|
+   | **Purpose**         | Gradual deployment of new features to monitor impact. | Compare two versions to evaluate user behavior.|
+   | **Focus**           | Operational stability and performance.              | User experience and preference.               |
+   | **Audience**        | Limited subset of users for operational testing.    | Split users into groups for testing variations.|
+   | **Example**         | Deploying a new API version to 10% of traffic.      | Testing two UI designs to see which performs better.|
+
+
 5. **Tools & Technology**: Use CloudTrail to track account activity.
 
 6. **Scenario**: Your app needs to meet compliance standards. How would you ensure activity logging?
