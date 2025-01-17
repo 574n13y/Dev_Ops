@@ -33,6 +33,20 @@
 
 
 3. **Cloud Computing**: Discuss the use cases for AWS Elastic File System (EFS).
+   - AWS EFS provides a scalable, managed file storage solution that can be accessed by multiple EC2 instances simultaneously.
+
+   **Use Cases**:
+    1. **Shared File Storage**:
+    - Applications requiring shared access across multiple instances, like content management systems.
+    2. **Big Data Analytics**:
+    - Enables parallel processing by multiple compute nodes accessing the same data.
+    3. **Backup and Restore**:
+    - Centralized storage for backups accessible across different applications or regions.
+    4. **Web Hosting**:
+    - Hosts static files (e.g., images, HTML) that need to be served to multiple web servers.
+    5. **Containerized Applications**:
+    - Provides persistent storage for containers in Kubernetes or ECS.
+
 
 4. **DevOps**: What is immutable infrastructure, and why is it beneficial?
 
