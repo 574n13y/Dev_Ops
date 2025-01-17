@@ -66,6 +66,33 @@ Immutable infrastructure refers to a model where servers or resources are never 
 
 
 5. **Tools & Technology**: Set up a basic EFS instance and attach it to an EC2 instance.
+   - **Steps**:
+    
+    1. **Create an EFS File System**:
+    - Go to the **EFS Console** in AWS.
+    - Click **Create File System** and configure:
+    * **VPC**: Select the appropriate VPC.
+    * **Mount Targets**: Enable mount targets for the subnets where your EC2 instances are running.
+    - Save and create.
+    
+    2. **Attach EFS to an EC2 Instance**:
+    - Install the NFS client on the EC2 instance:
+      ```bash
+      sudo yum install -y nfs-utils    # For Amazon Linux or RHEL
+      sudo apt-get install -y nfs-common # For Ubuntu/Debian
+      ```
+    - Create a directory to mount the EFS:
+      ```bash
+      sudo mkdir /mnt/efs
+      ```
+    - Mount the EFS:
+      ```bash
+      sudo mount -t nfs4 -o nfsvers=4.1 fs-XXXXXXX.efs.YOUR_REGION.amazonaws.com:/ /mnt/efs
+      ```
+    
+    3. **Test the Setup**:
+    - Write a file to the `/mnt/efs` directory from one instance and verify its availability on another instance using the same mount target.
+
 
 6. **Scenario**: You need shared file storage across multiple instances. How would you configure this?
 
