@@ -20,6 +20,17 @@
 
 
 2. **Networking**: Explain BGP (Border Gateway Protocol) and where it’s used.
+   - **BGP Overview**:  
+   Border Gateway Protocol (BGP) is the protocol used to exchange routing information between different autonomous systems (AS) on the internet. It ensures data is routed efficiently across various networks.
+
+   - **Use Cases**:
+    1. **Internet Service Providers (ISPs)**:
+    - ISPs use BGP to exchange routing information and ensure global internet connectivity.
+    2. **Cloud Providers**:
+    - AWS, Azure, and Google Cloud use BGP for connectivity in hybrid cloud environments.
+    3. **Enterprises**:
+    - Large organizations use BGP to manage traffic between their on-premises data centers and cloud environments.
+
 
 3. **Cloud Computing**: Discuss the use cases for AWS Elastic File System (EFS).
 
