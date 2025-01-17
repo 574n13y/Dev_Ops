@@ -95,4 +95,21 @@ Immutable infrastructure refers to a model where servers or resources are never 
 
 
 6. **Scenario**: You need shared file storage across multiple instances. How would you configure this?
+   - **Solution**:
+    1. **Choose AWS EFS**:
+   - AWS EFS is ideal for shared file storage because it provides scalable, distributed access across multiple EC2 instances.
+   
+    2. **Steps**:
+   - **Create an EFS File System**:
+    - Go to the EFS Console and set up a file system with appropriate mount targets.
+   - **Attach to EC2 Instances**:
+    - Use NFS to mount the EFS on all EC2 instances that need shared access.
+   - **Configure Permissions**:
+    - Use AWS IAM or security groups to control access to the EFS.
+   - **Test Shared Access**:
+    - Verify that all instances can read and write to the same files in the EFS.
+   
+    3. **Alternatives**:
+   - If EFS is not suitable, consider **Amazon S3** for object storage or **AWS FSx** for high-performance file storage needs.
+
 
