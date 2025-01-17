@@ -49,6 +49,21 @@
 
 
 4. **DevOps**: What is immutable infrastructure, and why is it beneficial?
+   - **Definition**:  
+Immutable infrastructure refers to a model where servers or resources are never modified after deployment. Any updates or changes are made by replacing the resource with a new version.
+
+   **Benefits**:
+    1. **Consistency**:
+    - Ensures that each deployment is predictable and reproducible.
+    2. **Simplifies Troubleshooting**:
+    - Eliminates issues caused by configuration drift (untracked changes over time).
+    3. **Improved Reliability**:
+    - Reduces the risk of manual configuration errors.
+    4. **Better Testing**:
+    - Infrastructure updates can be tested in isolation before replacing the old version.
+    5. **Easy Rollbacks**:
+    - Rolling back to a previous version is straightforward since the old version remains untouched.
+
 
 5. **Tools & Technology**: Set up a basic EFS instance and attach it to an EC2 instance.
 
