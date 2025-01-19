@@ -49,6 +49,17 @@
 
 
 4. **DevOps**: Define configuration drift and how to detect it.
+  - **Configuration Drift**:
+   - Occurs when the actual state of infrastructure or systems diverges from the defined configuration in code or documentation.
+   - Common causes:
+    - Manual changes to infrastructure.
+    - Unmanaged updates or patches.
+
+  - **How to Detect It**:
+    1. **Configuration Management Tools**: Tools like Ansible, Puppet, or Chef can flag deviations.
+    2. **Infrastructure as Code (IaC)**: Tools like Terraform or AWS CloudFormation detect changes during plan or deployment stages.
+    3. **Periodic Audits**: Regularly check the infrastructure against the desired state.
+
 
 5. **Tools & Technology**: Use Terraform to create a VPC with subnets.
 
