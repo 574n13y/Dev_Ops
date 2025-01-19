@@ -27,6 +27,15 @@
 
 
 2. **Networking**: What is a firewall, and how does it help in network security?
+   - **Firewall Definition**:
+  A firewall is a network security device or software that monitors and controls incoming and outgoing traffic based on predefined security rules.
+
+   - **How It Helps in Security**:
+    1. **Traffic Filtering**: Blocks unauthorized access while allowing legitimate traffic.
+    2. **Prevents Attacks**: Protects against malicious traffic, such as DDoS, port scanning, and exploits.
+    3. **Access Control**: Defines rules to permit or deny specific IPs, protocols, or ports.
+    4. **Segmentation**: Enforces isolation between network zones.
+
 
 3. **Cloud Computing**: Describe VPC subnetting and how it improves network segmentation.
 
