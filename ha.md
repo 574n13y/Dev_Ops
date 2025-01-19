@@ -63,5 +63,70 @@
 
 5. **Tools & Technology**: Use Terraform to create a VPC with subnets.
 
+```hcl
+provider "aws" {
+  region = "us-east-1"
+}
+
+resource "aws_vpc" "main_vpc" {
+  cidr_block = "10.0.0.0/16"
+  tags = {
+    Name = "MainVPC"
+  }
+}
+
+resource "aws_subnet" "public_subnet" {
+  vpc_id     = aws_vpc.main_vpc.id
+  cidr_block = "10.0.1.0/24"
+  map_public_ip_on_launch = true
+  availability_zone       = "us-east-1a"
+  tags = {
+    Name = "PublicSubnet"
+  }
+}
+
+resource "aws_subnet" "private_subnet" {
+  vpc_id     = aws_vpc.main_vpc.id
+  cidr_block = "10.0.2.0/24"
+  availability_zone       = "us-east-1a"
+  tags = {
+    Name = "PrivateSubnet"
+  }
+}
+
+resource "aws_internet_gateway" "main_igw" {
+  vpc_id = aws_vpc.main_vpc.id
+  tags = {
+    Name = "MainIGW"
+  }
+}
+
+resource "aws_route_table" "public_rt" {
+  vpc_id = aws_vpc.main_vpc.id
+  tags = {
+    Name = "PublicRT"
+  }
+}
+
+resource "aws_route" "public_route" {
+  route_table_id         = aws_route_table.public_rt.id
+  destination_cidr_block = "0.0.0.0/0"
+  gateway_id             = aws_internet_gateway.main_igw.id
+}
+
+resource "aws_route_table_association" "public_subnet_association" {
+  subnet_id      = aws_subnet.public_subnet.id
+  route_table_id = aws_route_table.public_rt.id
+}
+```
+
+   1. **Create a VPC**: CIDR block `10.0.0.0/16`.
+   2. **Create Subnets**: 
+   - Public Subnet: `10.0.1.0/24`, public IPs enabled.
+   - Private Subnet: `10.0.2.0/24`.
+   3. **Internet Gateway**: Attaches to the VPC for public internet access.
+   4. **Route Table**: Defines a route for public traffic.
+
+
 6. **Scenario**: You need a VPC with public and private subnets. How would you design this?
 
