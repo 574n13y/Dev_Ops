@@ -129,4 +129,19 @@ resource "aws_route_table_association" "public_subnet_association" {
 
 
 6. **Scenario**: You need a VPC with public and private subnets. How would you design this?
+   * **Design**:
+    1. **VPC**:
+    - CIDR block: `10.0.0.0/16`.
+    2. **Subnets**:
+    - Public Subnet: `10.0.1.0/24` (for public-facing resources like ALB).
+    - Private Subnet: `10.0.2.0/24` (for backend resources like EC2, RDS).
+    3. **Route Tables**:
+    - Public Subnet Route Table: Route to an Internet Gateway.
+    - Private Subnet Route Table: Route traffic through a NAT Gateway (for outbound internet).
+    4. **NAT Gateway**:
+    - Enables private subnet instances to access the internet securely.
+    5. **Security Groups**:
+    - Public Subnet: Allow inbound traffic on specific ports (e.g., HTTP/HTTPS).
+    - Private Subnet: Allow traffic only from specific sources (e.g., the public subnet).
+
 
