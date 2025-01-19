@@ -38,6 +38,15 @@
 
 
 3. **Cloud Computing**: Describe VPC subnetting and how it improves network segmentation.
+   - **VPC Subnetting**:
+    - Subnetting divides a VPC CIDR block into smaller subnets.
+    - Subnets can be public (accessible from the internet) or private (restricted to internal resources).
+  
+   - **Improving Network Segmentation**:
+    1. **Isolation**: Public-facing and internal resources are separated.
+    2. **Security**: Fine-grained control over access using security groups and Network ACLs.
+    3. **Efficient Routing**: Configures route tables for optimized traffic flow.
+
 
 4. **DevOps**: Define configuration drift and how to detect it.
 
