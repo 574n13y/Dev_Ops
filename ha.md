@@ -47,6 +47,19 @@
 
 
 3. **Cloud Computing**: What is AWS Transit Gateway, and how does it work?
+   - **AWS Transit Gateway**:
+    - A central hub that simplifies network management by connecting multiple VPCs, on-premises networks, and AWS services.
+
+   - **How It Works**:
+    1. **Attachment**: Connects resources (VPCs, VPNs, Direct Connect).
+    2. **Routing**: Automatically propagates routes between attached resources.
+    3. **Scalability**: Supports thousands of VPCs and routes in a single gateway.
+
+   - **Use Cases**:
+    - Simplifying multi-VPC connectivity.
+    - Centralized control of network traffic.
+    - Hybrid cloud setups (integrating on-premises and cloud networks).
+
 
 4. **DevOps**: Discuss the principles of continuous testing.
 
