@@ -74,6 +74,33 @@
 
 
 5. **Tools & Technology**: Configure an AWS Transit Gateway for VPC peering.
+    1. **Create a Transit Gateway**:
+      ```bash
+      aws ec2 create-transit-gateway --description "MyTransitGateway"
+      ```
+    
+    2. **Attach VPCs to the Transit Gateway**:
+    - Attach VPC A:
+      ```bash
+       aws ec2 create-transit-gateway-vpc-attachment \
+        --transit-gateway-id tgw-xxxxxxxx \
+        --vpc-id vpc-aaaaaaa \
+        --subnet-ids subnet-1111111 subnet-2222222
+      ```
+    - Attach VPC B:
+      ```bash
+       aws ec2 create-transit-gateway-vpc-attachment \
+        --transit-gateway-id tgw-xxxxxxxx \
+        --vpc-id vpc-bbbbbbb \
+        --subnet-ids subnet-3333333 subnet-4444444
+      ```
+    
+    3. **Update Route Tables**:
+    - Add routes in each VPC’s route table pointing to the Transit Gateway.
+    
+    4. **Propagate Routes**:
+    - Enable route propagation in the Transit Gateway route table.
+
 
 6. **Scenario**: Your organization needs a central routing solution across multiple VPCs. How would you implement this?
 
