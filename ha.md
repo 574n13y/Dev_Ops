@@ -62,6 +62,16 @@
 
 
 4. **DevOps**: Discuss the principles of continuous testing.
+   - **Continuous Testing**:
+    - Integrates automated testing at every stage of the CI/CD pipeline to identify issues early.
+
+   - **Principles**:
+    1. **Automation**: Automate as many test cases as possible (unit, integration, performance).
+    2. **Shift Left**: Test early in the development cycle to catch defects sooner.
+    3. **Fast Feedback**: Ensure quick results for faster decision-making.
+    4. **Test Coverage**: Cover different scenarios (functional, non-functional, edge cases).
+    5. **Environment Parity**: Test in environments similar to production.
+
 
 5. **Tools & Technology**: Configure an AWS Transit Gateway for VPC peering.
 
