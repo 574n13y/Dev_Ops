@@ -33,6 +33,18 @@
 
 
 2. **Networking**: Explain the difference between Layer 4 and Layer 7 load balancing.
+   - **Layer 4 Load Balancing**:
+    - Operates at the **transport layer** (TCP/UDP).
+    - Directs traffic based on IP address and port.
+    - Fast and efficient, as it doesn’t inspect packet content.
+    - Example: AWS **Network Load Balancer (NLB)**.
+
+   - **Layer 7 Load Balancing**:
+    - Operates at the **application layer** (HTTP/HTTPS).
+    - Routes traffic based on content (e.g., URL, headers).
+    - Supports advanced features like SSL termination and URL-based routing.
+    - Example: AWS **Application Load Balancer (ALB)**.
+
 
 3. **Cloud Computing**: What is AWS Transit Gateway, and how does it work?
 
