@@ -103,4 +103,21 @@
 
 
 6. **Scenario**: Your organization needs a central routing solution across multiple VPCs. How would you implement this?
+   1. **AWS Transit Gateway**:
+    - Deploy a **Transit Gateway** to act as the central hub for all VPCs.
+   
+   2. **Steps**:
+    1. **Create a Transit Gateway**: Attach all VPCs to it.
+    2. **Subnet Configuration**: Ensure subnets in each VPC are appropriately tagged for the Transit Gateway attachment.
+    3. **Route Table Updates**:
+    - Configure route tables in each VPC to send traffic destined for other VPCs via the Transit Gateway.
+    4. **Security Groups**:
+    - Update security groups to allow traffic between VPCs.
+   
+   3. **Hybrid Connectivity** (if needed):
+    - Attach on-premises networks using VPN or AWS Direct Connect.
+   
+   4. **Cost Efficiency**:
+    - Avoid creating a mesh of VPC peering connections by using the Transit Gateway.
+
 
