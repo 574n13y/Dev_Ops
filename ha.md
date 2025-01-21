@@ -100,4 +100,14 @@
 
 
 6. **Scenario**: Your organization wants to automatically archive and delete older data. How would you configure this?
+   * To archive and delete older data, configure **S3 Lifecycle Policies**:  
+    
+    1. **Transition**: Move objects to **S3 Glacier** after they haven’t been accessed for 90 days to save on storage costs.  
+    
+    2. **Expiration**: Automatically delete objects older than 1 year.  
+    
+    3. **Steps**:  
+    - Use the S3 console or CLI to set up lifecycle rules.  
+    - Monitor bucket metrics to ensure the policy is working as intended.  
+
 
