@@ -47,6 +47,17 @@
 
 
 4. **DevOps**: What is the role of automated deployment approval in CI/CD pipelines?
+   * **Purpose**:  
+    - Adds a layer of control to ensure deployments meet specific criteria before proceeding.  
+
+   **How It Works**:  
+    - Pipelines can include **manual approval steps**, where a stakeholder reviews and approves deployment.  
+    - Automated approvals can be achieved through tests or policy checks (e.g., ensuring security scans or performance benchmarks are met).  
+
+   **Benefits**:  
+    - Prevents deployment of broken or non-compliant code.  
+    - Enables controlled rollouts in production environments.  
+
 
 5. **Tools & Technology**: Set up lifecycle policies for an S3 bucket.
 
