@@ -39,6 +39,12 @@
 
 
 3. **Cloud Computing**: Define data lifecycle management in AWS.
+   * **Data Lifecycle Management (DLM)** in AWS is the process of automating the management of data stored in AWS services (e.g., S3, EBS). It optimizes costs by transitioning or deleting data based on its age or access patterns.  
+
+   **Key Features**:  
+    - **S3 Lifecycle Policies**: Transition objects to different storage classes like Standard, Infrequent Access (IA), or Glacier.  
+    - **EBS Snapshots**: Automate the creation and deletion of EBS snapshots.  
+
 
 4. **DevOps**: What is the role of automated deployment approval in CI/CD pipelines?
 
