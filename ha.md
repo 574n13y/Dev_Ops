@@ -18,6 +18,25 @@
 
 
 2. **Networking**: Explain how SSL/TLS encryption works and its importance.
+   * **How It Works**:  
+    
+    1. **Handshake Process**:  
+    - A client requests a secure connection to a server.  
+    - Server sends its **SSL/TLS certificate** (contains its public key).  
+    - The client verifies the certificate using a trusted Certificate Authority (CA).  
+    
+    2. **Session Key Generation**:  
+    - The client and server generate a shared session key using asymmetric encryption.  
+    - This session key is used for encrypting data during the session.  
+    
+    3. **Data Encryption**:  
+    - All communication is encrypted with the session key using symmetric encryption.  
+
+   **Importance**:  
+    - Ensures **data confidentiality** (prevents eavesdropping).  
+    - Guarantees **integrity** (data isn’t altered in transit).  
+    - Provides **authentication** (ensures the server is legitimate).  
+
 
 3. **Cloud Computing**: Define data lifecycle management in AWS.
 
