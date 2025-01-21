@@ -60,6 +60,44 @@
 
 
 5. **Tools & Technology**: Set up lifecycle policies for an S3 bucket.
+   * **Steps**:  
+    
+    1. Go to the **S3 Console**.  
+    
+    2. Select the bucket and navigate to the **Management** tab.  
+    
+    3. Under **Lifecycle Rules**, create a new rule.  
+    - **Name**: "Archive Old Files".  
+    - **Scope**: Choose the prefix or apply it to the whole bucket.  
+    
+    4. Configure transitions:  
+    - Move objects to **Glacier** after 90 days.  
+    - Delete objects after 365 days.  
+    
+    5. Review and apply the policy.  
+
+**Example Policy JSON**:  
+    ```json
+    {
+      "Rules": [
+        {
+         "ID": "ArchiveOldFiles",
+         "Filter": { "Prefix": "" },
+         "Status": "Enabled",
+         "Transitions": [
+           {
+             "Days": 90,
+             "StorageClass": "GLACIER"
+            }
+           ],
+           "Expiration": {
+           "Days": 365
+          }
+        }
+      ]
+     }
+    ```
+
 
 6. **Scenario**: Your organization wants to automatically archive and delete older data. How would you configure this?
 
