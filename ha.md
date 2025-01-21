@@ -1,6 +1,21 @@
 # Day 67
 
 1. **Linux**: Use `find` with advanced filters to search for files by size and date.
+   * The `find` command can be used with options like `-size` and `-mtime` to search for files.  
+   **Examples**:  
+    - Find files larger than 100MB:  
+      ```bash
+      find /path/to/search -type f -size +100M
+      ```
+    - Find files modified in the last 7 days:  
+      ```bash
+      find /path/to/search -type f -mtime -7
+      ```
+    - Combine both:  
+      ```bash
+      find /path/to/search -type f -size +100M -mtime -7
+      ```  
+
 
 2. **Networking**: Explain how SSL/TLS encryption works and its importance.
 
