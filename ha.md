@@ -45,6 +45,26 @@
 
 
 5. **Tools & Technology**: Configure a simple bucket policy in S3.
+   - **Example Policy**: Grant public read access to files in a bucket.  
+     ```json
+     {
+       "Version": "2012-10-17",
+        "Statement": [
+          {
+           "Sid": "PublicReadGetObject",
+           "Effect": "Allow",
+           "Principal": "*",
+           "Action": "s3:GetObject",
+           "Resource": "arn:aws:s3:::example-bucket/*"
+          }
+        ]
+     }
+     ```  
+   - **Steps**:  
+    1. Navigate to the S3 console.  
+    2. Select the bucket and go to the **Permissions** tab.  
+    3. Add the JSON policy under **Bucket Policy**.  
+
 
 6. **Scenario**: You need public and private access to different folders in an S3 bucket. How would you set it up?
 
