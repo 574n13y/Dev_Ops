@@ -35,6 +35,14 @@
 
 
 4. **DevOps**: Define canary deployment and its purpose.
+   - **Canary Deployment**: Gradually rolling out a new application version to a subset of users while monitoring its performance before full deployment.  
+   
+   - **Purpose**:  
+    - Reduce risk by testing changes in a controlled manner.  
+    - Rollback easily if issues are detected.  
+
+   - **Example Use Case**: Rolling out new API changes to 5% of users, monitoring for errors, and incrementally increasing the rollout.
+
 
 5. **Tools & Technology**: Configure a simple bucket policy in S3.
 
