@@ -22,6 +22,17 @@
 
 
 3. **Cloud Computing**: Describe S3 bucket policies and their usage.
+   - **Bucket Policies**: JSON-based access control policies for AWS S3 buckets.  
+   
+   - **Use Cases**:  
+    - Allow or deny access to specific users or groups.  
+    - Set permissions based on IP addresses, AWS services, or specific actions (e.g., read-only or upload).  
+   - **Key Components**:  
+    - **Principal**: Specifies the user or service.  
+    - **Action**: Defines the operations (e.g., `s3:GetObject`).  
+    - **Resource**: Identifies the S3 bucket or object.  
+    - **Condition**: Adds filters (e.g., IP address, tags).  
+
 
 4. **DevOps**: Define canary deployment and its purpose.
 
