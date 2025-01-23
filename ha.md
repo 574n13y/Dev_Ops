@@ -67,4 +67,44 @@
 
 
 6. **Scenario**: You need public and private access to different folders in an S3 bucket. How would you set it up?
-
+    1. **Bucket Structure**:  
+    - `/public`: For files accessible by everyone.  
+    - `/private`: For files accessible by authenticated users.  
+    
+    2. **Configuration Steps**:  
+    - **Policy for Public Folder**:  
+     ```json
+     {
+       "Version": "2012-10-17",
+       "Statement": [
+         {
+           "Effect": "Allow",
+           "Principal": "*",
+           "Action": "s3:GetObject",
+           "Resource": "arn:aws:s3:::your-bucket/public/*"
+         }
+       ]
+     }
+     ```  
+    - **Policy for Private Folder**:  
+     Use IAM roles or bucket policies to restrict access to authenticated users:  
+     ```json
+     {
+       "Version": "2012-10-17",
+       "Statement": [
+         {
+           "Effect": "Allow",
+           "Principal": {
+             "AWS": "arn:aws:iam::account-id:user/username"
+           },
+           "Action": "s3:GetObject",
+           "Resource": "arn:aws:s3:::your-bucket/private/*"
+         }
+       ]
+     }
+     ```  
+    
+    3. **Best Practices**:  
+    - Use AWS IAM policies for user-specific access.  
+    - Enable logging and monitoring to track access patterns.  
+    - Leverage AWS CloudFront for improved performance and security.  
