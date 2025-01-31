@@ -1,4 +1,4 @@
-# Day 63
+# Day 76
 
 1. **Linux**: Use `journalctl` to review system logs.
    - `journalctl` is a command-line tool for querying and displaying logs collected by `systemd`.
