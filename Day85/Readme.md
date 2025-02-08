@@ -84,8 +84,8 @@ AWS Lambda, Azure Functions, and Google Cloud Functions enable serverless archit
 6. **Scenario**: You need a function that automatically processes new files in S3. How would you implement it?
    * To automate processing:  
 
-   1️⃣. *Create an S3 bucket** (`my-data-bucket`).  
-   2️⃣️⃣️⃣. **Deploy an AWS Lambda function** to process new files.  
+   1️⃣. *Cr*eate an S3 bucket** (`my-data-bucket`).  
+   2️⃣️⃣️⃣. D **eeploy an AWS Lambda function** to process new files.  
    3️⃣. **Configure S3 Event Notifications** to trigger Lambda on `s3:ObjectCreated:*`.  
    4️⃣. **Assign IAM Role** to Lambda with `s3:GetObject` permission.  
    5️⃣. **Test by uploading a file** to S3 and verifying the Lambda logs.  
